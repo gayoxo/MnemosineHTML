@@ -9,8 +9,6 @@
 	</br>
 	<?php 
 	include 'config.php'; 
-	include 'funcion_ver_documento.php';
-	
 	$Basica=$_GET["BarraBasica"];
 	$Campo=$_GET["Campo"];
 	
@@ -27,26 +25,15 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'find?userclavy='.Clavyuser.'&passwordclavy='.Clavyuserkey.'&keyclavy='.Clavykey;
+		$service_url = $ServerService.'find';
 		$service_url= $service_url.
 		
 	$curl = curl_init($service_url);
 	
-	$TypeNumber=0;
-	if ($Campo='A')
-		$TypeNumber=0;
-	else if ($Campo='N')
-		$TypeNumber=1;
-	else if ($Campo='T')
-		$TypeNumber=2;
-	else if ($Campo='G')
-		$TypeNumber=3;
-		
-	$Busqueda= array("type" => $TypeNumber,"prositive" => "true", "like" => "true");
-	$BusquedaData=array($Basica => $Busqueda); 
-	
-		
-	$data_string = json_encode($BusquedaData);    
+	$data2 = array("type" => "111","prositive" => "true", "like" => "true");  
+	$data3 = array("type" => "124","prositive" => "false", "like" => "false");
+	$data = array("Hagrid" => $data2, "36" => $data3,"Hagrid" => $data3);   	
+	$data_string = json_encode($data);    
 	
 	
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -70,55 +57,7 @@
 		$status = curl_getinfo($curl);
 		
 		if ($status['http_code']=='200')
-		{
-			$JObj=json_decode($curl_response, true);
-	
-			foreach ($JObj as $valor) {
-				
-				/*
-				foreach ($JObj as $Etiqueta=>$ValorE)
-				{
-					var_dump ($Etiqueta);
-					var_dump ($ValorE);
-					echo $Etiqueta;
-					echo $ValorE;
-				}*/
-				//var_dump($valor);
-				echo "</br>";
-				$valorID="";
-				$valorDesc="";
-				$valorIZ="";
-				foreach ($valor as $Etiqueta=>$ValorE)
-				{
-					if ($Etiqueta=='IDDOcument')
-						$valorID=$ValorE;
-					else if ($Etiqueta=='Description')
-						$valorDesc=$ValorE;
-						else if ($Etiqueta=='Icon')
-						$valorIZ=$ValorE;
-					
-					/*var_dump ($Etiqueta);
-					echo "</br>";
-					var_dump ($ValorE);
-					echo "</br>";}*/
-				}
-				show_document($valorID,$valorDesc,$valorIZ);
-				
-				/*
-				echo "</br>";
-				echo "</br>";
-				
-				var_dump ($valor[0]);
-				var_dump ($valor[1]);
-				var_dump ($valor[2]);
-				
-				show_document($valor[1],$valor[2],$valor[3]); }*/
-			}
-			
-			//var_dump($JObj);
-			//echo $curl_response;
-			
-		}
+			echo $curl_response;
 		else
 		{
 			echo 'Problema del Buscador, intentelo de nuevo info: '.$status['http_code'];
