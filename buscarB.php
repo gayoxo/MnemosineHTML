@@ -42,8 +42,13 @@
 	else if ($Campo='G')
 		$TypeNumber=3;
 		
-	$Busqueda= array("type" => $TypeNumber,"prositive" => "true", "like" => "true");
-	$BusquedaData=array($Basica => $Busqueda); 
+	$Filtro= array(123,134,156);
+	$FiltroData = array("filtro" => $Filtro); 
+	
+	$Busqueda= array("type" => $TypeNumber,"prositive" => true, "and" =>true) ;
+	$BusquedaArray=array($Basica => $Busqueda);
+
+	$BusquedaData=array("busqueda" => $BusquedaArray, "filtro" => $FiltroData);
 	
 		
 	$data_string = json_encode($BusquedaData);    
