@@ -10,12 +10,12 @@
 	<div>
 	Buscador Basico
 	<form action='buscarB.php'>
-	<input type="text" name="BarraBasica" value="Buscar">
+	<input type="text" name="BarraBasica" value="">
 	<select name="Campo">
 		<option value="A">Todos</option>
 		<option value="N">Nombre</option>
 		<option value="T">Titulo</option>
-		<option value="G">Genero</option>
+		<option value="E">Editorial</option>
 	</select>
 	<input type="submit" value="Buscar">
 	</form>

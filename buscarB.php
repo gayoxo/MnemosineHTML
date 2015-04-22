@@ -33,16 +33,20 @@
 	$curl = curl_init($service_url);
 	
 	$TypeNumber=0;
-	if ($Campo='A')
+	if ($Campo=='A')
 		$TypeNumber=0;
-	else if ($Campo='N')
-		$TypeNumber=1;
-	else if ($Campo='T')
-		$TypeNumber=2;
-	else if ($Campo='G')
-		$TypeNumber=3;
+	else if ($Campo=='N')
+		$TypeNumber=21814;
+	else if ($Campo=='T')
+		$TypeNumber=25119;
+	else if ($Campo=='E')
+		$TypeNumber=19749;
 		
-	$Filtro= array(123,134,156);
+		
+	var_dump($TypeNumber);
+	var_dump($Campo);
+	
+	$Filtro= array(28647,28646,20805,21986);
 	$FiltroData = array("filtro" => $Filtro); 
 	
 	$Busqueda= array("type" => $TypeNumber,"prositive" => true, "and" =>true) ;
@@ -78,23 +82,36 @@
 		{
 			$JObj=json_decode($curl_response, true);
 	
+			//var_dump($JObj);
+			
+			$arraYDocumentos=array();
+			$TotalValue=0;
+			
 			foreach ($JObj as $valor) {
 				
-				/*
-				foreach ($JObj as $Etiqueta=>$ValorE)
+				foreach ($valor as $EtiquetaV=>$arrayE)
 				{
-					var_dump ($Etiqueta);
-					var_dump ($ValorE);
-					echo $Etiqueta;
-					echo $ValorE;
-				}*/
-				//var_dump($valor);
-				echo "</br>";
+				if ($EtiquetaV=='Documents')
+					$arraYDocumentos=$arrayE;		
+				
+				if ($EtiquetaV=='DocumentsCountTotal')
+					$TotalValue=$arrayE;
+				}
+			}
+			
+			echo "El numero de elementos encontrados es :".$TotalValue;
+			echo "</br>";
+			echo "</br>";
+			
+			foreach ($arraYDocumentos as $arrayEU)
+				{
+
 				$valorID="";
 				$valorDesc="";
 				$valorIZ="";
-				foreach ($valor as $Etiqueta=>$ValorE)
+				foreach ($arrayEU as $Etiqueta=>$ValorE)
 				{
+					
 					if ($Etiqueta=='IDDOcument')
 						$valorID=$ValorE;
 					else if ($Etiqueta=='Description')
@@ -102,22 +119,9 @@
 						else if ($Etiqueta=='Icon')
 						$valorIZ=$ValorE;
 					
-					/*var_dump ($Etiqueta);
-					echo "</br>";
-					var_dump ($ValorE);
-					echo "</br>";}*/
+					
 				}
 				show_document($valorID,$valorDesc,$valorIZ);
-				
-				/*
-				echo "</br>";
-				echo "</br>";
-				
-				var_dump ($valor[0]);
-				var_dump ($valor[1]);
-				var_dump ($valor[2]);
-				
-				show_document($valor[1],$valor[2],$valor[3]); }*/
 			}
 			
 			//var_dump($JObj);
