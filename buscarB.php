@@ -13,6 +13,14 @@
 	
 	$Basica=$_GET["BarraBasica"];
 	$Campo=$_GET["Campo"];
+	$Start=$_GET["Start"];
+	$Limite=$_GET["Limite"];
+	
+	if (empty($Start))
+		$Start=0;
+	
+	if (empty($Limite))
+		$Limite=10;
 	
 	$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder/';
 	$service_url = $ServerService.'active';
@@ -27,7 +35,7 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'find?userclavy='.Clavyuser.'&passwordclavy='.Clavyuserkey.'&keyclavy='.Clavykey;
+		$service_url = $ServerService.'find?userclavy='.Clavyuser.'&passwordclavy='.Clavyuserkey.'&keyclavy='.Clavykey.'&start='.$Start.'&limit='.$Limite;
 		$service_url= $service_url.
 		
 	$curl = curl_init($service_url);
@@ -43,8 +51,8 @@
 		$TypeNumber=19749;
 		
 		
-	var_dump($TypeNumber);
-	var_dump($Campo);
+	//var_dump($TypeNumber);
+	//var_dump($Campo);
 	
 	$Filtro= array(28647,28646,20805,21986);
 	$FiltroData = array("filtro" => $Filtro); 
@@ -100,6 +108,48 @@
 			}
 			
 			echo "El numero de elementos encontrados es :".$TotalValue;
+			echo "</br>";
+			echo "</br>";
+			
+			echo "<form>";
+			echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
+			echo "<input type=\"hidden\" name=\"Campo\" value=".$Campo." />";
+			echo "<input type=\"hidden\" name=\"Start\" value=".$Start." />";
+			?>
+
+			<select name="Limite">
+		<option value="10"<?php if ($Limite==10) echo "selected=\"selected\"";?>>10</option>
+		<option value="25"<?php if ($Limite==25) echo "selected=\"selected\"";?>>25</option>
+		<option value="50"<?php if ($Limite==50) echo "selected=\"selected\"";?>>50</option>
+		<option value="100"<?php if ($Limite==100) echo "selected=\"selected\"";?>>100</option>
+		<option value="200"<?php if ($Limite==200) echo "selected=\"selected\"";?>>200</option>
+		<option value="500"<?php if ($Limite==500) echo "selected=\"selected\"";?>>500</option>
+		<option value="1000"<?php if ($Limite==1000) echo "selected=\"selected\"";?>>1000</option>
+			</select>
+			<input type="submit" value="Buscar">
+			
+			<?php
+			if ($TotalValue>0){
+				$ParticionesC=$TotalValue/$Limite;
+				
+			}
+			
+			echo "</br>";
+			echo "</br>";
+			if ($TotalValue>$Limite)
+				{
+				$Particiones=$TotalValue/$Limite;
+				echo "<div>";				
+				for ($i = 0; $i <= $Particiones; $i++) {
+					$sta=($Limite*$i);		
+					$sup=$Limite+($Limite*$i);
+					if ($sup>$TotalValue)
+						$sup=$TotalValue;
+	//				echo "[".$sta."-".$sup."]";
+					echo "<a href='?BarraBasica=".$Basica."&Campo=".$Campo."&Start=".$sta."&Limite=".$Limite."' >[".($sta+1)."-".$sup."]</a>";
+				}		
+				echo "</div>";	
+				}
 			echo "</br>";
 			echo "</br>";
 			
