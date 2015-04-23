@@ -1,20 +1,63 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title>MnemosineHTML Buscador Avanzado</title>
-  </head>
-  <body>
+<?php include 'top.php'; ?>
     <p>MNEMOSINEHTML Resultado Basico</p>
 	</br>
-	<?php 
+	
+	
+<?php
+function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA)
+{
+	if (!isset($arrayFiltro))
+		echo "<a>+ de 20 Valores</a>";
+	else if (empty($arrayFiltro))
+		echo "<a>0 Valores</a>";
+	else
+	{
+	
+	foreach ($arrayFiltro as $arrayV)
+				{
+					$cunt;
+					$val;
+					foreach ($arrayV as $EtiquetaV=>$Valor)
+					{
+						if ($EtiquetaV=="Count")
+							$cunt=$Valor;
+						else if ($EtiquetaV=="FilterString")
+							$val=$Valor; 
+					}
+				
+				$FiltroAT=array();
+				if (isset($FiltroA)&&!empty($FiltroA))
+					{
+					$FiltroAJ=json_decode($FiltroA, true);	
+					foreach ($FiltroAJ as $elemarraF)
+						array_push($FiltroAT, $elemarraF);
+					}
+				
+				$Filtopair=array($TypeID=>$val);
+				
+				array_push($FiltroAT, $Filtopair);
+				
+				$data_stringFiltro = json_encode($FiltroAT);    
+				
+				echo "<li><a href='?BarraBasica=".$Basica."&Campo=".$Campo."&Start=".$Start."&Limite=".$Limite."&Filtro=".$data_stringFiltro."'>".$val." (".$cunt.")</a></li>";	
+				}
+	}
+}
+?>	
+	
+<?php 
 	include 'config.php'; 
+	
 	include 'funcion_ver_documento.php';
 	
 	$Basica=$_GET["BarraBasica"];
 	$Campo=$_GET["Campo"];
 	$Start=$_GET["Start"];
 	$Limite=$_GET["Limite"];
+	$FiltroA=$_GET["Filtro"];
+	
+	if (empty($FiltroA))
+		$FiltroA=array();
 	
 	if (empty($Start))
 		$Start=0;
@@ -83,17 +126,18 @@
 		echo $curl_response;
 	}else
 	{
-		
 		$status = curl_getinfo($curl);
 		
 		if ($status['http_code']=='200')
 		{
 			$JObj=json_decode($curl_response, true);
 	
+			curl_close($curl);
 			//var_dump($JObj);
 			
 			$arraYDocumentos=array();
 			$TotalValue=0;
+			$arraYFiltro=array();
 			
 			foreach ($JObj as $valor) {
 				
@@ -104,18 +148,25 @@
 				
 				if ($EtiquetaV=='DocumentsCountTotal')
 					$TotalValue=$arrayE;
+				
+				if ($EtiquetaV=='Filtro')
+					$arraYFiltro=$arrayE;
+				
 				}
 			}
 			
 			echo "El numero de elementos encontrados es :".$TotalValue;
 			echo "</br>";
-			echo "</br>";
 			
-			echo "<form>";
-			echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
-			echo "<input type=\"hidden\" name=\"Campo\" value=".$Campo." />";
-			echo "<input type=\"hidden\" name=\"Start\" value=".$Start." />";
 			?>
+			</br>
+			<div class='nvisibles'>
+			
+			<form>
+			<input type="hidden" name="BarraBasica" value=<?php echo $Basica?> />
+			<input type="hidden" name="Campo" value=<?php echo $Campo?> />
+			<input type="hidden" name="Start" value=<?php echo $Start?> />
+			
 
 			<select name="Limite">
 		<option value="10"<?php if ($Limite==10) echo "selected=\"selected\"";?>>10</option>
@@ -127,19 +178,18 @@
 		<option value="1000"<?php if ($Limite==1000) echo "selected=\"selected\"";?>>1000</option>
 			</select>
 			<input type="submit" value="Buscar">
+			</div>
+			</br>
 			
 			<?php
+			
 			if ($TotalValue>0){
 				$ParticionesC=$TotalValue/$Limite;
-				
 			}
-			
-			echo "</br>";
-			echo "</br>";
 			if ($TotalValue>$Limite)
 				{
 				$Particiones=$TotalValue/$Limite;
-				echo "<div>";				
+				echo "<div class='paginacion'>";				
 				for ($i = 0; $i <= $Particiones; $i++) {
 					$sta=($Limite*$i);		
 					$sup=$Limite+($Limite*$i);
@@ -149,13 +199,88 @@
 					echo "<a href='?BarraBasica=".$Basica."&Campo=".$Campo."&Start=".$sta."&Limite=".$Limite."' >[".($sta+1)."-".$sup."]</a>";
 				}		
 				echo "</div>";	
+				echo "</br>";
+				echo "</br>";
 				}
-			echo "</br>";
-			echo "</br>";
+				
+			?>	
+			<div class='filtro'>
 			
+			<?php
+			
+			$V28647;
+			$V28646;
+			$V20805;
+			$V21986;
+			
+			foreach ($arraYFiltro as $arrayEU)
+			{
+				$V28647B=false;
+					$V28646B=false;
+					$V20805B=false;
+					$V21986B=false;
+					
+			foreach ($arrayEU as $Etiqueta=>$ValorE)
+				{
+					
+					
+					if ($Etiqueta=='TypeId')
+					{
+						if ($ValorE==28647)
+							$V28647B=true;
+						if ($ValorE==28646)
+							$V28646B=true;
+						if ($ValorE==20805)
+							$V20805B=true;
+						if ($ValorE==21986)
+							$V21986B=true;
+						
+					}
+					else
+					{
+						if ($V28647B)
+							$V28647=$ValorE;
+						if ($V28646B)
+							$V28646=$ValorE;
+						if ($V20805B)
+							$V20805=$ValorE;
+						if ($V21986B)
+							$V21986=$ValorE;
+					}
+				}
+			}
+			
+
+			echo "<details>";
+			echo "<summary>Impresor</summary>";
+			ArrayFiltro('28647',$V28647,$Basica,$Campo,$Start,$Limite,$FiltroA);
+			echo "</details>";
+
+			
+			echo "<details>";
+			echo "<summary>Lugar de impresión</summary>";
+			ArrayFiltro('28646',$V28646,$Basica,$Campo,$Start,$Limite,$FiltroA);
+			echo "</details>";
+
+			
+			echo "<details>";
+			echo "<summary>Materia</summary>";
+			ArrayFiltro('20805',$V20805,$Basica,$Campo,$Start,$Limite,$FiltroA);
+			echo "</details>";
+			
+
+			echo "<details>";
+			echo "<summary>Tipo de documento</summary>";
+				ArrayFiltro('21986',$V21986,$Basica,$Campo,$Start,$Limite,$FiltroA);
+			echo "</details>";
+
+		
+			?>	
+			</div>	
+			<div class='documents'>
+			<?php
 			foreach ($arraYDocumentos as $arrayEU)
 				{
-
 				$valorID="";
 				$valorDesc="";
 				$valorIZ="";
@@ -173,7 +298,7 @@
 				}
 				show_document($valorID,$valorDesc,$valorIZ);
 			}
-			
+			echo "</div>";	
 			//var_dump($JObj);
 			//echo $curl_response;
 			
@@ -183,11 +308,13 @@
 			echo 'Problema del Buscador, intentelo de nuevo info: '.$status['http_code'];
 			echo "</br>";
 			echo $curl_response;
+			curl_close($curl);
 			
 		}
+		
 	}
 		
 	}
 	?>
-  </body>
-</html>
+	
+<?php include 'botton.php'; ?>

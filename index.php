@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title>MnemosineHTML</title>
-  </head>
-  <body>
+<?php include 'top.php'; ?>
     <p>MNEMOSINEHTML Test</p>
 	</br>
 	<div>
@@ -22,5 +16,4 @@
 	</div>
 	</br>
 	<div><a href='buscadoravanzado.php'>Buscador Avanzado</a></div>
-  </body>
-</html>
+<?php include 'botton.php'; ?>
