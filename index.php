@@ -3,7 +3,7 @@
 	</br>
 	<div>
 	Buscador Basico
-	<form action='buscarB.php'>
+	<form action='buscarB.php' method="post">
 	<input type="text" name="BarraBasica" value="">
 	<select name="Campo">
 		<option value="A">Todos</option>

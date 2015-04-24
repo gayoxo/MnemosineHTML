@@ -3,6 +3,10 @@
    margin-right: 2em; 
 }
 
+form.paginacionF {
+  display: inline;
+}
+
 .documents {
   float: left;
 }
