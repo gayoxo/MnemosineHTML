@@ -29,18 +29,16 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				
 				$FiltroAT=array();
 				if (isset($FiltroA)&&!empty($FiltroA))
-					{
-					$FiltroAJ=json_decode($FiltroA, true);	
-					foreach ($FiltroAJ as $elemarraF)
-						array_push($FiltroAT, $elemarraF);
-					}
+					$FiltroAT=json_decode($FiltroA, true);	
+					
 				
-				$Filtopair=array($TypeID=>$val);
 				
-				array_push($FiltroAT, $Filtopair);
+				if (!isset($FiltroAT[$TypeID])||$FiltroAT[$TypeID]==null)
+					$FiltroAT[$TypeID]=array();
 				
+				array_push($FiltroAT[$TypeID], $val);
+								
 				$data_stringFiltro = json_encode($FiltroAT);    
-				
 				
 				
 				echo "<li>"; 
@@ -61,6 +59,24 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 ?>	
 
 	
+	
+	<div>
+	<form action='buscarB.php' method="post">
+	<input type="text" name="BarraBasica" value="">
+	<select name="Campo">
+		<option value="A">Todos</option>
+		<option value="N">Nombre</option>
+		<option value="T">Titulo</option>
+		<option value="E">Editorial</option>
+	</select>
+	<input type="submit" value="Buscar">
+	</form>
+	</div>
+	</br>
+	<div><a href='buscadoravanzado.php'>Buscador Avanzado</a></div>
+	</br>
+	
+	
 <?php 
 	include 'config.php'; 
 	
@@ -74,6 +90,8 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 
 	if (empty($FiltroA))
 		$FiltroA=array();
+	
+	//var_dump($FiltroA);
 	
 	if (empty($Start))
 		$Start=0;
@@ -116,11 +134,16 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	$Filtro= array(28647,28646,20805,21986);
 	$FiltroData = array("filtro" => $Filtro); 
 	
+	
+	$FiltroAplicar= json_decode($FiltroA, true);	
+	//var_dump($FiltroA);
+	
 	$Busqueda= array("type" => $TypeNumber,"prositive" => true, "and" =>true) ;
 	$BusquedaArray=array($Basica => $Busqueda);
 
-	$BusquedaData=array("busqueda" => $BusquedaArray, "filtro" => $FiltroData);
+	$BusquedaData=array("busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar);
 	
+	//var_dump($BusquedaData);
 		
 	$data_string = json_encode($BusquedaData);    
 	
