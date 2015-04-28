@@ -16,7 +16,7 @@
 	else if ($Campo=='E')
 		$TypeNumber=19749;
 	
-	$Busqueda= array("type" => $TypeNumber,"prositive" => true, "and" =>true) ;
+	$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>true) ;
 	$BusquedaArray=array($Basica => $Busqueda);
 	
 	include 'buscar_codigo_general.php';

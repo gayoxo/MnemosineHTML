@@ -19,13 +19,16 @@
 	<?php
 	
 	for ($x = 0; $x <= $Campos; $x++) {
-   echo "<input type=\"text\" name=\"BarraBusqueda[]\" >";
-	echo "<select name=\"Campo[]\">";
+	echo "Negativo : <input type=\"checkbox\" name=\"positivo[".$x."]\" /> ";
+   echo "<input type=\"text\" name=\"BarraBusqueda[".$x."]\" >";
+	echo "<select name=\"Campo[".$x."]\">";
 	echo "<option value=\"A\">Todos</option>";
 	echo "<option value=\"N\">Nombre</option>";
 	echo "<option value=\"T\">Titulo</option>";
 	echo "<option value=\"E\">Editorial</option>";
 	echo "</select>";
+	if ($x!=0)
+		echo " O : <input type=\"checkbox\" name=\"logica[".$x."]\" />";
 	echo "</br>";
 	}	 
 

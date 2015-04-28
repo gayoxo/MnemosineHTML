@@ -6,12 +6,21 @@
 
 	$Basica=$_POST["BarraBusqueda"];
 	$Basica2=$_POST["Campo"];
+	$Basica3=$_POST["positivo"];
+	$Basica4=$_POST["logica"];
 	
 	if (!isset($Basica)||empty($Basica))
 		$Basica=array();
 	
 	if (!isset($Basica2)||empty($Basica2))
 		$Basica2=array();
+	
+	if (!isset($Basica3)||empty($Basica3))
+		$Basica3=array();
+	
+	if (!isset($Basica4)||empty($Basica4))
+		$Basica4=array();
+	
 	
 	if (count($Basica)!=count($Basica2))
 		{
@@ -37,6 +46,14 @@
 	{
 		$BasicaUni=$Basica[$x];
 		$Campo=$Basica2[$x];
+		
+		if (array_key_exists($x,$Basica3))
+			$Positivo=false;
+		else $Positivo=true;
+		
+		if (array_key_exists($x,$Basica4))
+			$ORE=false;
+		else $ORE=true;
 	
 		$TypeNumber=0;
 		if ($Campo=='A')
@@ -52,11 +69,11 @@
 	echo "</br>";
 	*/
 	
-	$Busqueda= array("type" => $TypeNumber,"prositive" => true, "and" =>true) ;
+	$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
 	$BusquedaArray[$BasicaUni]=$Busqueda;
 	}
 	
-	//var_dump($BusquedaArray);
+	var_dump($BusquedaArray);
 		
 	
 	include 'buscar_codigo_general.php';
