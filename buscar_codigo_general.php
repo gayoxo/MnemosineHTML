@@ -1,11 +1,12 @@
-<?php include 'top.php'; ?>
-    <p>MNEMOSINEHTML Resultado Basico</p>
-	</br>
-	
-	
+<?php
+	include 'config.php'; 
+	include 'funcion_ver_documento.php';
+?>
+
 <?php
 function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA)
 {
+	//var_dump ($FiltroA);
 	if (!isset($arrayFiltro))
 		echo "<a>+ de 50 Valores</a>";
 	else if (empty($arrayFiltro))
@@ -13,8 +14,17 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	else
 	{
 	
-	$counter=0;
+	$FiltroAplicarT= json_decode($FiltroA, true);
 	
+	if (isset($FiltroAplicarT[$TypeID])&&(!empty($FiltroAplicarT[$TypeID])))
+		{
+			$FiltroAplicar= $FiltroAplicarT[$TypeID];
+		}
+	else
+	{
+		$FiltroAplicar=array();
+	}
+		
 	foreach ($arrayFiltro as $arrayV)
 				{
 					$cunt;
@@ -27,69 +37,35 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 							$val=$Valor; 
 					}
 				
-				$FiltroAT=array();
-				if (isset($FiltroA)&&!empty($FiltroA))
-					$FiltroAT=json_decode($FiltroA, true);	
-					
+				echo "<li>";
 				
 				
-				if (!isset($FiltroAT[$TypeID])||$FiltroAT[$TypeID]==null)
-					$FiltroAT[$TypeID]=array();
-				
-				array_push($FiltroAT[$TypeID], $val);
-								
-				$data_stringFiltro = json_encode($FiltroAT);    
-				
-				
-				echo "<li>"; 
-				echo "<form class=\"filtroF\" name=\"f".$TypeID.$counter."\" action='' method=\"post\">";
-				echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
-					echo "<input type=\"hidden\" name=\"Campo\" value=".$Campo." />";
-					echo "<input type=\"hidden\" name=\"Start\" value=".$Start." />";
-					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
-					echo "<input type=\"hidden\" name=\"Filtro\" value='".$data_stringFiltro."' />";
-				echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['f".$TypeID.$counter."'].submit();\" >".$val." (".$cunt.")</a></li>";
-				echo "</form>";	
-				echo "</li>"; 	
-
-				$counter=$counter+1;				
+				if (in_array ($val,$FiltroAplicar))
+					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$val."\"  checked >".$val." (".$cunt.")";				
+				else
+					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$val."\">".$val." (".$cunt.")";
+				echo "</li>";
 				}
 	}
 }
 ?>	
 
-	
-	
-	<div>
-	<form action='buscarB.php' method="post">
-	<input type="text" name="BarraBasica" value="">
-	<select name="Campo">
-		<option value="A">Todos</option>
-		<option value="N">Nombre</option>
-		<option value="T">Titulo</option>
-		<option value="E">Editorial</option>
-	</select>
-	<input type="submit" value="Buscar">
-	</form>
-	</div>
-	</br>
-	<div><a href='buscadoravanzado.php'>Buscador Avanzado</a></div>
-	</br>
-	
-	
-<?php 
-	include 'config.php'; 
-	
-	include 'funcion_ver_documento.php';
-	
-	$Basica=$_POST["BarraBasica"];
-	$Campo=$_POST["Campo"];
+
+
+<?php
+
+$Campo=$_POST["Campo"];
 	$Start=$_POST["Start"];
 	$Limite=$_POST["Limite"];
 	$FiltroA=$_POST["Filtro"];
+	$FiltroNuevo=$_POST["FiltroNuevo"];
+	
+	
 
-	if (empty($FiltroA))
-		$FiltroA=array();
+	if (empty($FiltroNuevo))
+		$FiltroNuevo=false;
+	
+
 	
 	//var_dump($FiltroA);
 	
@@ -117,15 +93,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		
 	$curl = curl_init($service_url);
 	
-	$TypeNumber=0;
-	if ($Campo=='A')
-		$TypeNumber=0;
-	else if ($Campo=='N')
-		$TypeNumber=21814;
-	else if ($Campo=='T')
-		$TypeNumber=25119;
-	else if ($Campo=='E')
-		$TypeNumber=19749;
+	
 		
 		
 	//var_dump($TypeNumber);
@@ -135,11 +103,38 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	$FiltroData = array("filtro" => $Filtro); 
 	
 	
-	$FiltroAplicar= json_decode($FiltroA, true);	
 	//var_dump($FiltroA);
 	
-	$Busqueda= array("type" => $TypeNumber,"prositive" => true, "and" =>true) ;
-	$BusquedaArray=array($Basica => $Busqueda);
+	if (isset($FiltroA)&&!(empty($FiltroA)))
+		$FiltroAplicar= json_decode($FiltroA, true);
+	else
+		$FiltroAplicar=array();
+
+	
+	/*foreach ($Filtro as $Valor)	
+		var_dump($_POST["f".$Valor]);
+	echo "<br>"; */
+	
+	if ($FiltroNuevo)
+	{
+		$FiltroAplicar=array();
+		foreach ($Filtro as $Valor)	
+		{		
+			if (isset($_POST["f".$Valor])&&!(empty($_POST["f".$Valor])))
+			{
+				$A=$_POST["f".$Valor];
+				$FiltroAplicar[$Valor]=$A;
+			}
+		}
+	}
+	//var_dump($FiltroAplicar);
+	
+	$FiltroA=json_encode($FiltroAplicar); 
+	
+	
+	echo "<br>";
+	
+	
 
 	$BusquedaData=array("busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar);
 	
@@ -217,7 +212,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		<option value="500"<?php if ($Limite==500) echo "selected=\"selected\"";?>>500</option>
 		<option value="1000"<?php if ($Limite==1000) echo "selected=\"selected\"";?>>1000</option>
 			</select>
-			<input type="submit" value="Buscar">
+			<input type="submit" value="Cambiar Cantidad a Mostrar">
 			</form>
 			</div>
 			</br>
@@ -299,36 +294,36 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			}
 			
 ?>
-			<details>
+			<form class="filtroF" name="formFilter" action='' method="post">
+			<input type="hidden" name="BarraBasica" value=<?php echo $Basica?> />
+			<input type="hidden" name="Campo" value=<?php echo $Campo?> />
+			<input type="hidden" name="Start" value=<?php echo $Start?> />
+			<input type="hidden" name="Limite" value=<?php echo $Limite?>  />
+			<input type="hidden" name="FiltroNuevo" value=true />
+			<details <?php if (isset($FiltroAplicar[28647])&&(!empty($FiltroAplicar[28647]))) echo "open"; ?>>
 			<summary>Impresor</summary>
 		<?php	ArrayFiltro('28647',$V28647,$Basica,$Campo,$Start,$Limite,$FiltroA);?>	
 			</details>
 
 			
-			<details>
+			<details <?php if (isset($FiltroAplicar[28646])&&(!empty($FiltroAplicar[28646]))) echo "open"; ?>>
 			<summary>Lugar de impresión</summary>
-			<?php	ArrayFiltro('28646',$V28646,$Basica,$Campo,$Start,$Limite,$FiltroA);?>	
+			<?php ArrayFiltro('28646',$V28646,$Basica,$Campo,$Start,$Limite,$FiltroA); ?>	
 			</details>
 
 			
-			<details>
+			<details <?php if (isset($FiltroAplicar[20805])&&(!empty($FiltroAplicar[20805]))) echo "open"; ?> >
 			<summary>Materia</summary>
 			<?php	ArrayFiltro('20805',$V20805,$Basica,$Campo,$Start,$Limite,$FiltroA);?>	
 			</details>
 			
 
-			<details>
+			<details <?php if (isset($FiltroAplicar[21986])&&(!empty($FiltroAplicar[21986]))) echo "open"; ?> >
 			<summary>Tipo de documento</summary>
 			<?php		ArrayFiltro('21986',$V21986,$Basica,$Campo,$Start,$Limite,$FiltroA);?>	
 			</details>
 
-			</br>
-			<form action='' method="post">
-			<input type="hidden" name="BarraBasica" value=<?php echo $Basica?> />
-			<input type="hidden" name="Campo" value=<?php echo $Campo?> />
-			<input type="hidden" name="Start" value=<?php echo $Start?> />
-			<input type="hidden" name="Limite" value=<?php echo $Limite?>  />
-			<input type="submit" value="Limpiar Filtro">
+			<input type="submit" value="Aplicar Filtro">
 			</form>
 			</br>
 			
@@ -371,6 +366,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	}
 		
 	}
-	?>
-	
-<?php include 'botton.php'; ?>
+
+
+?>

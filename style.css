@@ -9,4 +9,43 @@ form.paginacionF {
 
 .documents {
   float: left;
+  width: 80%;
+}
+
+input[type="text"] {
+  width: 600px;
+}
+
+.documento_unico{
+border-radius: 25px;
+    border: 2px solid #071AC0;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;
+    float: inherit;	
+}
+
+.documento_unico_data{
+border-radius: 25px;
+    border: 2px solid #071AC0;
+    padding: 20px; 
+    float: inherit;	
+}
+
+
+.documento_unico_resto {
+  overflow-y: auto;
+  height: 100px;
+  float: left;
+}
+
+.documento_unico_icono {
+  float: left;
+  margin-right: 2em;
+ }
+ 
+ .documento_unico_abrir {
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
 }
