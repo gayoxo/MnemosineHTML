@@ -59,8 +59,6 @@ $Campo=$_POST["Campo"];
 	$Limite=$_POST["Limite"];
 	$FiltroA=$_POST["Filtro"];
 	$FiltroNuevo=$_POST["FiltroNuevo"];
-	
-	
 
 	if (empty($FiltroNuevo))
 		$FiltroNuevo=false;

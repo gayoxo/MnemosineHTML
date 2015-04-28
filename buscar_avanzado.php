@@ -4,6 +4,10 @@
 <?php include 'form_buscador.php'?>	
 <?php 
 
+	$Previa=$_POST["BarraBasica"];
+	
+	
+	
 	$Basica=$_POST["BarraBusqueda"];
 	$Basica2=$_POST["Campo"];
 	$Basica3=$_POST["positivo"];
@@ -21,12 +25,6 @@
 	if (!isset($Basica4)||empty($Basica4))
 		$Basica4=array();
 	
-	
-	if (count($Basica)!=count($Basica2))
-		{
-		echo "Error en POST del PHP";
-		exit(0);
-		}
 		
 /*	var_dump($Basica);
 	
@@ -73,8 +71,11 @@
 	$BusquedaArray[$BasicaUni]=$Busqueda;
 	}
 	
-	var_dump($BusquedaArray);
-		
+
+		if (isset($Previa)&&(!empty($Previa)))
+			$BusquedaArray= json_decode($Previa, true);
+	
+	$Basica=json_encode($BusquedaArray);
 	
 	include 'buscar_codigo_general.php';
 	
