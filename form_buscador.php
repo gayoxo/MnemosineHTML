@@ -1,7 +1,7 @@
 <div>
 	Buscador Basico
 	<form action='buscar_basico.php' method="post">
-	<input type="text" name="BarraBasica" value="">
+	<input type="text" name="BarraBasica" maxlength="120" value="">
 	<select name="Campo">
 		<option value="A">Todos</option>
 		<option value="N">Nombre</option>

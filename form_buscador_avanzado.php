@@ -20,7 +20,7 @@
 	
 	for ($x = 0; $x <= $Campos; $x++) {
 	echo "Negativo : <input type=\"checkbox\" name=\"positivo[".$x."]\" /> ";
-   echo "<input type=\"text\" name=\"BarraBusqueda[".$x."]\" >";
+   echo "<input type=\"text\" name=\"BarraBusqueda[".$x."]\" maxlength=\"120\">";
 	echo "<select name=\"Campo[".$x."]\">";
 	echo "<option value=\"A\">Todos</option>";
 	echo "<option value=\"N\">Nombre</option>";
