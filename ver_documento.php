@@ -1,10 +1,12 @@
-<?php include 'top.php'; ?>
+<?php include 'top.php';
+include 'config.php';  ?>
+
 <?php 
 
 
 echo "<div class=\"documento_unico_data\">";
 $DocumentID=$_GET["documento"];
-echo $DocumentID;
+//echo $DocumentID;
 
 if (!isset($DocumentID)||($DocumentID==0))
 {
@@ -17,6 +19,8 @@ $ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder
 	$service_url = $ServerService.'getPlainDocument?userclavy='.Clavyuser.'&passwordclavy='.Clavyuserkey.'&keyclavy='.Clavykey.'&iddocument='.$DocumentID;
 	$curl = curl_init($service_url);
 
+	//echo ($service_url);
+	
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	$curl_response = curl_exec($curl);
 	if ($curl_response === false) {
@@ -29,7 +33,10 @@ $ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder
 		
 		if ($status['http_code']=='200')
 		{
-			echo "Ok";
+			echo $curl_response;
+			echo "</br>";
+			//$JObj=json_decode($curl_response, true);
+			//var_dump($JObj);
 		}
 		else
 		{
