@@ -1,6 +1,109 @@
 <?php include 'top.php';
 include 'config.php';  ?>
 
+
+<?php
+function ProcesaLista($ArrayE,$lis)
+{
+	foreach ($ArrayE as $arrayV)
+	{
+	$Type="";
+		$Value="";
+		$DocRef="";
+		$Info= array();
+		$DescRef="";
+		
+	
+	foreach ($arrayV as $EtiquetaV=>$Valor)
+	{
+		
+	/*	echo "Aqui: ".$EtiquetaV." Valor: ".$Valor ;*/
+		
+		
+		
+		
+		if ($EtiquetaV=='Type')
+			$Type=$Valor;		
+				
+		if ($EtiquetaV=='DescRef')
+			$DescRef=$Valor;		
+		
+		if ($EtiquetaV=='Value')
+			$Value=$Valor;
+				
+		if ($EtiquetaV=='DocRef')
+			$DocRef=$Valor;
+				
+		if ($EtiquetaV=='Info')
+			$Info=$Valor;
+	}
+
+	if (!empty($Type))
+	{		
+	if ($lis==true)
+		echo "<li class=\"lisummary\">";
+	
+	if (!empty($Info))
+	{
+		echo "<details open>";
+				
+		echo "<summary>";
+	}
+	
+		$Result="";
+		
+		if (!empty($Value))
+		{
+			$Show="OV: ".$Value." (Sin descripción)" ;
+			if (!empty($DescRef))
+			$Show=$DescRef;
+			
+			
+		if ($DocRef==true)
+				$Result= "<a class=\"avalueE\" href=\"ver_documento.php?documento=".$Value."\" target=\"_blank\" >".$Show."</a>";
+			else 
+				$Result= "<span class=\"svalueE\">".$Value."</span>";
+		}
+		
+		echo $Type.": ".$Result;
+		
+		if (!empty($Info))
+			echo "</summary>";
+		echo "<ul>";
+	}
+	
+		
+		
+		
+		if (!empty($Info))
+			ProcesaLista($Info,true);
+			
+			
+
+			
+			
+		if (!empty($Type))	
+		{
+			echo "</ul>";
+			
+			if (!empty($Info))
+				echo "</details>";
+			
+			if ($lis==true)
+				echo "</li>";
+		}			
+	}
+	
+	
+	
+	
+}
+
+
+
+?>	
+
+
 <?php 
 
 
@@ -33,10 +136,69 @@ $ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder
 		
 		if ($status['http_code']=='200')
 		{
-			echo $curl_response;
-			echo "</br>";
-			//$JObj=json_decode($curl_response, true);
-			//var_dump($JObj);
+			/*echo $curl_response;
+			echo "</br>";*/
+			
+			$JObj=json_decode($curl_response, true);
+			
+			curl_close($curl);
+			
+			$IDDOcument=$DocumentID;
+			$Description="";
+			$Icon="";
+			$Info= array();
+			
+			foreach ($JObj as $EtiquetaV=>$arrayE) {
+				
+				
+				if ($EtiquetaV=='IDDOcument')
+					$IDDOcument=$arrayE;		
+				
+				if ($EtiquetaV=='Description')
+					$Description=$arrayE;
+				
+				if ($EtiquetaV=='Icon')
+					$Icon=$arrayE;
+				
+				if ($EtiquetaV=='Info')
+					$Info=$arrayE;
+				
+
+				/*foreach ($valor as $EtiquetaV=>$arrayE)
+				{
+				
+				
+				}*/
+			}
+			
+			?>
+			
+			<span Class="verDocumentId"><?php echo $IDDOcument;?></span>
+			
+			
+			<div class="verDocumentCabe"> 
+			
+			 <img  class="verDocumentIcon" src="<?php echo $Icon;?>" alt="Default" width="50"><span Class="verDocumentDescription"><?php echo $Description;?></span>
+				
+			</div>
+			
+
+				
+			
+			
+			
+			<div class="verDocumentInfo"> 
+				<?php 
+				
+				if (!empty($Info))
+				{
+				//var_dump($Info);
+				ProcesaLista($Info,false);
+				}
+				?>
+			</div>
+
+			<?php
 		}
 		else
 		{
