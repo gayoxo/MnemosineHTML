@@ -5,19 +5,28 @@
 <?php 
 	
 	$Basica=$_POST["BarraBasica"];
+	$Basica2=$_POST["Campo"];
 	
-	$TypeNumber=0;
-	if ($Campo=='A')
-		$TypeNumber=0;
-	else if ($Campo=='N')
-		$TypeNumber=21814;
-	else if ($Campo=='T')
-		$TypeNumber=25119;
-	else if ($Campo=='E')
-		$TypeNumber=19749;
 	
-	$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>true) ;
-	$BusquedaArray=array($Basica => $Busqueda);
+	$TypeNumber=intval($Campo);
+
+	$ArrayBasico=preg_split("/[\s,]+/",$Basica); 
+	
+	$BusquedaArray=array();
+	
+	foreach ($ArrayBasico as $elem)
+	{
+		if (!empty($elem))
+		{
+			$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>false) ;
+			$BusquedaArray[$elem]=$Busqueda;
+		}
+	}
+	
+	//var_dump($BusquedaArray);
+	
+	/*$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>false) ;
+	$BusquedaArray=array($Basica => $Busqueda);*/
 	
 	include 'buscar_codigo_general.php';
 	

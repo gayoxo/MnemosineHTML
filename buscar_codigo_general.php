@@ -54,7 +54,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 
 <?php
 
-$Campo=$_POST["Campo"];
+//	$Campo=$_POST["Campo"];
 	$Start=$_POST["Start"];
 	$Limite=$_POST["Limite"];
 	$FiltroA=$_POST["Filtro"];
@@ -97,7 +97,8 @@ $Campo=$_POST["Campo"];
 	//var_dump($TypeNumber);
 	//var_dump($Campo);
 	
-	$Filtro= array(28647,28646,20805,21986);
+	include 'filtro.php';
+	
 	$FiltroData = array("filtro" => $Filtro); 
 	
 	
@@ -247,83 +248,56 @@ $Campo=$_POST["Campo"];
 			?>	
 			<div class='filtro'>
 			
-			<?php
 			
-			$V28647;
-			$V28646;
-			$V20805;
-			$V21986;
-			
-			foreach ($arraYFiltro as $arrayEU)
-			{
-				$V28647B=false;
-					$V28646B=false;
-					$V20805B=false;
-					$V21986B=false;
-					
-			foreach ($arrayEU as $Etiqueta=>$ValorE)
-				{
-					
-					
-					if ($Etiqueta=='TypeId')
-					{
-						if ($ValorE==28647)
-							$V28647B=true;
-						if ($ValorE==28646)
-							$V28646B=true;
-						if ($ValorE==20805)
-							$V20805B=true;
-						if ($ValorE==21986)
-							$V21986B=true;
-						
-					}
-					else
-					{
-						if ($V28647B)
-							$V28647=$ValorE;
-						if ($V28646B)
-							$V28646=$ValorE;
-						if ($V20805B)
-							$V20805=$ValorE;
-						if ($V21986B)
-							$V21986=$ValorE;
-					}
-				}
-			}
-			
-?>
 			<form class="filtroF" name="formFilter" action='' method="post">
 			<input type="hidden" name="BarraBasica" value=<?php echo $Basica?> />
 			<input type="hidden" name="Campo" value=<?php echo $Campo?> />
 			<input type="hidden" name="Start" value=<?php echo $Start?> />
 			<input type="hidden" name="Limite" value=<?php echo $Limite?>  />
 			<input type="hidden" name="FiltroNuevo" value=true />
-			<details <?php if (isset($FiltroAplicar[28647])&&(!empty($FiltroAplicar[28647]))) echo "open"; ?>>
-			<summary>Impresor</summary>
-		<?php	ArrayFiltro('28647',$V28647,$Basica,$Campo,$Start,$Limite,$FiltroA);?>	
-			</details>
-
 			
-			<details <?php if (isset($FiltroAplicar[28646])&&(!empty($FiltroAplicar[28646]))) echo "open"; ?>>
-			<summary>Lugar de impresión</summary>
-			<?php ArrayFiltro('28646',$V28646,$Basica,$Campo,$Start,$Limite,$FiltroA); ?>	
-			</details>
-
+			<?php
 			
-			<details <?php if (isset($FiltroAplicar[20805])&&(!empty($FiltroAplicar[20805]))) echo "open"; ?> >
-			<summary>Materia</summary>
-			<?php	ArrayFiltro('20805',$V20805,$Basica,$Campo,$Start,$Limite,$FiltroA);?>	
-			</details>
 			
-
-			<details <?php if (isset($FiltroAplicar[21986])&&(!empty($FiltroAplicar[21986]))) echo "open"; ?> >
-			<summary>Tipo de documento</summary>
-			<?php		ArrayFiltro('21986',$V21986,$Basica,$Campo,$Start,$Limite,$FiltroA);?>	
-			</details>
-
+			foreach ($arraYFiltro as $arrayEU)
+			{
+				$TypeA=0;
+				$valueAArr="";
+				foreach ($arrayEU as $Etiqueta=>$ValorE)
+				{
+					if ($Etiqueta=='TypeId')
+						$TypeA=$ValorE;
+						
+					else
+						$valueAArr=$ValorE;
+						
+				}
+				
+				
+				echo "<details";
+				
+				if (isset($FiltroAplicar[$TypeA])&&(!empty($FiltroAplicar[$TypeA]))) 
+					echo "open"; 
+				echo ">";
+				echo "<summary>";
+				$ValueA=$FiltroObject->findElem($TypeA);
+				echo $ValueA;
+				echo "</summary>";
+				
+				ArrayFiltro($TypeA,$valueAArr,$Basica,$Campo,$Start,$Limite,$FiltroA);
+			
+				echo "</details>";
+				
+		
+				
+			}
+			?>	
+			
 			<input type="submit" value="Aplicar Filtro">
 			</form>
 			</br>
+			
+			
 			
 			</div>	
 			<div class='documents'>

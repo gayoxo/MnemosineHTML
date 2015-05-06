@@ -53,28 +53,27 @@
 			$ORE=false;
 		else $ORE=true;
 	
-		$TypeNumber=0;
-		if ($Campo=='A')
-			$TypeNumber=0;
-		else if ($Campo=='N')
-			$TypeNumber=21814;
-		else if ($Campo=='T')
-			$TypeNumber=25119;
-		else if ($Campo=='E')
-			$TypeNumber=19749;
+	
+		$TypeNumber=intval($Campo);
+		
 	
 /*	echo $BasicaUni;
 	echo "</br>";
 	*/
 	
-	$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
-	$BusquedaArray[$BasicaUni]=$Busqueda;
+	if (isset($BasicaUni)&&(!empty($BasicaUni)))
+		{
+		$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
+		$BusquedaArray[$BasicaUni]=$Busqueda;
+		}
 	}
 	
 
 		if (isset($Previa)&&(!empty($Previa)))
 			$BusquedaArray= json_decode($Previa, true);
 	
+	
+	//var_dump($BusquedaArray);
 	$Basica=json_encode($BusquedaArray);
 	
 	include 'buscar_codigo_general.php';

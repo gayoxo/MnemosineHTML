@@ -3,10 +3,14 @@
 	<form action='buscar_basico.php' method="post">
 	<input type="text" name="BarraBasica" maxlength="120" value="">
 	<select name="Campo">
-		<option value="A">Todos</option>
-		<option value="N">Nombre</option>
-		<option value="T">Titulo</option>
-		<option value="E">Editorial</option>
+	
+	<?php 
+	include 'campos.php';
+	
+	foreach ($CamposArray as $elem) 
+		echo "<option value=\"".$elem->Id."\">".$elem->Valor."</option>";
+	
+	?>
 	</select>
 	<input type="submit" value="Buscar">
 	</form>
