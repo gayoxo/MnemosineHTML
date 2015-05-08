@@ -3,6 +3,19 @@
 	include 'funcion_ver_documento.php';
 ?>
 
+
+
+<?php
+function ArrayFiltroN($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA)
+{
+	//Aqui meter mano;
+	
+	ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA);
+	
+}
+?>	
+
+
 <?php
 function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA)
 {
@@ -281,18 +294,22 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				echo ">";
 				echo "<summary>";
 				$ValueA=$FiltroObject->findElem($TypeA);
+				$ValueNumber=$FiltroObject->isNumeric($TypeA);
 				echo $ValueA;
 				echo "</summary>";
-				
-				ArrayFiltro($TypeA,$valueAArr,$Basica,$Campo,$Start,$Limite,$FiltroA);
-			
+				echo "<div class=\"scrollFilter\">";
+				if ($ValueNumber)
+					ArrayFiltro($TypeA,$valueAArr,$Basica,$Campo,$Start,$Limite,$FiltroA);
+				else
+					ArrayFiltroN($TypeA,$valueAArr,$Basica,$Campo,$Start,$Limite,$FiltroA);
+				echo "</div>";
 				echo "</details>";
 				
 		
 				
 			}
 			?>	
-			
+			</br>
 			<input type="submit" value="Aplicar Filtro">
 			</form>
 			</br>

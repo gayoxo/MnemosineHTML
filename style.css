@@ -1,6 +1,6 @@
 .filtro {
   float: left;
-   margin-right: 2em; 
+   margin-right: 1em; 
 }
 
 form.paginacionF {
@@ -86,4 +86,10 @@ span.verDocumentDescription {
   font-weight: bold;
   color: darkred;
   font-size: x-large;
+}
+
+.scrollFilter {
+  overflow-y: auto;
+  max-height: 200px;
+  max-width: 210px;
 }
