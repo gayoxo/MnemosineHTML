@@ -237,24 +237,51 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			if ($TotalValue>$Limite)
 				{
 				$Particiones=$TotalValue/$Limite;
-				echo "<div class='paginacion'>";				
-				for ($i = 0; $i <= $Particiones; $i++) {
+				echo "<div class='paginacion'>";
+				$Visibles=0;
+				$InicioMenos=false;
+				for ($i = 0; ($i <= $Particiones&&$Visibles<6); $i++) {
 					$sta=($Limite*$i);		
 					$sup=$Limite+($Limite*$i);
 					if ($sup>$TotalValue)
 						$sup=$TotalValue;
+					
+					if ($Start<=$sta)
+					{
 	//				echo "[".$sta."-".$sup."]";
 					echo "<form class=\"paginacionF\" name=\"p".($sta+1)."\" action='' method=\"post\">";
 					echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
 					echo "<input type=\"hidden\" name=\"Campo\" value=".$Campo." />";
 					echo "<input type=\"hidden\" name=\"Start\" value=".$sta." />";
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
-					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";
+					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
+				
+					$staPlus=($Limite*$i);
+					if (!$InicioMenos&&$Start<=$sta)
+					{
+						
+					$InicioMenos=true;
+					if ($Start>0)
+						echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >Menos</a>  ";
+					}
+				
+					if ($Visibles<5)
+					{
+						
+					$Visibles=$Visibles+1;
 					echo "<a ";
 					if ($Start==$sta)
 						echo "class=\"paginadorActivo\" ";
 					echo " href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >".($i+1)."</a>  ";
+					
+					}else
+					{	
+					$Visibles=$Visibles+1;
+					echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >Mas</a>  ";	
+					}
 					echo "</form>";
+					}
+					
 				}		
 				echo "</div>";	
 				echo "</br>";
