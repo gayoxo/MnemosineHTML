@@ -256,14 +256,15 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
 				
-					$staPlus=($Limite*$i);
-					if (!$InicioMenos&&$Start<=$sta)
+					$staPlus=($Limite*$i*5);
+					if (!$InicioMenos&&$Start<=$staPlus)
 					{
 						
 					$InicioMenos=true;
 					if ($Start>0)
 						echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >Menos</a>  ";
 					}
+
 				
 					if ($Visibles<5)
 					{
