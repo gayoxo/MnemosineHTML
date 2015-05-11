@@ -65,7 +65,7 @@ li.lisummary {
 
 span.svalueE {
  font-weight: normal;
-  color: darkblue;
+  color: black;
 }
 
 a.avalueE {
@@ -92,4 +92,10 @@ span.verDocumentDescription {
   overflow-y: auto;
   max-height: 200px;
   max-width: 210px;
+}
+
+a.paginadorActivo {
+  pointer-events: none;
+  cursor: default;
+  color: black;
 }

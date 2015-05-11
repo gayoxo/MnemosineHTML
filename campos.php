@@ -16,6 +16,6 @@ class CampoElem
 
 //$a=new CampoElem(0,"Todos");
 	
-	$CamposArray=array(new CampoElem(0,"Todos"),new CampoElem(21814,"Nombre"),new CampoElem(25119,"Titulo"),new CampoElem(19749,"Editorial"));
+	$CamposArray=array(new CampoElem(0,"Todos"),new CampoElem(21814,"Autor"),new CampoElem(25119,"Titulo"),new CampoElem(19749,"Editorial"));
 
 ?>

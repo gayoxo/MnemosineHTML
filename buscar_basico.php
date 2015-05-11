@@ -18,7 +18,7 @@
 	{
 		if (!empty($elem))
 		{
-			$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>false) ;
+			$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>true) ;
 			$BusquedaArray[$elem]=$Busqueda;
 		}
 	}

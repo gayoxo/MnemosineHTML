@@ -211,7 +211,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<form action='' method="post">
 			<input type="hidden" name="BarraBasica" value=<?php echo $Basica?> />
 			<input type="hidden" name="Campo" value=<?php echo $Campo?> />
-			<input type="hidden" name="Start" value=<?php echo $Start?> />
+			<input type="hidden" name="Start" value=0 />
 			<input type="hidden" name="Filtro" value='<?php echo $FiltroA?>' />
 
 
@@ -250,7 +250,10 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Start\" value=".$sta." />";
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";
-					echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >[".($sta+1)."-".$sup."]</a>";
+					echo "<a ";
+					if ($Start==$sta)
+						echo "class=\"paginadorActivo\" ";
+					echo " href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >".($i+1)."</a>  ";
 					echo "</form>";
 				}		
 				echo "</div>";	
