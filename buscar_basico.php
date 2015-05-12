@@ -2,13 +2,18 @@
 <?php $LinkAtras="index.php"; ?>
 <?php include 'cabecera.php'; ?>
 <?php include 'form_buscador.php'?>	
+<?php include 'listanegra.php'?>	
+
+	
+
 <?php 
 	
 	$Basica=$_POST["BarraBasica"];
 	$Basica2=$_POST["Campo"];
 	
-	
 	$TypeNumber=intval($Campo);
+	
+	$TypeNumber=$CamposArray->findElem($TypeNumber);
 
 	$ArrayBasico=preg_split("/[\s,]+/",$Basica); 
 	
@@ -16,14 +21,15 @@
 	
 	foreach ($ArrayBasico as $elem)
 	{
-		if (!empty($elem))
+		if (!empty($elem)||!listanegra($elem))
 		{
-			$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>true) ;
-			$BusquedaArray[$elem]=$Busqueda;
+			$Busqueda= array("value"=>$elem,"type" => $TypeNumber,"positive" => true, "and" =>true) ;
+			array_push($BusquedaArray,$Busqueda);
+			
 		}
 	}
 	
-	//var_dump($BusquedaArray);
+	var_dump($BusquedaArray);
 	
 	/*$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>false) ;
 	$BusquedaArray=array($Basica => $Busqueda);*/

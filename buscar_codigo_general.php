@@ -208,14 +208,14 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			</br>
 			<div class='nvisibles'>
 			
-			<form action='' method="post">
+			<form name='formlimite' action='' method="post">
 			<input type="hidden" name="BarraBasica" value=<?php echo $Basica?> />
 			<input type="hidden" name="Campo" value=<?php echo $Campo?> />
 			<input type="hidden" name="Start" value=0 />
 			<input type="hidden" name="Filtro" value='<?php echo $FiltroA?>' />
 
 
-			<select name="Limite">
+			<select name="Limite" onchange="javascript:document.forms['formlimite'].submit();">
 		<option value="10"<?php if ($Limite==10) echo "selected=\"selected\"";?>>10</option>
 		<option value="25"<?php if ($Limite==25) echo "selected=\"selected\"";?>>25</option>
 		<option value="50"<?php if ($Limite==50) echo "selected=\"selected\"";?>>50</option>
@@ -224,7 +224,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		<option value="500"<?php if ($Limite==500) echo "selected=\"selected\"";?>>500</option>
 		<option value="1000"<?php if ($Limite==1000) echo "selected=\"selected\"";?>>1000</option>
 			</select>
-			<input type="submit" value="Cambiar Cantidad a Mostrar">
 			</form>
 			</div>
 			</br>
@@ -246,8 +245,28 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					if ($sup>$TotalValue)
 						$sup=$TotalValue;
 					
+					
 					if ($Start<=$sta)
 					{
+						
+					if (!$InicioMenos&&$Start!=0)	
+					{
+					$InicioMenos=true;	
+					$staPlus=$sta-($Limite*5);
+					if ($staPlus<0)
+						$staPlus=0;
+					echo "<form class=\"paginacionF\" name=\"p".($staPlus+1)."\" action='' method=\"post\">";
+					echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
+					echo "<input type=\"hidden\" name=\"Campo\" value=".$Campo." />";
+					echo "<input type=\"hidden\" name=\"Start\" value=".$staPlus." />";
+					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
+					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
+					echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($staPlus+1)."'].submit();\" >Menos</a>  ";
+					echo "</form>";
+					}
+					else
+						$InicioMenos=true;	
+					
 	//				echo "[".$sta."-".$sup."]";
 					echo "<form class=\"paginacionF\" name=\"p".($sta+1)."\" action='' method=\"post\">";
 					echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
@@ -256,15 +275,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
 				
-					$staPlus=($Limite*$i*5);
-					if (!$InicioMenos&&$Start<=$staPlus)
-					{
-						
-					$InicioMenos=true;
-					if ($Start>0)
-						echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >Menos</a>  ";
-					}
-
 				
 					if ($Visibles<5)
 					{

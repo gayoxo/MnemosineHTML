@@ -2,20 +2,48 @@
 class CampoElem
 {
 	
-	public $Id =0; 
+	public $Numer =0; 
+	public $Id =array(); 
 	public $Valor ="Unvalued"; 
 	
 	
-    public function __construct($id, $valor){
+    public function __construct($numer,array $id, $valor){
         $this->Id = $id;
 		$this->Valor=$valor;
+		$this->Numer=$numer;
     }
     
 
 }
 
-//$a=new CampoElem(0,"Todos");
+class CampoArray
+{
+	public $CampoA =array(); 
 	
-	$CamposArray=array(new CampoElem(0,"Todos"),new CampoElem(21814,"Autor"),new CampoElem(25119,"Titulo"),new CampoElem(19749,"Editorial"));
+	
+    public function __construct(array $campoA ){
+        $this->CampoA = $campoA;
+    }
+    
+	
+	public function findElem($numerID)
+	{
+	foreach ($this->CampoA as $elem)
+		if ($elem->Numer==$numerID)
+			return $elem->Id;
+			
+	return array(); 
+	}
+	
+	
+	
+}
+
+
+
+	
+	$CamposArrayA=array(new CampoElem(0,array(0),"Todos"),new CampoElem(1,array(21814,21817,19028),"Autor"),new CampoElem(2,array(27915),"Función"),new CampoElem(2,array(25119,21974,21985),"Titulo"),new CampoElem(3,array(19749),"Editorial"));
+	
+	$CamposArray=new CampoArray($CamposArrayA);
 
 ?>

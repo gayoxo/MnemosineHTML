@@ -7,9 +7,9 @@
 	<?php 
 	include 'campos.php';
 	
-	foreach ($CamposArray as $elem) 
-		echo "<option value=\"".$elem->Id."\">".$elem->Valor."</option>";
-	
+	foreach ($CamposArray->CampoA as $elem) 
+		echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
+
 	?>
 	</select>
 	<input type="submit" value="Buscar">
