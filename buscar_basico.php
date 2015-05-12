@@ -11,7 +11,8 @@
 	$Basica=$_POST["BarraBasica"];
 	$Basica2=$_POST["Campo"];
 	
-	$TypeNumber=intval($Campo);
+	$TypeNumber=intval($Basica2);
+	
 	
 	$TypeNumber=$CamposArray->findElem($TypeNumber);
 
@@ -29,7 +30,7 @@
 		}
 	}
 	
-	var_dump($BusquedaArray);
+	//var_dump($BusquedaArray);
 	
 	/*$Busqueda= array("type" => $TypeNumber,"positive" => true, "and" =>false) ;
 	$BusquedaArray=array($Basica => $Busqueda);*/

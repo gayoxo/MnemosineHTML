@@ -55,7 +55,7 @@
 	
 	
 		$TypeNumber=intval($Campo);
-		
+		$TypeNumber=$CamposArray->findElem($TypeNumber);
 	
 /*	echo $BasicaUni;
 	echo "</br>";
@@ -63,8 +63,12 @@
 	
 	if (isset($BasicaUni)&&(!empty($BasicaUni)))
 		{
-		$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
-		$BusquedaArray[$BasicaUni]=$Busqueda;
+			
+		$Busqueda= array("value"=>$BasicaUni,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
+			array_push($BusquedaArray,$Busqueda);	
+			
+		//$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
+		//$BusquedaArray[$BasicaUni]=$Busqueda;
 		}
 	}
 	
@@ -73,7 +77,7 @@
 			$BusquedaArray= json_decode($Previa, true);
 	
 	
-	//var_dump($BusquedaArray);
+//	var_dump($BusquedaArray);
 	$Basica=json_encode($BusquedaArray);
 	
 	include 'buscar_codigo_general.php';
