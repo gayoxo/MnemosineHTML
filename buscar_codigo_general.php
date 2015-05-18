@@ -146,9 +146,9 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	
 	echo "<br>";
 	
-	
+	include 'description.php';
 
-	$BusquedaData=array("busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar);
+	$BusquedaData=array("busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar,"resumen" => $Desc);
 	
 	//var_dump($BusquedaData);
 		
@@ -368,6 +368,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				$valorID="";
 				$valorDesc="";
 				$valorIZ="";
+				$valorElem=array();
 				foreach ($arrayEU as $Etiqueta=>$ValorE)
 				{
 					
@@ -377,10 +378,11 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 						$valorDesc=$ValorE;
 						else if ($Etiqueta=='Icon')
 						$valorIZ=$ValorE;
-					
+							else if ($Etiqueta=='Atributos')
+								$valorElem=$ValorE;
 					
 				}
-				show_document($valorID,$valorDesc,$valorIZ,$counterdocT);
+				show_document($valorID,$valorDesc,$valorIZ,$counterdocT,$valorElem,$DescObject);
 			}
 			echo "</div>";	
 			//var_dump($JObj);
