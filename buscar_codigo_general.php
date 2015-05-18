@@ -356,12 +356,15 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			</br>
 			
 			
-			
 			</div>	
 			<div class='documents'>
 			<?php
+			$counterdoc=0;
 			foreach ($arraYDocumentos as $arrayEU)
 				{
+					$counterdoc=$counterdoc+1;
+					$counterdocT=$counterdoc+$Start;
+				//	echo $counterdoc;
 				$valorID="";
 				$valorDesc="";
 				$valorIZ="";
@@ -377,7 +380,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					
 					
 				}
-				show_document($valorID,$valorDesc,$valorIZ);
+				show_document($valorID,$valorDesc,$valorIZ,$counterdocT);
 			}
 			echo "</div>";	
 			//var_dump($JObj);

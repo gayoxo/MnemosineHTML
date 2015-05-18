@@ -20,8 +20,7 @@ input[type="text"] {
 border-radius: 25px;
     border: 2px solid #071AC0;
     padding: 20px; 
-    width: 200px;
-    height: 150px;
+    width: 100%;
     float: inherit;	
 }
 
@@ -35,7 +34,7 @@ border-radius: 25px;
 
 .documento_unico_resto {
   overflow-y: auto;
-  height: 100px;
+  max-height: 100px;
   float: left;
 }
 
@@ -46,8 +45,8 @@ border-radius: 25px;
  
  .documento_unico_abrir {
   height: 50px;
-  vertical-align: middle;
-  text-align: center;
+  vertical-align: top;
+  text-align: right;
 }
 
 ul {

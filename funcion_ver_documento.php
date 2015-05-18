@@ -1,7 +1,10 @@
 <?php
-function show_document($arg_1,$arg_2,$arg_3)
+function show_document($arg_1,$arg_2,$arg_3,$arg_4)
 {
 	echo "<div class=\"documento_unico\">";
+	echo "<div class=\"documento_unico_orden\">";
+	echo $arg_4;
+	echo "</div>";
 	echo "<div class=\"documento_unico_icono\">";
 	echo "<img src=\"".$arg_3."\" width=\"50\" border=\"0\" alt=\"iconoDocumento\">";
 	echo "</div>";
