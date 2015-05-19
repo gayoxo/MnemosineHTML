@@ -181,6 +181,12 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			curl_close($curl);
 			//var_dump($JObj);
 			
+			echo "<span class=\"resultado_test\">";
+			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabel."</span>";
+			echo "</span>";
+			echo "</br>";
+			echo "</br>";
+			
 			$arraYDocumentos=array();
 			$TotalValue=0;
 			$arraYFiltro=array();
@@ -200,8 +206,9 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				
 				}
 			}
-			
-			echo "El numero de elementos encontrados es :".$TotalValue;
+			echo "<span class=\"resultado_test_number\">";
+			echo "El numero de elementos encontrados es : <span class=\"resultado_test_number_value\">".$TotalValue."</span>";
+			echo "</span>";
 			echo "</br>";
 			
 			?>

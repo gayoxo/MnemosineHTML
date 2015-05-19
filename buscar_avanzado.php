@@ -37,7 +37,7 @@
 	$BusquedaArray=array();
 	
 	
-	
+	$BusquedaStringLabel="";
 	
 	
 	for ($x = 0; $x < count($Basica); $x++) 
@@ -63,6 +63,20 @@
 	
 	if (isset($BasicaUni)&&(!empty($BasicaUni)))
 		{
+			
+		if (!empty($BusquedaStringLabel))
+			
+			if ($ORE)
+				$BusquedaStringLabel=$BusquedaStringLabel."AND ";
+			else
+				$BusquedaStringLabel=$BusquedaStringLabel."OR ";
+			
+			
+			$Negativotemporal="";
+			if (!$Positivo)
+				$Negativotemporal="¬";
+			
+			$BusquedaStringLabel=$BusquedaStringLabel.$Negativotemporal.$BasicaUni." ";	
 			
 		$Busqueda= array("value"=>$BasicaUni,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
 			array_push($BusquedaArray,$Busqueda);	

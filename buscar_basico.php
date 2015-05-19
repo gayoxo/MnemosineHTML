@@ -20,10 +20,19 @@
 	
 	$BusquedaArray=array();
 	
+	$BusquedaStringLabel="";
+	
+	
 	foreach ($ArrayBasico as $elem)
 	{
 		if (!empty($elem)||!listanegra($elem))
 		{
+			if (!empty($BusquedaStringLabel))
+				$BusquedaStringLabel=$BusquedaStringLabel."AND ";
+			
+			
+			$BusquedaStringLabel=$BusquedaStringLabel.$elem." ";
+			
 			$Busqueda= array("value"=>$elem,"type" => $TypeNumber,"positive" => true, "and" =>true) ;
 			array_push($BusquedaArray,$Busqueda);
 			

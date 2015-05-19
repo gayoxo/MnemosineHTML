@@ -12,8 +12,7 @@ function show_document($arg_1,$arg_2,$arg_3,$arg_4,$arg_5,$DescObject)
 	echo "<a href=\"ver_documento.php?documento=".$arg_1."\" target=\"_blank\" >Abrir</a>";
 	echo "</div>";
 	echo "<div class=\"documento_unico_resto\">";
-	echo "<span class\"Descripcion_documento_buscador\"> Descripcion</span>:";
-	echo "<span class\"Descripcion_documento_buscador_valor\">".$arg_2."</span>";
+	echo "<span class=\"Descripcion_documento_buscador_valor\">".$arg_2."</span>";
 	echo "</br>";
 	echo "</br>";
 	foreach($arg_5 as $arrayElem)
@@ -33,7 +32,7 @@ function show_document($arg_1,$arg_2,$arg_3,$arg_4,$arg_5,$DescObject)
 		$Resultado=$DescObject->findElem($Type);
 		//echo $Resultado.": ".$Valor;
 		
-		echo "<span class\"Descripcion_documento_tipo\"> ".$Resultado."</span>:";
+		echo "<span class\"Descripcion_documento_tipo\"> ".$Resultado."</span>: ";
 		echo "<span class\"Descripcion_documento_tipo_valor\">".$Valor."</span>";
 		echo "</br>";
 	}
