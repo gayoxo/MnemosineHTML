@@ -6,6 +6,7 @@
 
 	
 
+	
 <?php 
 	
 	$Basica=$_POST["BarraBasica"];
