@@ -33,7 +33,7 @@
 			
 			$BusquedaStringLabel=$BusquedaStringLabel.$elem." ";
 			
-			$Busqueda= array("value"=>$elem,"type" => $TypeNumber,"positive" => true, "and" =>true) ;
+			$Busqueda= array("value"=>$elem,"type" => $TypeNumber,"positive" => true, "and" =>true , "exacto"=>true) ;
 			array_push($BusquedaArray,$Busqueda);
 			
 		}
