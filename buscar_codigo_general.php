@@ -337,7 +337,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				
 				echo "<details";
 				
-				if (isset($FiltroAplicar[$TypeA])&&(!empty($FiltroAplicar[$TypeA]))) 
+				if ((isset($FiltroAplicar[$TypeA])&&(!empty($FiltroAplicar[$TypeA])))||$TypeA==0)
 					echo "open"; 
 				echo ">";
 				echo "<summary>";

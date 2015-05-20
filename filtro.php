@@ -60,7 +60,7 @@ class FiltroArray
 
 
 
-$FiltroP= array(new FiltroElem(28647,"Impresor",false),new FiltroElem(28646,"Lugar de impresión",false),new FiltroElem(20805,"Materia",false),new FiltroElem(21986,"Tipo de documento",false),new FiltroElem(19750,"Fecha de publicación",false));
+$FiltroP= array(new FiltroElem(0,"Tipo",false),new FiltroElem(28647,"Impresor",false),new FiltroElem(28646,"Lugar de impresión",false),new FiltroElem(20805,"Materia",false),new FiltroElem(21986,"Tipo de documento",false),new FiltroElem(19750,"Fecha de publicación",false));
 
 $FiltroObject=new FiltroArray($FiltroP);
 
