@@ -7,9 +7,20 @@
 	<?php 
 	include 'campos.php';
 	
-	foreach ($CamposArray->CampoA as $elem) 
-		echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
+	
+	foreach ($CamposArray->CampoA as $Group1=>$Arra) 
+	{
+	
+		if ($Group1!="0")
+			echo "<optgroup label=\"".$Group1."\">";
+	
+		foreach ($Arra as $elem) 
+				echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
 
+		
+		if ($Group1!="0")
+			 echo "</optgroup>";
+	}
 	?>
 	</select>
 	<input type="submit" value="Buscar">

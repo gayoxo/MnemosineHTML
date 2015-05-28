@@ -38,8 +38,19 @@
 	
 	
 	//TODO AQUI
-	foreach ($CamposArray->CampoA as $elem) 
-		echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
+	foreach ($CamposArray->CampoA as $Group1=>$Arra) 
+	{
+	
+		if ($Group1!="0")
+			echo "<optgroup label=\"".$Group1."\">";
+	
+		foreach ($Arra as $elem) 
+				echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
+
+		
+		if ($Group1!="0")
+			 echo "</optgroup>";
+	}
 	
 /*	echo "<option value=\"0\">Todos</option>";
 	echo "<option value=\"21814\">Nombre</option>";
