@@ -24,15 +24,24 @@
 		
 	
 		echo "</br>";	
-	echo "N : <input type=\"checkbox\" name=\"positivo[".$x."]\"  title=\"Marcar para negar la existencia del texto\" /> ";
+		
+		echo "<select name=\"Opciones[".$x."]\"  title=\"Opciones\">";
+		if ($x!=0)
+			echo "<option value=\"OR\">OR</option>";
+
+		echo "<option value=\"AND\">AND</option>";
+		echo "<option value=\"NOT\">NOT</option>";
+		echo "</select>";
+		
+	/*echo "N : <input type=\"checkbox\" name=\"positivo[".$x."]\"  title=\"Marcar para negar la existencia del texto\" /> ";
 	
 	echo " O : <input type=\"checkbox\" ";
 	
 	if ($x==0)
 		echo "disabled readonly ";
 	
-	echo "name=\"logica[".$x."]\" title=\"Marcar para usar logica 'ó' en lugar de 'y' \" />"; 
-		
+	echo "name=\"logica[".$x."]\" title=\"Marcar para usar logica 'o' en lugar de 'y' \" />"; 
+		*/
    echo "<input type=\"text\" name=\"BarraBusqueda[".$x."]\" maxlength=\"120\">";
 	echo "<select name=\"Campo[".$x."]\">";
 	

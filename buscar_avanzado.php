@@ -10,8 +10,11 @@
 	
 	$Basica=$_POST["BarraBusqueda"];
 	$Basica2=$_POST["Campo"];
-	$Basica3=$_POST["positivo"];
-	$Basica4=$_POST["logica"];
+
+	
+	$Opciones=$_POST["Opciones"];
+	
+	//var_dump($Opciones);
 	
 	if (!isset($Basica)||empty($Basica))
 		$Basica=array();
@@ -19,11 +22,6 @@
 	if (!isset($Basica2)||empty($Basica2))
 		$Basica2=array();
 	
-	if (!isset($Basica3)||empty($Basica3))
-		$Basica3=array();
-	
-	if (!isset($Basica4)||empty($Basica4))
-		$Basica4=array();
 	
 		
 /*	var_dump($Basica);
@@ -45,14 +43,18 @@
 		$BasicaUni=$Basica[$x];
 		$Campo=$Basica2[$x];
 		
-		if (array_key_exists($x,$Basica3))
-			$Positivo=false;
-		else $Positivo=true;
+		$Positivo=true;
+		$AND=true;
 		
-		if (array_key_exists($x,$Basica4))
-			$ORE=false;
-		else $ORE=true;
-	
+		if (array_key_exists($x,$Opciones))
+			if ($Opciones[$x]=="OR")
+				$AND=false;
+			else
+				if ($Opciones[$x]=="AND")
+				$AND=true;
+			else
+				if ($Opciones[$x]=="NOT")
+				$Positivo=false;	
 	
 		$TypeNumber=intval($Campo);
 		$TypeNumber=$CamposArray->findElem($TypeNumber);
@@ -66,7 +68,7 @@
 			
 		if (!empty($BusquedaStringLabel))
 			
-			if ($ORE)
+			if ($AND)
 				$BusquedaStringLabel=$BusquedaStringLabel."AND ";
 			else
 				$BusquedaStringLabel=$BusquedaStringLabel."OR ";
@@ -78,7 +80,7 @@
 			
 			$BusquedaStringLabel=$BusquedaStringLabel.$Negativotemporal.$BasicaUni." ";	
 			
-		$Busqueda= array("value"=>$BasicaUni,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE,"exacto"=>true) ;
+		$Busqueda= array("value"=>$BasicaUni,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$AND,"exacto"=>true) ;
 			array_push($BusquedaArray,$Busqueda);	
 			
 		//$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
