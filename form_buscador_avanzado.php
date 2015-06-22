@@ -7,7 +7,7 @@
 //	echo $Campos;
 	
 	if (!isset($Campos)||(empty($Campos)))
-		$Campos=0;
+		$Campos=2;
 	
 //	echo $Campos;
 	?>
