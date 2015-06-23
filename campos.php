@@ -42,9 +42,9 @@ class CampoArray
 
 	$Grupo0=array(new CampoElem(0,array(0),"Todos"));
 
-	$Grupo1=array(new CampoElem(1,array(21814,21817,19028),"Nombre"),new CampoElem(2,array(27915),"Función"));
+	$Grupo1=array(new CampoElem(1,array(-3,21814,21817,19028),"Nombre"),new CampoElem(2,array(27915),"Función"));
 	
-	$Grupo2=array(new CampoElem(3,array(25119,21974,21985),"Titulo"),new CampoElem(4,array(19749),"Editorial"));
+	$Grupo2=array(new CampoElem(3,array(-3,25119,21974,21985),"Titulo"),new CampoElem(4,array(19749),"Editorial"));
 	
 	$CamposArrayA=array(0 => $Grupo0,"Autor" =>$Grupo1,"Obra" => $Grupo2);
 	
