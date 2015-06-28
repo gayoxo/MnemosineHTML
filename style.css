@@ -1,3 +1,15 @@
+@font-face {
+       font-family: "mnemosine";
+       src = url('fuentes/OratorStd.otf') format("opentype"); 
+ 
+}
+
+@font-face {   
+  font-family: "Kimberley";   
+  src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype"); 
+}
+
+
 .filtro {
   float: left;
    margin-right: 1em; 
@@ -122,4 +134,44 @@ span.Descripcion_documento_buscador_valor {
  font-weight: bold;
  color: darkred;
   font-size: x-large;
+}
+
+.cabecera_smart_library{
+  text-align: right;
+
+  }
+
+  body{
+  text-align: center;
+  font-family: mnemosine, Orator Std ;
+  
+  }
+
+.zona_icono{
+background-image: url("imagenes/lienzo.png");
+/*background-size: 80px 60px;*/
+    background-repeat: no-repeat;
+ background-attachment: fixed;
+    background-position: center; 
+}
+
+.buscador_simple
+{
+ text-align: left;
+ font-size: 20px;
+       text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+ }
+
+ .buscador_simple_zona{
+ margin-left: 3em;
+ }
+ 
+
+p.texto_cabecera {
+  margin-top: 0em;
+  font-size: 50px;
+  font-weight: bold;
+      text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+
 }

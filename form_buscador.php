@@ -1,8 +1,9 @@
-<div>
+	<div class="buscador_simple_zona buscador_simple">
+	<div>
 	Buscador Basico
 	<form action='buscar_basico.php' method="post">
-	<input type="text" name="BarraBasica" maxlength="120" value="">
-	<select name="Campo">
+	<input class="barra_buscador_simple buscador_simple" type="text" name="BarraBasica" maxlength="120" value="">
+	<select class="campo_valores_buscador_simple buscador_simple" name="Campo">
 	
 	<?php 
 	include 'campos.php';
@@ -23,9 +24,14 @@
 	}
 	?>
 	</select>
-	<input type="submit" value="Buscar">
+	<input class="buscar_buscador_simple buscador_simple" type="submit" value="Buscar">
 	</form>
 	</div>
 	</br>
-	<div><a href='form_buscador_avanzado.php'>Buscador Avanzado</a></div>
+	<div>
+	<button class="buscar_buscador_simple buscador_simple" type="submit" value="Buscar" onclick="window.location.href='form_buscador_avanzado.php'">Buscador Avanzado
+	</button>
+	<!--- <a href='form_buscador_avanzado.php'>Buscador Avanzado</a></div> -->
 	</br>
+	</div>
+	</div> <!-- Cierre de la cabecera con imagen -->
