@@ -1,6 +1,6 @@
 @font-face {
        font-family: "mnemosine";
-       src = url('fuentes/OratorStd.otf') format("opentype"); 
+       src: url('fuentes/OratorStd.ttf') format("truetype"); 
  
 }
 
@@ -143,7 +143,6 @@ span.Descripcion_documento_buscador_valor {
 
   body{
   text-align: center;
-  font-family: mnemosine, Orator Std ;
   
   }
 
@@ -162,11 +161,64 @@ background-image: url("imagenes/lienzo.png");
        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 
  }
+ 
+
+.buscador_avanzado
+{
+ text-align: left;
+ font-size: 20px;
+       text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+ }
+ 
+ .wrapper{
+	margin: 2em 4em;
+	  font-family: mnemosine;
+
+ }
+ 
+ .Colecciones {
+  width: 96.5%;
+}
+ 
+.Colecciones ul{
+	overflow-y: auto;
+	list-style: none;
+    width: 100%;
+	max-height: 400px;
+}
+
+.collection_test
+{
+text-align: center;
+	font-family: mnemosine, Orator Std ;
+    font-size: 28px;
+}
+
+.Colecciones ul li{
+  float: left;
+  width: 33%;
+    margin: 2em 0;
+}
 
  .buscador_simple_zona{
  margin-left: 3em;
  }
  
+ .buscador_avanzado_zona{
+ margin-left: 3em;
+ margin-top: 0em;
+
+ }
+ 
+ .buscador_avanzado_zona_mas{
+ margin-left: 5em;
+ margin-top: 0em;
+ } 
+ 
+ button.buscar_buscador_simple {
+  margin-bottom: 2em;
+}
 
 p.texto_cabecera {
   margin-top: 0em;

@@ -6,4 +6,5 @@
 	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
   </head>
   <body>
-<div class="zona_icono">
+  <div class="wrapper">
+	<div class="zona_icono">

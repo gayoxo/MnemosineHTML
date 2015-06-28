@@ -12,8 +12,10 @@
 //	echo $Campos;
 	?>
 	
-	Buscador Avanzado
-	<form name="buscadoravanzadobuscar" action='buscar_avanzado.php' method="post">
+	<div class="texto_base buscador_avanzado buscador_avanzado_zona">Buscador Avanzado</div>
+	<br>
+	</div> <!-- Cierre de la cabecera con imagen -->
+	<form class="formulario_base buscador_avanzado buscador_avanzado_zona_mas" name="buscadoravanzadobuscar" action='buscar_avanzado.php' method="post">
 	
 	
 	<?php
@@ -28,7 +30,6 @@
 	
 	foreach ($CamposArray->CampoA as $Group1=>$Arra) 
 	{
-		echo "</br>";
 		echo "</br>";	
 		if ($Group1!="0")
 		{
@@ -83,60 +84,7 @@
 	$counterCampos=$counterCampos+1;
 		}
 	
-/*	
-	
-	for ($x = 0; $x <= $Campos; $x++) {
-		
-	
-		echo "</br>";	
-		
-		echo "<select name=\"Opciones[".$x."]\"  title=\"Opciones\">";
-		if ($x!=0)
-			echo "<option value=\"OR\">OR</option>";
 
-		echo "<option value=\"AND\">AND</option>";
-		echo "<option value=\"NOT\">NOT</option>";
-		echo "</select>";
-		
-	/*echo "N : <input type=\"checkbox\" name=\"positivo[".$x."]\"  title=\"Marcar para negar la existencia del texto\" /> ";
-	
-	echo " O : <input type=\"checkbox\" ";
-	
-	if ($x==0)
-		echo "disabled readonly ";
-	
-	echo "name=\"logica[".$x."]\" title=\"Marcar para usar logica 'o' en lugar de 'y' \" />"; 
-		*//*
-   echo "<input type=\"text\" name=\"BarraBusqueda[".$x."]\" maxlength=\"120\">";
-	echo "<select name=\"Campo[".$x."]\">";
-	
-	
-
-	foreach ($CamposArray->CampoA as $Group1=>$Arra) 
-	{
-	
-		if ($Group1!="0")
-			echo "<optgroup label=\"".$Group1."\">";
-	
-		foreach ($Arra as $elem) 
-				echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
-
-		
-		if ($Group1!="0")
-			 echo "</optgroup>";
-	}
-	
-/*	echo "<option value=\"0\">Todos</option>";
-	echo "<option value=\"21814\">Nombre</option>";
-	echo "<option value=\"25119\">Titulo</option>";
-	echo "<option value=\"19749\">Editorial</option>";
-	*//*
-	
-	echo "</select>";
-	
-
-	}	 
-*/	
 	?>
 	
 <!--	<input type="button" value="+" onclick="javascript:document.forms['addCampo'].submit();">-->

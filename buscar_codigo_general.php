@@ -63,9 +63,11 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 }
 ?>	
 
-
+<div>
 
 <?php
+
+
 
 //	$Campo=$_POST["Campo"];
 	$Start=$_POST["Start"];
@@ -416,3 +418,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 
 
 ?>
+
+</div>
+
+<?php include 'botton.php'; ?>

@@ -34,4 +34,5 @@
 	<!--- <a href='form_buscador_avanzado.php'>Buscador Avanzado</a></div> -->
 	</br>
 	</div>
+	</div> 
 	</div> <!-- Cierre de la cabecera con imagen -->
