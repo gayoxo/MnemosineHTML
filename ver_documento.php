@@ -104,6 +104,8 @@ function ProcesaLista($ArrayE,$lis)
 ?>	
 
 
+</div>
+
 <?php 
 
 

@@ -50,7 +50,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 							$val=$Valor; 
 					}
 				
-				echo "<li>";
+				echo "<li class=\"lifiltro\">";
 				
 				
 				if (in_array ($val,$FiltroAplicar))
@@ -297,6 +297,8 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<a ";
 					if ($Start==$sta)
 						echo "class=\"paginadorActivo\" ";
+					else
+						echo "class=\"paginadorNoActivo\" ";
 					echo " href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >".($i+1)."</a>  ";
 					
 					}else
@@ -342,7 +344,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				}
 				
 				
-				echo "<details";
+				echo "<details class=\"detailsfiltro\" ";
 				
 				if ((isset($FiltroAplicar[$TypeA])&&(!empty($FiltroAplicar[$TypeA])))||$TypeA==0)
 					echo "open"; 
@@ -365,7 +367,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			}
 			?>	
 			</br>
-			<input type="submit" value="Aplicar Filtro">
+			<input class="submitFiltro" type="submit" value="Aplicar Filtro">
 			</form>
 			</br>
 			

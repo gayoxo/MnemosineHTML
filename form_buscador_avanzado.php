@@ -11,8 +11,8 @@
 	
 //	echo $Campos;
 	?>
-	
-	<div class="texto_base buscador_avanzado buscador_avanzado_zona">Buscador Avanzado</div>
+	<br>
+	<span class="texto_base_avanzado buscador_avanzado buscador_avanzado_zona">Buscador Avanzado</span>
 	<br>
 	</div> <!-- Cierre de la cabecera con imagen -->
 	<form class="formulario_base buscador_avanzado buscador_avanzado_zona_mas" name="buscadoravanzadobuscar" action='buscar_avanzado.php' method="post">

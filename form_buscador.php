@@ -1,6 +1,6 @@
 	<div class="buscador_simple_zona buscador_simple">
 	<div>
-	Buscador Basico
+	<span class="texto_buscador_simple">Buscador Básico</span>
 	<form action='buscar_basico.php' method="post">
 	<input class="barra_buscador_simple buscador_simple" type="text" name="BarraBasica" maxlength="120" value="">
 	<select class="campo_valores_buscador_simple buscador_simple" name="Campo">
@@ -13,10 +13,10 @@
 	{
 	
 		if ($Group1!="0")
-			echo "<optgroup label=\"".$Group1."\">";
+			echo "<optgroup class=\"buscador_simple\" label=\"".$Group1."\">";
 	
 		foreach ($Arra as $elem) 
-				echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
+				echo "<option class=\"buscador_simple\" value=\"".$elem->Numer."\">".$elem->Valor."</option>";
 
 		
 		if ($Group1!="0")
