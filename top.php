@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <title>MnemosineHTML Buscador</title>
+	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="responsive-nav.css">
 	<script src="responsive-nav.js"></script>
 	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
@@ -21,8 +22,8 @@
 				</a>
 				</li>
 				<li class="li_menunav"><a class="menu_elem" href="/HTMLMnemosine">Colecciones&nbsp></a></li>
-				<li class="li_menunav"><a class="menu_elem" href="#">Proyecto My Smart&nbspLibrary&nbsp></a></li>
-				<li class="li_menunav"><a class="menu_elem" href="#">Quiénes Somos&nbsp></a></li>
+				<li class="li_menunav"><a class="menu_elem" href="smartlibraryproyect.php">Proyecto My Smart&nbspLibrary&nbsp></a></li>
+				<li class="li_menunav"><a class="menu_elem" href="quienessomos.php">Quiénes Somos&nbsp></a></li>
 		 	</ul>
 		</nav>
 	</div>

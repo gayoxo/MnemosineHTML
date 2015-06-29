@@ -55,7 +55,7 @@
 		for ($x = 0; $x <= $CamposAct; $x++) {
 			
 			echo "</br>";	
-			echo "<select name=\"Opciones[".$counter."]\"  title=\"Opciones\">";
+			echo "<select class=\"campo_valores_buscador_avanzado buscador_avanzado\" name=\"Opciones[".$counter."]\"  title=\"Opciones\">";
 			if ($x!=0)
 				echo "<option value=\"OR\">OR</option>";
 
@@ -64,8 +64,8 @@
 			echo "</select>";
 		
 
-			echo "<input type=\"text\" name=\"BarraBusqueda[".$counter."]\" maxlength=\"120\">";
-			echo "<select name=\"Campo[".$counter."]\">";
+			echo "<input class=\"barra_buscador_simple buscador_simple\" type=\"text\" name=\"BarraBusqueda[".$counter."]\" maxlength=\"120\">";
+			echo "<select class=\"campo_valores_buscador_avanzado buscador_avanzado\" name=\"Campo[".$counter."]\">";
 	
 	
 
@@ -79,7 +79,7 @@
 	
 	}
 	
-	echo "<input type=\"button\" value=\"+\" onclick=\"javascript:document.forms['addCampo".$counterCampos."'].submit();\">";
+	echo "<input class=\"buttonnormal\"type=\"button\" value=\"+\" onclick=\"javascript:document.forms['addCampo".$counterCampos."'].submit();\">";
 	echo "</br>";
 	$counterCampos=$counterCampos+1;
 		}

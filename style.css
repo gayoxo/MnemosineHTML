@@ -217,9 +217,9 @@ background-size: 100% 100%;
 
  }
  
-input.barra_buscador_simple
+input.barra_buscador_simple, input.barra_buscador_avanzado
 {
-font-family: normal;
+font-family: mnemosine_minuscula;
 }
  
  .wrapper{
@@ -231,6 +231,11 @@ font-family: normal;
  .Colecciones {
   width: 96.5%;
 }
+
+ .Colecciones, .mysmartlibraryproyect, .quienes_somos{
+  width: 96.5%;
+}
+
  
 .Colecciones ul{
 	overflow-y: auto;
@@ -255,7 +260,7 @@ text-align: center;
 
  .buscador_simple_zona{
  margin-left: 3em;
- margin: 0em 20%;
+ margin: 0em 16%;
  }
  
  .buscador_avanzado_zona{
@@ -266,7 +271,7 @@ text-align: center;
  }
  
  .buscador_avanzado_zona_mas{
-  margin: 0em 20%;
+  margin: 0em 17%;
  } 
  
  button.buscar_buscador_simple {
@@ -318,7 +323,13 @@ color: black;
 text-decoration:none
 }
 
-p.Colecciones_texto_Cabecera{
+input.buttonnormal
+{
+font-family: mnemosine_minuscula;
+font-size: inherit;
+}
+
+p.Colecciones_texto_Cabecera, p.mysmartlibraryproyect_texto_Cabecera, p.quienes_somos_texto_Cabecera{
 font-size: 2em;
 }
 
