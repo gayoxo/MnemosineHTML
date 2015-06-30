@@ -9,7 +9,7 @@ function show_document($arg_1,$arg_2,$arg_3,$arg_4,$arg_5,$DescObject)
 	echo "<img src=\"".$arg_3."\" width=\"50\" border=\"0\" alt=\"iconoDocumento\">";
 	echo "</div>";
 	echo "<div class=\"documento_unico_resto\">";
-	echo "<a class=\"linkdocument\" href=\"ver_documento.php?documento=".$arg_1."\" target=\"_blank\" >";
+	echo "<a class=\"linkdocument\" href=\"ver_documento.php?documento=".$arg_1."\" >";
 	echo "<span class=\"Descripcion_documento_buscador_valor\">".$arg_2."</span>";
 	echo "</a>";
 	echo "</br>";
