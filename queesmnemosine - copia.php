@@ -5,7 +5,7 @@
 
 </div>	
 <div class="mysmartlibraryproyect">
-	<p class="mysmartlibraryproyect_texto_Cabecera">Proyecto My Smart Library</p>
+	<p class="mysmartlibraryproyect_texto_Cabecera">Que es Mnemosine</p>
 	<hr class="linea_horizontal">
 	<div class="smart_library_body">
 		<p class="justifiedtext">

@@ -55,6 +55,11 @@
 		for ($x = 0; $x <= $CamposAct; $x++) {
 			
 			echo "</br>";	
+			
+		
+
+			echo "<input class=\"barra_buscador_avanzado buscador_avanzado\" type=\"text\" name=\"BarraBusqueda[".$counter."]\" maxlength=\"120\">";
+			
 			echo "<select class=\"campo_valores_buscador_avanzado buscador_avanzado\" name=\"Opciones[".$counter."]\"  title=\"Opciones\">";
 			if ($x!=0)
 				echo "<option value=\"OR\">OR</option>";
@@ -62,17 +67,19 @@
 			echo "<option value=\"AND\">AND</option>";
 			echo "<option value=\"NOT\">NOT</option>";
 			echo "</select>";
-		
-
-			echo "<input class=\"barra_buscador_simple buscador_simple\" type=\"text\" name=\"BarraBusqueda[".$counter."]\" maxlength=\"120\">";
-			echo "<select class=\"campo_valores_buscador_avanzado buscador_avanzado\" name=\"Campo[".$counter."]\">";
+			
+			echo "<select class=\"campo_valores_buscador_avanzado_tipos buscador_avanzado";
 	
+			if ($Group1=="0")
+				echo " buscador_avanzado_todos ";
+			
+			echo "\" name=\"Campo[".$counter."]\">";
 	
 
 	
 			foreach ($Arra as $elem) 
-					echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
-
+				echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
+			
 			$counter=$counter+1;
 		echo "</select>";
 	

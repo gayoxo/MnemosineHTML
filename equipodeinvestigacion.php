@@ -5,27 +5,9 @@
 
 </div>		
 <div class="quienes_somos">
-	<p class="quienes_somos_texto_Cabecera">Quiénes Somos</p>
+	<p class="quienes_somos_texto_Cabecera">Equipo de Investigación</p>
 	<hr class="linea_horizontal">
 	<div class="quienes_somos_body">
-		<div class="bloque">
-			<div class="imagen_bloque">
-				<a class="quienes_somos_link" href="index.php">
-					<img class="imagen_bloque_base" src="imagenes/logomenu.png" alt="">
-				</a>
-			</div>
-			<div class="texto_bloque">
-				<p class="texto_bloque_cabecera">
-					<a class="quienes_somos_link" href="index.php">
-					MNEMOSINE
-					</a>
-				</p>
-				<p class="texto-bloque_cuerpo">
-				El principal objetivo de Mnemosine es seleccionar, catalogar y hacer visibles en formato digital textos que pertenecen a un repertorio olvidado que permitirá la revisión historiográfica de lo que ya se denomina ‘la otra Edad de Plata’ (Ángela Ena Bordonada: 2013). Esta biblioteca  digital pretende ser un campo de experimentación internacional para la creación de redes semánticas interoperables a través de las cuales se genere investigación e innovación de calidad y nuevos modelos teóricos de interpretación de textos literarios.
-				</p>
-			</div>
-		</div>
-		<hr class="linea_horizontal">
 		<div class="bloque">
 			<div class="imagen_bloque">
 				<a class="quienes_somos_link" href="quienessomos.php">
@@ -35,7 +17,7 @@
 			<div class="texto_bloque">
 				<p class="texto_bloque_cabecera">
 					<a class="quienes_somos_link" href="quienessomos.php">
-					Quiénes Somos
+					Personal de la Investigación
 					</a>
 				</p>
 				<p class="texto-bloque_cuerpo">
@@ -48,9 +30,9 @@
 			</div>
 		</div>
 		<hr class="linea_horizontal">
-		<div class="bloque">
+		<div class="bloque_especial bloque">
 			<div class="imagen_bloque">
-					<img class="imagen_bloque_base" src="imagenes/red.png" alt="">
+					<img class="imagen_bloque_base" src="imagenes/Blanco.png" alt="">
 			</div>
 			<div class="texto_bloque">
 				<p class="texto_bloque_cabecera">

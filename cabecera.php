@@ -8,4 +8,4 @@
 			 
 		</a>	
 	</div>
-	<span class="texto_cabecera">Biblioteca Digital de la Otra Edad de Plata</span>
+	<!--<span class="texto_cabecera">Biblioteca Digital de la Otra Edad de Plata</span> -->

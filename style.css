@@ -221,13 +221,19 @@ background-size: 100% 100%;
 
  }
  
-input.barra_buscador_simple, input.barra_buscador_avanzado
-{
+input.barra_buscador_simple{
 font-family: mnemosine_minuscula;
+  width: 70%;
+  min-width: 200px;
+}
+
+select.campo_valores_buscador_simple{
+width: 15%;
+  min-width: 75px;
 }
  
  .wrapper{
-	margin: 0em 6em 0em 10em;
+	margin: 0em 5% 0em 10em;
 	  font-family: mnemosine;
 
  }
@@ -236,7 +242,7 @@ font-family: mnemosine_minuscula;
   width: 96.5%;
 }
 
- .Colecciones, .mysmartlibraryproyect, .quienes_somos{
+ .Colecciones, .mysmartlibraryproyect, .quienes_somos, .zonIndex{
   width: 96.5%;
 }
 
@@ -333,7 +339,7 @@ font-family: mnemosine_minuscula;
 font-size: inherit;
 }
 
-p.Colecciones_texto_Cabecera, p.mysmartlibraryproyect_texto_Cabecera, p.quienes_somos_texto_Cabecera{
+p.Colecciones_texto_Cabecera, p.mysmartlibraryproyect_texto_Cabecera, p.quienes_somos_texto_Cabecera, p.zonaIndexCentro{
 font-size: 2em;
 }
 
@@ -429,7 +435,7 @@ color:#31b49d;
 }
 
 p.justifiedtext {
-  margin: 2em 15em;
+  margin: 2em 20%;
   text-align: justify;
   font-family: diddot;
   font-size: 1.1em;
@@ -444,7 +450,7 @@ p.justifiedtext {
 }
 
 .bloque {
-  margin: 2em 12em;
+  margin: 2em 20%;
     float: left;
 }
 
@@ -484,8 +490,42 @@ a.quienes_somos_link:hover {
 text-decoration:none;
  color:#31b49d;
 }
-  
-/*
+
+ p.zonaIndexCentro_text{
+text-align: justify;
+ font-family: diddot;
+ margin: 2em 20%;
+  font-style: italic;
+  font-size: 1.5em;
+ 
+ } 
+
+ .bloque_especial {
+  margin: 1em 20% -2em 20%;
+}
+ 
+ select.buscador_avanzado_todos {
+  display: none;
+}
+
+input.barra_buscador_avanzado{
+font-family: mnemosine;
+  width: 62%;
+  min-width: 200px;
+}
+
+select.campo_valores_buscador_avanzado{
+font-family: mnemosine;
+  width: 15%;
+  min-width:75px;
+}
+
+select.campo_valores_buscador_avanzado_tipos{
+font-family: mnemosine;
+  width: 15%;
+  min-width:100px;
+}
+ /*
 ul .menustyle{
     list-style-image: url('sqpurple.gif');
 }

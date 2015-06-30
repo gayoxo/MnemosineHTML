@@ -5,77 +5,10 @@
 
 <?php include 'form_buscador.php'?>
 	
-<div class="Colecciones">
-	<p class="Colecciones_texto_Cabecera">Colecciones</p>
+<div class="zonIndex">
+	<p class="zonaIndexCentro">Biblioteca Digital de la `Otra` Edad de Plata</p>	
 	<hr class="linea_horizontal">
-	<ul>	
-
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION1.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-		
-		
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION3.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-		
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION4.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-		
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION5.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-		
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION6.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-		
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION7.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-		
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION8.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="#">
-		<img onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');" src="imagenes/COLECCION9.png" width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p onmouseover="nhpup.popup('Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.');">Mujeres intelectuales de la edad de plata </p></div>
-		</div>
-		</li>
-		
-	</ul>
+	<p class="zonaIndexCentro_text">El principal objetivo de Mnemosine es seleccionar, catalogar y hacer visibles en formato digital textos que pertenecen a un repertorio olvidado que permitirá la revisión historiográfica de lo que ya se denomina ‘la otra Edad de Plata’ (Ángela Ena Bordonada: 2013). Esta biblioteca digital pretende ser un campo de experimentación internacional para la creación de redes semánticas interoperables a través de las cuales se genere investigación e innovación de calidad y nuevos modelos teóricos de interpretación de textos literarios.</p>
 </div>	
 	
 <?php include 'botton.php'; ?>

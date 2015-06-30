@@ -42,7 +42,13 @@ class CampoArray
 
 	$Grupo0=array(new CampoElem(0,array(0),"Todos"));
 
-	$Grupo1=array(new CampoElem(1,array(-3,21814,21817,19028),"Nombre"),new CampoElem(2,array(30995),"Función"),new CampoElem(3,array(31020),"Exilio"),new CampoElem(4,array(31018),"Fecha de nacimiento"),new CampoElem(5,array(31019),"Fecha de muerte"),new CampoElem(5,array(21832),"Género"));
+	$Grupo1=array(
+	new CampoElem(1,array(-3,21814,21817,19028),"Nombre"),
+	new CampoElem(2,array(30995),"Función"),
+	new CampoElem(3,array(31020),"Exilio"),
+	new CampoElem(4,array(31018),"Fecha de nacimiento"),
+	new CampoElem(5,array(31019),"Fecha de muerte"),
+	new CampoElem(5,array(21832),"Género"));
 	
 	$Grupo2=array(
 	new CampoElem(6,array(-3,25119,21974,21985),"Titulo"),
