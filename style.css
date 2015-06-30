@@ -10,7 +10,11 @@
  
 }
 
-
+@font-face {
+       font-family: "diddot";
+       src: url('fuentes/ufonts.com_didot.ttf') format("truetype"); 
+ 
+}
 
 @font-face {   
   font-family: "Kimberley";   
@@ -241,7 +245,7 @@ font-family: mnemosine_minuscula;
 	overflow-y: auto;
 	list-style: none;
     width: 100%;
-	max-height: 700px;
+	max-height: 800px;
 }
 
 .collection_test
@@ -423,6 +427,64 @@ text-decoration:none;
 a.coleccion_vinculo:hover{
 color:#31b49d;
 }
+
+p.justifiedtext {
+  margin: 2em 15em;
+  text-align: justify;
+  font-family: diddot;
+  font-size: 1.1em;
+  
+}
+
+.smart_library_body
+{
+  margin-top: 1em;
+  font-family: diddot;
+  font-size: 1.1em; 
+}
+
+.bloque {
+  margin: 2em 12em;
+    float: left;
+}
+
+.imagen_bloque {
+  width: 20%;
+  float: left;
+}
+
+img.imagen_bloque_base {
+  width: 100%;
+}
+
+.texto_bloque
+{
+ width: 76%;
+  float: left;
+  margin-left: 4%;
+
+}
+p.texto_bloque_cabecera {
+text-align: left;
+  font-size: 1.3em;
+}
+
+
+p.texto-bloque_cuerpo {
+text-align: justify;
+ font-family: diddot;
+}
+  
+a.quienes_somos_link {
+text-decoration:none;
+ color: black;
+}
+
+a.quienes_somos_link:hover {
+text-decoration:none;
+ color:#31b49d;
+}
+  
 /*
 ul .menustyle{
     list-style-image: url('sqpurple.gif');

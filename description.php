@@ -52,10 +52,10 @@ class DescArray
 $DescP= array(
 new Desc(21814,"Nombre"),
 new Desc(27914,"Fechas asociadas al nombre"),
-//new Desc(31013,"Obras"),
+new Desc(31013,"Obras"),
 //new Desc(30995,"Participacion"),
 new Desc(25119,"Título"),
-//new Desc(21809,"Relacion"),
+new Desc(21809,"Relacion"),
 //new Desc(30994,"Participantes"),
 new Desc(19749,"Editorial"),
 new Desc(19750,"Año de publicación"));

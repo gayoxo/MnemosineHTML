@@ -18,7 +18,7 @@
 			<ul class="menu_list">
 				<li class="li_menunavicon li_menunav">
 				<a href="/HTMLMnemosine"> 
-				<img class="iconomenu menu_elem" src="imagenes/logomenu2.png" width="100" height="100" class="Bannericon" alt=""> 
+				<img class="iconomenu menu_elem Bannericon" src="imagenes/logomenu2.png" width="100" height="100" alt=""> 
 				</a>
 				</li>
 				<li class="li_menunav"><a class="menu_elem" href="/HTMLMnemosine">Colecciones&nbsp></a></li>
