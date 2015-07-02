@@ -76,7 +76,7 @@ class CollectionArray
 	new CollectionElem(
 		1,
 		"Mujeres intelectuales de la edad de plata",
-		"Coordinadora: Kirsty Hooper. Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata.",
+		"Esta colección reúne a un grupo de mujeres que publicaron ensayo, poesía, teatro y prosa durante la Edad de Plata. Coordinadora: Kirsty Hooper.",
 		"Id1=6&Desc1=Mujer",
 		"imagenes/COLECCION1.png"
 		),
@@ -84,7 +84,7 @@ class CollectionArray
 	new CollectionElem(
 		2,
 		"Traductoras de la Edad de Plata",
-		"Coordinadora: Amelia Sanz Cabrerizo. Esta colección reúne a un grupo de mujeres que publicaron en español traducciones de autores extranjeros. Se utiliza la herramienta @Note para realizar anotaciones colaborativas de textos en línea.",
+		"Esta colección reúne a un grupo de mujeres que publicaron en español traducciones de autores extranjeros. Se utiliza la herramienta @Note para realizar anotaciones colaborativas de textos en línea. Coordinadora: Amelia Sanz Cabrerizo.",
 		"Id1=6&Desc1=Mujer&Id2=2&Desc2=Traductor",
 		"imagenes/COLECCION3.png"
 		),
@@ -92,7 +92,7 @@ class CollectionArray
 	new CollectionElem(
 		3,
 		"Muertos en conflicto (1936-1939)",
-		"Coordinador: Pendiente de asignar. Esta colección reúne a aquellos autores raros y olvidados que fallecieron por distintas causas durante la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los lugares de fallecimiento.",
+		"Esta colección reúne a aquellos autores raros y olvidados que fallecieron por distintas causas durante la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los lugares de fallecimiento. Coordinador: Pendiente de asignar.",
 		"Id1=5&Desc1=1936&Or1=true&Id2=5&Desc2=1938&Or2=true&Id3=5&Desc3=1939&Or3=true&Id4=5&Desc4=1937&Or4=true",
 		"imagenes/COLECCION4.png"
 		),
@@ -100,7 +100,7 @@ class CollectionArray
 	new CollectionElem(
 		4,
 		"Autores en exilio",
-		"Coordinadora: Lucía Cotarelo Esteban. Esta colección reúne escritores que sufrieron el exilio tras la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los espacios del exilio.",
+		"Esta colección reúne escritores que sufrieron el exilio tras la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los espacios del exilio. Coordinadora: Lucía Cotarelo Esteban.",
 		"Id1=3&Desc1=Si",
 		"imagenes/COLECCION5.png"
 		),
@@ -108,7 +108,7 @@ class CollectionArray
 	new CollectionElem(
 		5,
 		"Protociencia-ficción",
-		"Coordinadora: Marta Correa Román: Esta colección reúne los textos de la “Biblioteca de Protociencia-ficción Agustín Jaureguizar” que han sido digitalizados por la Biblioteca UCM. Se aportan datos y metadatos externos a Mnemosine.",
+		"Esta colección reúne los textos de la “Biblioteca de Protociencia-ficción Agustín Jaureguizar” que han sido digitalizados por la Biblioteca UCM. Se aportan datos y metadatos externos a Mnemosine. Coordinadora: Marta Correa Román.",
 		"Id1=10&Desc1=Protociencia-ficción",
 		"imagenes/COLECCION6.png"
 		),
@@ -116,7 +116,7 @@ class CollectionArray
 	new CollectionElem(
 		6,
 		"Diálogos literarios",
-		"Coordinadora: Mª Jesús Fraga: Esta colección reúne los textos dialogados que se publicaron durante la Edad de Plata. Se fomenta así la colaboración con el Grupo de Investigación UCM Dyalogica y su Biblioteca Digital del Diálogo Hispánico.",
+		"Esta colección reúne los textos dialogados que se publicaron durante la Edad de Plata. Se fomenta así la colaboración con el Grupo de Investigación UCM Dyalogica y su Biblioteca Digital del Diálogo Hispánico. Coordinadora: Mª Jesús Fraga.",
 		"Id1=10&Desc1=Dialogos",
 		"imagenes/COLECCION7.png"
 		),
@@ -124,7 +124,7 @@ class CollectionArray
 	new CollectionElem(
 		7,
 		"Felipe Trigo",
-		"Coordinador: Pendiente de asignar. Es una colección de los libros publicados por un autor individual.",
+		"Es una colección de los libros publicados por un autor individual. Coordinador: Pendiente de asignar.",
 		"Id1=1&Desc1=Felipe&Id2=1&Desc2=Trigo",
 		"imagenes/COLECCION8.png"
 		),
@@ -132,7 +132,7 @@ class CollectionArray
 		new CollectionElem(
 		8,
 		"Carmen de Burgos",
-		"Coordinador: Pendiente de asignar. Es una colección de los libros publicados por una autora individual.",
+		"Es una colección de los libros publicados por una autora individual. Coordinador: Pendiente de asignar.",
 		"Id1=1&Desc1=Carmen&Id2=1&Desc2=Burgos",
 		"imagenes/COLECCION9.png"
 		)

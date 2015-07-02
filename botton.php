@@ -2,6 +2,8 @@
 <div class="footer">
 	<hr class="linea_horizontal_footer">
 	
+	<div class="footerContent">
+	
 	<div class="footer_elemnt">
 		<a class="quienes_somos_link" href=" https://www.ucm.es/" target="_blank">
 					<img class="imagen_bloque_base" src="imagenes/logocomplutense.gif" alt="">
@@ -46,6 +48,8 @@
 			<br>
 			<a class="footer_somos_link" href="mailto:dromero@filol.ucm.es"><p>Contacto&nbsp|</p></a>
 		</div>
+	</div>
+	
 		
 		
 	</div>
