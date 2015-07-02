@@ -1,5 +1,11 @@
 <?php include 'top.php';
-include 'config.php';  ?>
+include 'config.php'; 
+?> 
+<br>
+<br>
+<?php 
+include "form_buscador.php";
+?>
 
 
 <?php
@@ -103,8 +109,7 @@ function ProcesaLista($ArrayE,$lis)
 
 ?>	
 
-
-</div>
+	<br>
 
 <?php 
 

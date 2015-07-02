@@ -2,6 +2,7 @@
 <?php $LinkAtras="index.php"; ?>
 <?php include 'cabecera.php'; ?>
 <?php
+
 	$Campos=$_POST["Campos"];
 	
 //	echo $Campos;
@@ -12,9 +13,14 @@
 //	echo $Campos;
 	?>
 	<br>
-	<span class="texto_base_avanzado buscador_avanzado buscador_avanzado_zona">Buscador Avanzado</span>
+<!--	<span class="texto_base_avanzado buscador_avanzado buscador_avanzado_zona">Buscador Avanzado</span>-->
 	<br>
 	</div> <!-- Cierre de la cabecera con imagen -->
+	
+	<p class="buscador_avanzado_texto_Cabecera">Buscador Avanzado</p>
+	<hr class="linea_horizontal">
+	
+	
 	<form class="formulario_base buscador_avanzado buscador_avanzado_zona_mas" name="buscadoravanzadobuscar" action='buscar_avanzado.php' method="post">
 	
 	

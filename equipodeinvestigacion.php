@@ -103,7 +103,7 @@
 				</p>
 				<p class="texto-bloque_cuerpo">
 				<a class="quienes_somos_link" href="mailto:dromero@filol.ucm.es">
-				<img class="imagen_bloque_base mail" src="imagenes/mail.png" alt="">
+				<img class="imagen_bloque_base mail" src="imagenes/mail.jpg" alt="">
 				</a>
 				</p>
 			</div>

@@ -57,6 +57,7 @@
 				$Positivo=false;	
 	
 		$TypeNumber=intval($Campo);
+		$Inside=$CamposArray->isinside($TypeNumber);
 		$TypeNumber=$CamposArray->findElem($TypeNumber);
 	
 /*	echo $BasicaUni;
@@ -80,7 +81,12 @@
 			
 			$BusquedaStringLabel=$BusquedaStringLabel.$Negativotemporal.$BasicaUni." ";	
 			
-		$Busqueda= array("value"=>$BasicaUni,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$AND,"exacto"=>true) ;
+			$BasicaUniE=$BasicaUni;
+			
+			if ($Inside)
+				$BasicaUniE="*".$BasicaUni."*";
+			
+		$Busqueda= array("value"=>$BasicaUniE,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$AND,"exacto"=>true) ;
 			array_push($BusquedaArray,$Busqueda);	
 			
 		//$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
@@ -101,4 +107,3 @@
 		
 	?>
 	
-<?php include 'botton.php'; ?>
