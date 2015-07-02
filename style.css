@@ -21,6 +21,31 @@
   src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype"); 
 }
 
+img.mail{
+  width: 100px !important;
+}
+
+a.zonaIndexCentro_text_link
+{
+color: black;
+
+}
+
+a.zonaIndexCentro_text_link:hover{
+
+
+color: #31b49d;
+}
+
+a.justifiedtext_link{
+color: black;
+
+}
+
+a.justifiedtext_link:hover{
+
+color: #31b49d;
+}
 
 .filtro {
   float: left;
@@ -259,13 +284,21 @@ width: 15%;
 text-align: center;
 	font-family: mnemosine, Orator Std ;
     font-size: 20px;
-	margin: 0em 3em;
+	margin: 0em 10%;
 }
 
 .Colecciones ul li{
   float: left;
   width: 25%;
     margin: 2em 0;
+	height: 100%;
+	min-width:160px;
+}
+
+.Colecciones p{
+  height: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
  .buscador_simple_zona{
@@ -496,7 +529,7 @@ text-align: justify;
  font-family: diddot;
  margin: 2em 20%;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1.7em;
  
  } 
 

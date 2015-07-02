@@ -6,9 +6,15 @@
 <?php include 'form_buscador.php'?>
 	
 <div class="zonIndex">
-	<p class="zonaIndexCentro">Biblioteca Digital de la `Otra` Edad de Plata</p>	
+	<p class="zonaIndexCentro">Bienvenidos a la Biblioteca Digital de “La otra Edad de Plata”.</p>	
 	<hr class="linea_horizontal">
-	<p class="zonaIndexCentro_text">El principal objetivo de Mnemosine es seleccionar, catalogar y hacer visibles en formato digital textos que pertenecen a un repertorio olvidado que permitirá la revisión historiográfica de lo que ya se denomina ‘la otra Edad de Plata’ (Ángela Ena Bordonada: 2013). Esta biblioteca digital pretende ser un campo de experimentación internacional para la creación de redes semánticas interoperables a través de las cuales se genere investigación e innovación de calidad y nuevos modelos teóricos de interpretación de textos literarios.</p>
+	<p class="zonaIndexCentro_text">
+	En Mnemosine podrá encontrar enlaces a textos digitalizados y datos de autores y obras que pertenecen al repertorio de raros y olvidados (1868-1939).<br> 
+	<br>
+Los registros de Mnemosine proceden de metadatos importados por <a class="zonaIndexCentro_text_link" href="http://clavy.fdi.ucm.es" target="_blank">Clavy©</a> 
+desde <a class="zonaIndexCentro_text_link" href="http://www.bne.es/es/Catalogos/BibliotecaDigitalHispanica/Inicio/index.html" target="_blank">Biblioteca Digital Hispánica</a> y 
+desde <a class="zonaIndexCentro_text_link" href="http://babel.hathitrust.org/cgi/mb?a=listis;c=576801556" target="_blank">HathiTrust</a>.
+	</p>
 </div>	
 	
 <?php include 'botton.php'; ?>
