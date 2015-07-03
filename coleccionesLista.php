@@ -92,7 +92,7 @@ class CollectionArray
 	new CollectionElem(
 		3,
 		"Muertos en conflicto (1936-1939)",
-		"Esta colección reúne a aquellos autores raros y olvidados que fallecieron por distintas causas durante la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los lugares de fallecimiento. Coordinador: Pendiente de asignar.",
+		"Esta colección reúne a aquellos autores raros y olvidados que fallecieron por distintas causas durante la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los lugares de fallecimiento. Coordinador: José Miguel González Soriano.",
 		"Id1=5&Desc1=1936&Or1=true&Id2=5&Desc2=1938&Or2=true&Id3=5&Desc3=1939&Or3=true&Id4=5&Desc4=1937&Or4=true",
 		"imagenes/COLECCION4.png"
 		),

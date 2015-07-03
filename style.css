@@ -10,9 +10,31 @@
  
 }
 
+/*
 @font-face {
        font-family: "diddot";
        src: url('fuentes/ufonts.com_didot.ttf') format("truetype"); 
+ 
+}
+
+
+@font-face {
+       font-family: "diddot";
+       src: url('fuentes/Baskerville.ttc') format("truetype"); 
+ 
+}
+
+@font-face {
+       font-family: "diddot";
+       src: url('fuentes/Cambria.ttf') format("truetype"); 
+ 
+}
+
+*/
+
+@font-face {
+       font-family: "diddot";
+       src: url('fuentes/Lucida Console.ttf') format("truetype"); 
  
 }
 
@@ -20,6 +42,8 @@
   font-family: "Kimberley";   
   src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype"); 
 }
+
+
 
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -37,7 +61,16 @@
     color: #31b49d !important;
 }
 
+img.cabecera_smart_library_image{
+width: 175px;
+  margin: -8px;
+}
 
+
+.bases_legales
+{
+font-family: diddot;
+}
 
 img.mail{
   width: 100px !important;
@@ -64,6 +97,10 @@ a.justifiedtext_link:hover{
 
 color: #31b49d;
 }
+
+
+
+
 
 .filtro {
   float: left;
@@ -202,6 +239,21 @@ a.paginadorNoActivo:hover {
   text-decoration:none;
   cursor: default;
   color: #31b49d;
+}
+
+
+a.bases_legales_body_link
+{
+
+  cursor: default;
+  color: black;
+}
+
+a.bases_legales_body_link:hover
+{
+
+  cursor: default;
+   color: #31b49d;
 }
 
 span.resultado_test_value {
@@ -462,7 +514,7 @@ a.linkdocument{
 .footer_elemnt
 {
   /* float: left; */
-  width: 12%;
+  width: 10%;
   padding: 0 1em;
   /* margin: 0em 8%; */
   display: table-cell;

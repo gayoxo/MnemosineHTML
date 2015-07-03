@@ -5,6 +5,13 @@
 	<div class="footerContent">
 	
 	<div class="footer_elemnt">
+		<a class="quienes_somos_link" href="http://mysmartlibrary.es/" target="_blank">
+					<img class="imagen_bloque_base" src="imagenes/logoA.png" alt="">
+				</a>
+		</div>
+	
+	
+	<div class="footer_elemnt">
 		<a class="quienes_somos_link" href=" https://www.ucm.es/" target="_blank">
 					<img class="imagen_bloque_base" src="imagenes/logocomplutense.gif" alt="">
 				</a>
@@ -32,14 +39,14 @@
 		
 		
 		<div class="footer_elemnt">
-		<!--<a class="quienes_somos_link" href=" https://www.ucm.es/loep" target="_blank"> -->
+		<a class="quienes_somos_link" href=" http://www.mineco.gob.es/portal/site/mineco/idi" target="_blank"> 
 					<img class="imagen_bloque_base" src="imagenes/logo-mineco.jpg" alt="">
-			<!--	</a> -->
+				</a> 
 		</div>
 		
 		<div class="footer_elemnt">
 		<!--<a class="quienes_somos_link" href=" https://www.ucm.es/loep" target="_blank"> -->
-					<img class="imagen_bloque_base" src="imagenes/creative-commons.gif" alt="">
+					<img class="imagen_bloque_base" src="imagenes/by-nc-sa.eu_petit.png" alt="">
 			<!--	</a> -->
 		</div>
 		
