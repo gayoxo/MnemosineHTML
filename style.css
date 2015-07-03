@@ -30,13 +30,22 @@
  
 }
 
-*/
+
 
 @font-face {
        font-family: "diddot";
        src: url('fuentes/Lucida Console.ttf') format("truetype"); 
  
 }
+*/
+@font-face {
+       font-family: "diddot";
+       src: url('fuentes/ufonts.com_courier-new.ttf') format("truetype"); 
+ 
+}
+
+
+
 
 @font-face {   
   font-family: "Kimberley";   
@@ -647,6 +656,7 @@ text-align: left;
 p.texto-bloque_cuerpo {
 text-align: justify;
  font-family: diddot;
+   line-height: 1.5em;
 }
   
 a.quienes_somos_link {
