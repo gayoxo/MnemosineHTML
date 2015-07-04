@@ -50,7 +50,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 							$val=$Valor; 
 					}
 				
-				echo "<li>";
+				echo "<li class=\"lifiltro\">";
 				
 				
 				if (in_array ($val,$FiltroAplicar))
@@ -63,20 +63,25 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 }
 ?>	
 
-
+<div>
 
 <?php
+
+
 
 //	$Campo=$_POST["Campo"];
 	$Start=$_POST["Start"];
 	$Limite=$_POST["Limite"];
 	$FiltroA=$_POST["Filtro"];
 	$FiltroNuevo=$_POST["FiltroNuevo"];
+	$BusquedaStringLabelIN=$_POST["BusquedaStringLabelIN"];
 
+	
 	if (empty($FiltroNuevo))
 		$FiltroNuevo=false;
 	
-
+	if (isset($BusquedaStringLabelIN)&&!empty($BusquedaStringLabelIN))
+		$BusquedaStringLabel=$BusquedaStringLabelIN;
 	
 	//var_dump($FiltroA);
 	
@@ -220,6 +225,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="Campo" value=<?php echo $Campo?> />
 			<input type="hidden" name="Start" value=0 />
 			<input type="hidden" name="Filtro" value='<?php echo $FiltroA?>' />
+			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
 
 
 			<select name="Limite" onchange="javascript:document.forms['formlimite'].submit();">
@@ -268,7 +274,8 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Start\" value=".$staPlus." />";
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
-					echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($staPlus+1)."'].submit();\" >Menos</a>  ";
+					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
+					echo "<a class=\"paginadorNoActivo\" href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($staPlus+1)."'].submit();\" >Menos</a>  ";
 					echo "</form>";
 					}
 					else
@@ -281,7 +288,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Start\" value=".$sta." />";
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
-				
+					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
 				
 					if ($Visibles<5)
 					{
@@ -290,12 +297,14 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<a ";
 					if ($Start==$sta)
 						echo "class=\"paginadorActivo\" ";
+					else
+						echo "class=\"paginadorNoActivo\" ";
 					echo " href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >".($i+1)."</a>  ";
 					
 					}else
 					{	
 					$Visibles=$Visibles+1;
-					echo "<a href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >Mas</a>  ";	
+					echo "<a class=\"paginadorNoActivo\" href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >Mas</a>  ";	
 					}
 					echo "</form>";
 					}
@@ -316,7 +325,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="Start" value=<?php echo $Start?> />
 			<input type="hidden" name="Limite" value=<?php echo $Limite?>  />
 			<input type="hidden" name="FiltroNuevo" value=true />
-			
+			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
 			<?php
 			
 			
@@ -335,7 +344,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				}
 				
 				
-				echo "<details";
+				echo "<details class=\"detailsfiltro\" ";
 				
 				if ((isset($FiltroAplicar[$TypeA])&&(!empty($FiltroAplicar[$TypeA])))||$TypeA==0)
 					echo "open"; 
@@ -358,7 +367,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			}
 			?>	
 			</br>
-			<input type="submit" value="Aplicar Filtro">
+			<input class="submitFiltro" type="submit" value="Aplicar Filtro">
 			</form>
 			</br>
 			
@@ -411,3 +420,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 
 
 ?>
+
+</div>
+
+<?php include 'botton.php'; ?>

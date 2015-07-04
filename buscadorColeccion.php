@@ -4,33 +4,45 @@
 <?php include 'form_buscador.php'?>	
 <?php 
 
-	$Previa=$_POST["BarraBasica"];
+	
+	$BusquedaArray=array();
 	
 	
+	$BusquedaStringLabel="";
 	
-	$Basica=$_POST["BarraBusqueda"];
-	$Basica2=$_POST["Campo"];
+	
+	for ($x = 1; isset($_GET["Id".$x]); $x++)
+	{
+	
+	$Campo=$_GET["Id".$x];
+	$BasicaUni=$_GET["Desc".$x];
+	$Or=$_GET["Or".$x];
+	
+	$Positivo=true;
+	
+	if (!isset($Or))
+		$Or=false;
 
-	
-	$Opciones=$_POST["Opciones"];
-	
-	//var_dump($Opciones);
-	
-	if (!isset($Basica)||empty($Basica))
-		$Basica=array();
-	
-	if (!isset($Basica2)||empty($Basica2))
-		$Basica2=array();
+	$AND=!$Or;
 	
 	
-		
-/*	var_dump($Basica);
-	
-	echo "</br>";
-	
-	var_dump($Basica2); 
-	echo "</br>";
+	/*
+	if (isset($BasicaUni)&isset($Campo))
+		echo "Tipo:".$Campo." Valor:".$BasicaUni." And:".$AND;
+	echo "<br>";
 	*/
+	
+	
+	$TypeNumber=intval($Campo);
+	$Inside=$CamposArray->isinside($TypeNumber);
+	$TypeNumber=$CamposArray->findElem($TypeNumber);
+	
+	
+/*	}
+	
+	exit();
+	
+	
 	
 	$BusquedaArray=array();
 	
@@ -64,6 +76,8 @@
 	echo "</br>";
 	*/
 	
+	
+	
 	if (isset($BasicaUni)&&(!empty($BasicaUni)))
 		{
 			
@@ -86,20 +100,32 @@
 			if ($Inside)
 				$BasicaUniE="*".$BasicaUni."*";
 			
-		$Busqueda= array("value"=>$BasicaUniE,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$AND,"exacto"=>true) ;
-			array_push($BusquedaArray,$Busqueda);	
 			
-		//$Busqueda= array("type" => $TypeNumber,"positive" => $Positivo, "and" =>$ORE) ;
-		//$BusquedaArray[$BasicaUni]=$Busqueda;
+		$Busqueda= array("value"=>$BasicaUniE,"type" => $TypeNumber,"positive" => $Positivo, "and" =>$AND,"exacto"=>true) ;
+		
+	/*	var_dump($Busqueda);
+		echo "<br>";
+		echo "<br>"; */
+		
+		array_push($BusquedaArray,$Busqueda);	
+		
+
 		}
 	}
-	
+
+	/*
+		echo "<br>";
+		var_dump($BusquedaArray);
+		
+		*/
+
 
 		if (isset($Previa)&&(!empty($Previa)))
 			$BusquedaArray= json_decode($Previa, true);
 	
 	
-//	var_dump($BusquedaArray);
+	//var_dump($BusquedaArray);
+	
 	$Basica=json_encode($BusquedaArray);
 	
 	include 'buscar_codigo_general.php';

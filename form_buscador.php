@@ -1,20 +1,33 @@
-<div>
-	Buscador Basico
+	<div class="buscador_simple_zona buscador_simple">
+	<div>
 	<form action='buscar_basico.php' method="post">
-	<input type="text" name="BarraBasica" maxlength="120" value="">
-	<select name="Campo">
+	<input class="barra_buscador_simple buscador_simple" type="text" name="BarraBasica" maxlength="120" placeholder="Buscar autor, obra, fecha...">
+	<select class="campo_valores_buscador_simple buscador_simple" name="Campo">
 	
 	<?php 
 	include 'campos.php';
 	
-	foreach ($CamposArray->CampoA as $elem) 
-		echo "<option value=\"".$elem->Numer."\">".$elem->Valor."</option>";
+	
+	foreach ($CamposArray->CampoA as $Group1=>$Arra) 
+	{
+	
+		if ($Group1!="0")
+			echo "<optgroup class=\"buscador_simple\" label=\"".$Group1."\">";
+	
+		foreach ($Arra as $elem) 
+				echo "<option class=\"buscador_simple\" value=\"".$elem->Numer."\">".$elem->Valor."</option>";
 
+		
+		if ($Group1!="0")
+			 echo "</optgroup>";
+	}
 	?>
 	</select>
-	<input type="submit" value="Buscar">
+	<input class="buscar_buscador_simple buscador_simple" type="submit" value="Buscar">
 	</form>
 	</div>
 	</br>
-	<div><a href='form_buscador_avanzado.php'>Buscador Avanzado</a></div>
+	</div>	
 	</br>
+	</br>
+	</div> <!-- Cierre de la cabecera con imagen -->

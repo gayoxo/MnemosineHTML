@@ -14,8 +14,10 @@
 	
 	$TypeNumber=intval($Basica2);
 	
+	$Inside=$CamposArray->isinside($TypeNumber);
 	
 	$TypeNumber=$CamposArray->findElem($TypeNumber);
+	
 
 	$ArrayBasico=preg_split("/[\s,]+/",$Basica); 
 	
@@ -34,7 +36,12 @@
 			
 			$BusquedaStringLabel=$BusquedaStringLabel.$elem." ";
 			
-			$Busqueda= array("value"=>$elem,"type" => $TypeNumber,"positive" => true, "and" =>true , "exacto"=>true) ;
+			$elemE=$elem;
+				
+			if ($Inside)
+				$elemE="*".$elem."*";
+			
+			$Busqueda= array("value"=>$elemE,"type" => $TypeNumber,"positive" => true, "and" =>true , "exacto"=>true) ;
 			array_push($BusquedaArray,$Busqueda);
 			
 		}
@@ -50,4 +57,3 @@
 	
 	?>
 	
-<?php include 'botton.php'; ?>
