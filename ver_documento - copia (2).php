@@ -62,13 +62,7 @@ function ProcesaLista($ArrayE,$lis)
 		if ($DocRef==true)
 				$Result= "<a class=\"avalueE\" href=\"ver_documento.php?documento=".$Value."\" target=\"_blank\" >".$Show."</a>";
 			else 
-			{
-			/*	$Valor = eregi_replace('(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1 </a>', $Valor);
-				$Valor = eregi_replace('(((f|ht){1}tps://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1</a>', $Valor);
-				$Valor = eregi_replace('([[:space:]()[{}])(www.[-a-zA-Z0-9@:%_+.~#?&//=]+)','\1<a href="http://\2" target="_blank">\2</a>', $Valor);
-				$Valor = eregi_replace('([_.0-9a-z-]+@([0-9a-z][0-9a-z-]+.)+[a-z]{2,3})','<a href="mailto:\1" target="_blank">\1</a>', $Valor);*/
 				$Result= "<span class=\"svalueE\">".$Value."</span>";
-			}
 		}
 		
 		echo $Type.": ".$Result;
