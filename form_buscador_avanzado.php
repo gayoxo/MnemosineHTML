@@ -67,10 +67,13 @@
 			echo "<input class=\"barra_buscador_avanzado buscador_avanzado\" type=\"text\" name=\"BarraBusqueda[".$counter."]\" maxlength=\"120\">";
 			
 			echo "<select class=\"campo_valores_buscador_avanzado buscador_avanzado\" name=\"Opciones[".$counter."]\"  title=\"Opciones\">";
-			if ($x!=0)
-				echo "<option value=\"OR\">OR</option>";
+			
 
 			echo "<option value=\"AND\">AND</option>";
+			
+			if ($x!=0)
+				echo "<option value=\"OR\">OR</option>";
+			
 			echo "<option value=\"NOT\">NOT</option>";
 			echo "</select>";
 			
