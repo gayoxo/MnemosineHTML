@@ -101,7 +101,7 @@ class CollectionArray
 		4,
 		"Autores en exilio",
 		"Esta colección reúne escritores que sufrieron el exilio tras la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los espacios del exilio. Coordinadora: Lucía Cotarelo Esteban.",
-		"Id1=3&Desc1=Si",
+		"Id1=3&Desc1=Sí",
 		"imagenes/COLECCION5.png"
 		),
 
