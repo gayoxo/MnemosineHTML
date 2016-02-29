@@ -28,14 +28,11 @@
 	
 	foreach ($ArrayBasico as $elem)
 	{
-		if (preg_match("/^\".+\"$/",$elem))
-		{
-			$elem=str_replace("\"","",$elem);
-			$incluseList=true;
-		}
+
 		
 		if (!empty($elem)&&($incluseList||!listanegra($elem)))
 		{
+			if 
 			
 			if (!empty($BusquedaStringLabel))
 				$BusquedaStringLabel=$BusquedaStringLabel."AND ";

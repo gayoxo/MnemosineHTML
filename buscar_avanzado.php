@@ -64,7 +64,13 @@
 	echo "</br>";
 	*/
 	
-	if (isset($BasicaUni)&&(!empty($BasicaUni)))
+	if (preg_match("/^\".+\"$/",$BasicaUni))
+		{
+			$BasicaUni=str_replace("\"","",$BasicaUni);
+			$incluseList=true;
+		}
+	
+	if (isset($BasicaUni)&&(!empty($BasicaUni))&&($incluseList||!listanegra($BasicaUni)))
 		{
 			
 		if (!empty($BusquedaStringLabel))

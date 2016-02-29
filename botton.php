@@ -45,6 +45,12 @@
 		</div>
 		
 		<div class="footer_elemnt">
+		<a class="quienes_somos_link" href="http://www.fbbva.es/" target="_blank"> 
+					<img class="imagen_bloque_base" src="imagenes/BBVA.png" alt="">
+					</a> 
+		</div>
+		
+		<div class="footer_elemnt">
 		<!--<a class="quienes_somos_link" href=" https://www.ucm.es/loep" target="_blank"> -->
 					<img class="imagen_bloque_base" src="imagenes/by-nc-sa.eu_petit.png" alt="">
 			<!--	</a> -->

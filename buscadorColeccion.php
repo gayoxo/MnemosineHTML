@@ -26,55 +26,12 @@
 	$AND=!$Or;
 	
 	
-	/*
-	if (isset($BasicaUni)&isset($Campo))
-		echo "Tipo:".$Campo." Valor:".$BasicaUni." And:".$AND;
-	echo "<br>";
-	*/
-	
-	
 	$TypeNumber=intval($Campo);
 	$Inside=$CamposArray->isinside($TypeNumber);
 	$TypeNumber=$CamposArray->findElem($TypeNumber);
 	
 	
-/*	}
-	
-	exit();
-	
-	
-	
-	$BusquedaArray=array();
-	
-	
-	$BusquedaStringLabel="";
-	
-	
-	for ($x = 0; $x < count($Basica); $x++) 
-	{
-		$BasicaUni=$Basica[$x];
-		$Campo=$Basica2[$x];
-		
-		$Positivo=true;
-		$AND=true;
-		
-		if (array_key_exists($x,$Opciones))
-			if ($Opciones[$x]=="OR")
-				$AND=false;
-			else
-				if ($Opciones[$x]=="AND")
-				$AND=true;
-			else
-				if ($Opciones[$x]=="NOT")
-				$Positivo=false;	
-	
-		$TypeNumber=intval($Campo);
-		$Inside=$CamposArray->isinside($TypeNumber);
-		$TypeNumber=$CamposArray->findElem($TypeNumber);
-	
-/*	echo $BasicaUni;
-	echo "</br>";
-	*/
+
 	
 	
 	
@@ -105,7 +62,7 @@
 		
 	/*	var_dump($Busqueda);
 		echo "<br>";
-		echo "<br>"; */
+		echo "<br>";*/
 		
 		array_push($BusquedaArray,$Busqueda);	
 		

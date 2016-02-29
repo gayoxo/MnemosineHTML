@@ -2,13 +2,13 @@
 define('Clavyuser','gayoxo@gmail.com');
 define('Clavyuserkey','ClaW1538457');
 define('Clavykey','13298173611946');
-define('ClavyServer','localhost');
+define('ClavyServer','a-note.fdi.ucm.es');
 define('ClavyPort','8080');
 define('ClavyDomine','Clavy');
 
-define('TZN_ODA_HOST','localhost');
+define('TZN_ODA_HOST','repositorios.fdi.ucm.es');
 
-define('TZN_DB_EXTERNAL_HOST','localhost');
+define('TZN_DB_EXTERNAL_HOST','repositorios.fdi.ucm.es');
 
 define('TZN_DB_EXTERNAL_USER','ilsaserver');       // Nombre del usuario de la base de datos
 define('TZN_DB_EXTERNAL_PASS','platano');           // Contraseña del usuario de la base de datos

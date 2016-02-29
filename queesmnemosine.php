@@ -24,7 +24,7 @@ que permita ​valorar
 			<img class="icono_entre_parrafos" src="imagenes/red90.png" width="200" height="200" alt="">
 		</div>
 		<p class="justifiedtext">
-		La investigación desarrollada en <i>Mnemosine</i> está siendo financiada por el <a class="justifiedtext_link" href="http://www.mineco.gob.es/portal/site/mineco/idi">Ministerio de Economía y Competitividad</a>. Proyecto de Investigación: <a class="justifiedtext_link" href="https://www.ucm.es/leethi/eselit-2">“Escritorios Electrónicos para las Literaturas-2”. Referencia FFI2012-34666 (2012-2015)</a>
+		La investigación desarrollada en <i>Mnemosine</i> está siendo financiada por el <a class="justifiedtext_link" href="http://www.mineco.gob.es/portal/site/mineco/idi">Ministerio de Economía y Competitividad</a>. Proyecto de Investigación: <a class="justifiedtext_link" href="https://www.ucm.es/leethi/eselit-2">“Escritorios Electrónicos para las Literaturas-2”. Referencia FFI2012-34666 (2012-2015)</a> y por la <a class="justifiedtext_link" href="http://www.fbbva.es/">Fundación BBVA</a>. Proyecto de Investigación "Modelo Unificado de Gestión de Colecciones Digitales con Estructuras Reconfigurables: Aplicación a la Creación de Bibliotecas Digitales Especializadas para Investigación y Docencia". Referencia HUM14_251 (2015-2016).
 		</p>
 	</div>
 </div>	

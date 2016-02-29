@@ -40,8 +40,9 @@ class CampoArray
 		foreach ($elem as $elemV)
 			if ($elemV->Numer==$numerID)
 				return $elemV->Id;
-			
-	return array(); 
+	
+	$SalidaVacia=array($numerID);
+	return $SalidaVacia; 
 	}
 	
 	public function isinside($numerID)
@@ -73,7 +74,8 @@ class CampoArray
 	new CampoElem(8,array(19749,28646,28647,19750),"Datos de Publicación",false),
 	new CampoElem(9,array(20805,20700,20666,20762,29718),"Materia",false),
 	new CampoElem(10,array(21985),"Colección o serie",false),
-	new CampoElem(11,array(29183,19054,27949,28138,19063),"Otros Campos",false));
+	new CampoElem(11,array(29183,19054,27949,28138,19063),"Otros Campos",false)
+	);
 	
 	$CamposArrayA=array(0 => $Grupo0,"Autor" =>$Grupo1,"Obra" => $Grupo2);
 	

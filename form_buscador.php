@@ -1,7 +1,7 @@
 	<div class="buscador_simple_zona buscador_simple">
 	<div>
 	<form action='buscar_basico.php' method="post">
-	<input class="barra_buscador_simple buscador_simple" type="text" name="BarraBasica" maxlength="120" placeholder="Buscar autor, obra, fecha...">
+	<input class="barra_buscador_simple buscador_simple" type="text" name="BarraBasica" maxlength="120" value="" placeholder="Buscar autor, obra, fecha...">
 	<select class="campo_valores_buscador_simple buscador_simple" name="Campo">
 	
 	<?php 
