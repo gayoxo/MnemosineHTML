@@ -62,19 +62,19 @@ class CampoArray
 	$Grupo0=array(new CampoElem(0,array(0),"Todos",false));
 
 	$Grupo1=array(
-	new CampoElem(1,array(-3,21814,21817,19028),"Nombre",false),
-	new CampoElem(2,array(30995),"Función",false),
-	new CampoElem(3,array(31020),"Exilio",false),
-	new CampoElem(4,array(31018),"Fecha de nacimiento",true),
-	new CampoElem(5,array(31019),"Fecha de muerte",true),
-	new CampoElem(6,array(21832),"Género",false));
+	new CampoElem(1,array(-1,56330,56334),"Nombre",false),
+	new CampoElem(2,array(56468),"Función",false),
+	new CampoElem(3,array(56348),"Exilio",false),
+	new CampoElem(4,array(56339),"Fecha de nacimiento",true),
+	new CampoElem(5,array(56340),"Fecha de muerte",true),
+	new CampoElem(6,array(56347),"Género",false));
 	
 	$Grupo2=array(
-	new CampoElem(7,array(-3,25119,21974,21985),"Titulo",false),
-	new CampoElem(8,array(19749,28646,28647,19750),"Datos de Publicación",false),
-	new CampoElem(9,array(20805,20700,20666,20762,29718),"Materia",false),
-	new CampoElem(10,array(21985),"Colección o serie",false),
-	new CampoElem(11,array(29183,19054,27949,28138,19063),"Otros Campos",false)
+	new CampoElem(7,array(-2,56473,56486,56521),"Titulo",false),
+	new CampoElem(8,array(56488,56492,56491,56490),"Datos de Publicación",false),
+	new CampoElem(9,array(56497,56502,56504,56508,56510),"Materia",false),
+	new CampoElem(10,array(-3,56521),"Colección o serie",false),
+	new CampoElem(11,array(56549,56550,56551,56553,56554),"Otros Campos",false)
 	);
 	
 	$CamposArrayA=array(0 => $Grupo0,"Autor" =>$Grupo1,"Obra" => $Grupo2);

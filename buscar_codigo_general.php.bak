@@ -69,12 +69,11 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 
 
 
-	$Campo=$_POST["Campo"];
+//	$Campo=$_POST["Campo"];
 	$Start=$_POST["Start"];
 	$Limite=$_POST["Limite"];
 	$FiltroA=$_POST["Filtro"];
 	$FiltroNuevo=$_POST["FiltroNuevo"];
-	$BusquedaARRAY=$_POST["BusquedaARRAY"];
 	$BusquedaStringLabelIN=$_POST["BusquedaStringLabelIN"];
 
 	
@@ -84,10 +83,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	if (isset($BusquedaStringLabelIN)&&!empty($BusquedaStringLabelIN))
 		$BusquedaStringLabel=$BusquedaStringLabelIN;
 	
-	if (isset($BusquedaARRAY)&&!empty($BusquedaARRAY))
-	{
-		$BusquedaArray=json_decode($BusquedaARRAY);
-	}
 	//var_dump($FiltroA);
 	
 	if (empty($Start))
@@ -164,7 +159,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		
 	$data_string = json_encode($BusquedaData);    
 	
-	$BusquedaArray = json_encode($BusquedaArray);    
 	
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
@@ -232,7 +226,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="Start" value=0 />
 			<input type="hidden" name="Filtro" value='<?php echo $FiltroA?>' />
 			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
-			<input type="hidden" name="BusquedaARRAY" value='<?php echo $BusquedaArray?>' />
+
 
 			<select name="Limite" onchange="javascript:document.forms['formlimite'].submit();">
 		<option value="10"<?php if ($Limite==10) echo "selected=\"selected\"";?>>10</option>
@@ -281,7 +275,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
-					echo "<input type=\"hidden\" name=\"BusquedaARRAY\" value='".$BusquedaArray."' />";
 					echo "<a class=\"paginadorNoActivo\" href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($staPlus+1)."'].submit();\" >Menos</a>  ";
 					echo "</form>";
 					}
@@ -296,7 +289,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
-					echo "<input type=\"hidden\" name=\"BusquedaARRAY\" value='".$BusquedaArray."' />";
 				
 					if ($Visibles<5)
 					{
@@ -334,7 +326,6 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="Limite" value=<?php echo $Limite?>  />
 			<input type="hidden" name="FiltroNuevo" value=true />
 			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
-			<input type="hidden" name="BusquedaARRAY" value='<?php echo $BusquedaArray?>' />
 			<?php
 			
 			

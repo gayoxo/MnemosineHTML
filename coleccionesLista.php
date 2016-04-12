@@ -117,7 +117,7 @@ class CollectionArray
 		6,
 		"Diálogos literarios",
 		"Esta colección reúne los textos dialogados que se publicaron durante la Edad de Plata. Se fomenta así la colaboración con el Grupo de Investigación UCM Dyalogica y su Biblioteca Digital del Diálogo Hispánico. Coordinadora: Mª Jesús Fraga.",
-		"Id1=10&Desc1=Dialogos",
+		"Id1=0&Desc1=Dialogos",
 		"imagenes/COLECCION7.png"
 		),
 
