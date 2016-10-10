@@ -1,5 +1,5 @@
-# MnemosineHTMLTest
-MnemosineHTMLTest
+# MnemosineHTML
+MnemosineHTML
 
 
-Test de HTM para la aplicacion MNEMOSINE que nos permita la interaccion con Clavy
+HTML para la aplicacion MNEMOSINE que nos permita la interaccion con Clavy
