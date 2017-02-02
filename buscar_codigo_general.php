@@ -38,10 +38,47 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		$FiltroAplicar=array();
 	}
 		
-	foreach ($arrayFiltro as $arrayV)
+	
+
+$ArrayUnic=array();	
+foreach ($arrayFiltro as $arrayV)
+{
+	$cunt=0;
+	$val="Tipo";
+	foreach ($arrayV as $EtiquetaV=>$Valor)
+	{
+		if ($EtiquetaV=="Count")
+			$cunt=$Valor;
+		else if ($EtiquetaV=="FilterString")
+			$val=$Valor; 
+	}
+	
+	$cuntOld=0;
+	if (isset($ArrayUnic[$val])&&!empty($ArrayUnic[$val]))
+		$cuntOld=$ArrayUnic[$val];
+	
+	$ArrayUnic[$val]=$cuntOld+$cunt;
+
+}
+//	var_dump($ArrayUnic);
+		
+		
+	foreach ($ArrayUnic as $Name=>$counT)
+				{		
+				echo "<li class=\"lifiltro\">";
+				
+				
+				if (in_array ($Name,$FiltroAplicar))
+					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$Name."\"  checked >".$Name." (".$counT.")";				
+				else
+					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$Name."\">".$Name." (".$counT.")";
+				echo "</li>";
+				}	
+		
+/*	foreach ($arrayFiltro as $arrayV)
 				{
-					$cunt;
-					$val;
+					$cunt=0;
+					$val="Tipo";
 					foreach ($arrayV as $EtiquetaV=>$Valor)
 					{
 						if ($EtiquetaV=="Count")
@@ -58,7 +95,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 				else
 					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$val."\">".$val." (".$cunt.")";
 				echo "</li>";
-				}
+				}*/
 	}
 }
 ?>	
@@ -77,6 +114,8 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	$BusquedaARRAY=$_POST["BusquedaARRAY"];
 	$BusquedaStringLabelIN=$_POST["BusquedaStringLabelIN"];
 
+
+	
 	
 	if (empty($FiltroNuevo))
 		$FiltroNuevo=false;
@@ -193,7 +232,12 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			//var_dump($JObj);
 			
 			echo "<span class=\"resultado_test\">";
-			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabel."</span>";
+			
+			if (isset($NamedQuerry)&&!(empty($NamedQuerry)))
+				echo $NamedQuerry;
+			else
+				echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabel."</span>";
+			
 			echo "</span>";
 			echo "</br>";
 			echo "</br>";
@@ -340,6 +384,8 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			
 			foreach ($arraYFiltro as $arrayEU)
 			{
+				
+				
 				$TypeA=0;
 				$valueAArr="";
 				foreach ($arrayEU as $Etiqueta=>$ValorE)
