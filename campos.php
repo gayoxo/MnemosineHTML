@@ -72,7 +72,7 @@ class CampoArray
 	$Grupo2=array(
 	new CampoElem(7,array(-2,56473,56486,56521),"Titulo",false),
 	new CampoElem(8,array(56488,56492,56491,56490),"Datos de Publicación",false),
-	new CampoElem(9,array(56497,56502,56504,56508,56510),"Materia",false),
+	new CampoElem(9,array(56497,56502,56504,56508,56510,74088,69586),"Materia",false),
 	new CampoElem(10,array(-3,56521),"Colección o serie",false),
 	new CampoElem(11,array(56549,56550,56551,56553,56554),"Otros Campos",false)
 	);

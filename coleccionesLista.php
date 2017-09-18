@@ -123,7 +123,7 @@ class CollectionArray
 		7,
 		"Protociencia-ficción",
 		"Esta colección reúne los textos de la “Biblioteca de Protociencia-ficción Agustín Jaureguizar” que han sido digitalizados por la Biblioteca UCM. Se aportan datos y metadatos externos a Mnemosine. Coordinadora: Marta Correa Román.",
-		"name=Protociencia-ficción&Id1=10&Desc1=Protociencia-ficción",
+		"name=Protociencia-ficción&Id1=9&Desc1=ficción&Id2=9&Desc2=Protociencia",
 		"imagenes/COLECCION6.png"
 		),
 
