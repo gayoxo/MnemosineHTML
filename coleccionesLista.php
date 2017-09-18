@@ -91,7 +91,7 @@ class CollectionArray
 		3,
 		"Madrid en la Literatura de la Edad de Plata",
 		"Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinador: José Miguel González Soriano",
-		"name=Madrid en la Literatura de la Edad de Plata&Id1=0&Desc1=Madrid",
+		"name=Madrid en la Literatura de la Edad de Plata&Id1=12&Desc1=Madrid",
 		"imagenes/COLECCION8.png"
 		),
 	
