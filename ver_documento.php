@@ -187,7 +187,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 				if ($EtiquetaV=='Description')
 					$Description=$arrayE;
 				
-				if ($EtiquetaV=='Icon')
+				if ($EtiquetaV=='Icon'&&!empty($arrayE))
 					$Icon=$arrayE;
 				
 				if ($EtiquetaV=='Info')
