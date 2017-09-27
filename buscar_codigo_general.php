@@ -452,7 +452,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 						$valorID=$ValorE;
 					else if ($Etiqueta=='Description')
 						$valorDesc=$ValorE;
-						else if ($Etiqueta=='Icon'||!empty($Value))
+						else if ($Etiqueta=='Icon'&&!empty($ValorE))
 						$valorIZ=$ValorE;
 							else if ($Etiqueta=='Atributos')
 								$valorElem=$ValorE;
