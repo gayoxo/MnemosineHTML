@@ -50,19 +50,23 @@ class DescArray
 
 
 $DescP= array(
-new Desc(56330,"Nombre"),
-new Desc(62209,"Nombre"),
-new Desc(70617,"Nombre"),
-new Desc(73985,"Nombre"),
-new Desc(74268,"Nombre"),
-new Desc(27914,"Fechas asociadas al nombre"),
-new Desc(31013,"Obras"),
-//new Desc(30995,"Participacion"),
-new Desc(25119,"Título"),
-new Desc(21809,"Relacion"),
-//new Desc(30994,"Participantes"),
-new Desc(19749,"Editorial"),
-new Desc(19750,"Año de publicación"));
+new Desc(56332,"Fechas asociadas al nombre"),
+new Desc(62212,"Fechas asociadas al nombre"),
+new Desc(70620,"Fechas asociadas al nombre"),
+new Desc(73968,"Fechas asociadas al nombre"),
+new Desc(74259,"Fechas asociadas al nombre"),
+new Desc(56488,"Editorial"),
+new Desc(62942,"Editorial"),
+new Desc(74786,"Editorial"),
+new Desc(74804,"Editorial"),
+new Desc(74134,"Editorial"),
+new Desc(74347,"Editorial"),
+new Desc(56490,"Año de publicación"),
+new Desc(62943,"Año de publicación"),
+new Desc(74790,"Año de publicación"),
+new Desc(74806,"Año de publicación"),
+new Desc(74078,"Año de publicación"),
+new Desc(74342,"Año de publicación"));
 
 $DescObject=new DescArray($DescP);
 
