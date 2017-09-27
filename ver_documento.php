@@ -42,6 +42,12 @@ function ProcesaLista($ArrayE,$lis)
 				
 		if ($EtiquetaV=='Info')
 			$Info=$Valor;
+		
+			if ($EtiquetaV=='RecRef')
+			$RecRef=$Valor;
+		
+		if ($EtiquetaV=='DescIcon')
+			$DescIcon=$Valor;
 	}
 
 	if (!empty($Type))
@@ -67,6 +73,15 @@ function ProcesaLista($ArrayE,$lis)
 			
 		if ($DocRef==true)
 				$Result= "<a class=\"avalueE\" href=\"ver_documento.php?documento=".$Value."\" target=\"_blank\" >".$Show."</a>";
+			else 
+		if (($RecRef==true))
+		{
+			if (!empty($DescIcon))
+				$Result= "<a class=\"avalueE\" href=\"".$Value."\" target=\"_blank\" ><img class=\"iconvalueE\" src=\"".$DescIcon."\" alt=\"".$DescIcon."\" >OPEN</a>";
+			else
+				$Result= "<a class=\"avalueE\" href=\"".$Value."\" target=\"_blank\" >".$Value."</a>";
+				
+		}
 			else 
 			{
 				
