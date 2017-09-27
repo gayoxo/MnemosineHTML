@@ -175,7 +175,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 			
 			$IDDOcument=$DocumentID;
 			$Description="";
-			$Icon="";
+			$Icon="imagenes/logomenu2.png";
 			$Info= array();
 			
 			foreach ($JObj as $EtiquetaV=>$arrayE) {

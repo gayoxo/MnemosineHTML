@@ -443,7 +443,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 				//	echo $counterdoc;
 				$valorID="";
 				$valorDesc="";
-				$valorIZ="";
+				$valorIZ="imagenes/logomenu2.png";
 				$valorElem=array();
 				foreach ($arrayEU as $Etiqueta=>$ValorE)
 				{
