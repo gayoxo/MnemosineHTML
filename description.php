@@ -50,7 +50,11 @@ class DescArray
 
 
 $DescP= array(
-new Desc(21814,"Nombre"),
+new Desc(56330,"Nombre"),
+new Desc(62209,"Nombre"),
+new Desc(70617,"Nombre"),
+new Desc(73985,"Nombre"),
+new Desc(74268,"Nombre"),
 new Desc(27914,"Fechas asociadas al nombre"),
 new Desc(31013,"Obras"),
 //new Desc(30995,"Participacion"),
