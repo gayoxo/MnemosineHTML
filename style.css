@@ -454,6 +454,19 @@ background-color: white;
   float: left;
 }
 
+
+a.nav-toggle {
+    color: Black;
+    font-size: 1.4em;
+    font-family: diddot;
+}
+
+a.nav-toggle:hover {
+    color: #31b49d;
+    font-size: 1.4em;
+    font-family: diddot;
+}
+
 input[type="button"]
 {
 font-family: mnemosine;
@@ -542,6 +555,8 @@ a.linkdocument{
 
 .footer{
 margin: 1em 10% 2em;
+float: left;
+width: 87%;
 }
 
 
