@@ -58,9 +58,10 @@ function ProcesaLista($ArrayE,$lis)
 	
 	if (!empty($Info))
 	{
-		if ($Type=='F. Recursos'||$Type=='F.Enriquecida'||$Type=='Recursos')
-			echo "<details>";
-		else
+//NO LO NECESITAN
+//		if ($Type=='F. Recursos'||$Type=='F.Enriquecida'||$Type=='Recursos')
+//			echo "<details>";
+//		else
 			echo "<details open>";
 				
 		echo "<summary>";
