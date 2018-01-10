@@ -18,7 +18,8 @@ function ProcesaLista($ArrayE,$lis)
 		$DocRef="";
 		$Info= array();
 		$DescRef="";
-		
+		$RecRef="";
+	$DescIcon="";
 	
 	foreach ($arrayV as $EtiquetaV=>$Valor)
 	{
@@ -43,7 +44,7 @@ function ProcesaLista($ArrayE,$lis)
 		if ($EtiquetaV=='Info')
 			$Info=$Valor;
 		
-			if ($EtiquetaV=='RecRef')
+		if ($EtiquetaV=='RecRef')
 			$RecRef=$Valor;
 		
 		if ($EtiquetaV=='DescIcon')
@@ -57,7 +58,11 @@ function ProcesaLista($ArrayE,$lis)
 	
 	if (!empty($Info))
 	{
-		echo "<details open>";
+//NO LO NECESITAN
+//		if ($Type=='F. Recursos'||$Type=='F.Enriquecida'||$Type=='Recursos')
+//			echo "<details>";
+//		else
+			echo "<details open>";
 				
 		echo "<summary>";
 	}
@@ -82,7 +87,7 @@ function ProcesaLista($ArrayE,$lis)
 				$Result= "<a class=\"avalueE\" href=\"".$Value."\" target=\"_blank\" >".$Value."</a>";
 				
 		}
-			else 
+			else
 			{
 				
 				$Value = eregi_replace('(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1 </a>', $Value);
@@ -152,8 +157,9 @@ $ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder
 	$curl = curl_init($service_url);
 
 	//echo ($service_url);
-curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 60); // Setting the amount of time (in seconds) before the request times out
-curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time for cURL to execute queries 
+	
+	curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 60); // Setting the amount of time (in seconds) before the request times out
+	curl_setopt($curl, CURLOPT_TIMEOUT, 180);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	$curl_response = curl_exec($curl);
 	if ($curl_response === false) {
@@ -192,6 +198,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 				
 				if ($EtiquetaV=='Info')
 					$Info=$arrayE;
+				
 				
 
 				/*foreach ($valor as $EtiquetaV=>$arrayE)

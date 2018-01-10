@@ -38,47 +38,10 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		$FiltroAplicar=array();
 	}
 		
-	
-
-$ArrayUnic=array();	
-foreach ($arrayFiltro as $arrayV)
-{
-	$cunt=0;
-	$val="Tipo";
-	foreach ($arrayV as $EtiquetaV=>$Valor)
-	{
-		if ($EtiquetaV=="Count")
-			$cunt=$Valor;
-		else if ($EtiquetaV=="FilterString")
-			$val=$Valor; 
-	}
-	
-	$cuntOld=0;
-	if (isset($ArrayUnic[$val])&&!empty($ArrayUnic[$val]))
-		$cuntOld=$ArrayUnic[$val];
-	
-	$ArrayUnic[$val]=$cuntOld+$cunt;
-
-}
-//	var_dump($ArrayUnic);
-		
-		
-	foreach ($ArrayUnic as $Name=>$counT)
-				{		
-				echo "<li class=\"lifiltro\">";
-				
-				
-				if (in_array ($Name,$FiltroAplicar))
-					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$Name."\"  checked >".$Name." (".$counT.")";				
-				else
-					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$Name."\">".$Name." (".$counT.")";
-				echo "</li>";
-				}	
-		
-/*	foreach ($arrayFiltro as $arrayV)
+	foreach ($arrayFiltro as $arrayV)
 				{
-					$cunt=0;
-					$val="Tipo";
+					$cunt;
+					$val;
 					foreach ($arrayV as $EtiquetaV=>$Valor)
 					{
 						if ($EtiquetaV=="Count")
@@ -95,7 +58,7 @@ foreach ($arrayFiltro as $arrayV)
 				else
 					echo "<input type=\"checkbox\" name=\"f".$TypeID."[]\" value=\"".$val."\">".$val." (".$cunt.")";
 				echo "</li>";
-				}*/
+				}
 	}
 }
 ?>	
@@ -113,7 +76,6 @@ foreach ($arrayFiltro as $arrayV)
 	$FiltroNuevo=$_POST["FiltroNuevo"];
 	$BusquedaARRAY=$_POST["BusquedaARRAY"];
 	$BusquedaStringLabelIN=$_POST["BusquedaStringLabelIN"];
-
 
 	
 	
@@ -140,7 +102,7 @@ foreach ($arrayFiltro as $arrayV)
 	$curl = curl_init($service_url);
 
 	curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 60); // Setting the amount of time (in seconds) before the request times out
-curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time for cURL to execute queries 
+	curl_setopt($curl, CURLOPT_TIMEOUT, 180);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	$curl_response = curl_exec($curl);
 	if ($curl_response === false) {
@@ -155,7 +117,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 		
 	$curl = curl_init($service_url);
 	curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 60); // Setting the amount of time (in seconds) before the request times out
-curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time for cURL to execute queries 
+	curl_setopt($curl, CURLOPT_TIMEOUT, 180);
 	
 		
 		
@@ -209,7 +171,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 	$BusquedaArray = json_encode($BusquedaArray);    
 	
 	curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 60); // Setting the amount of time (in seconds) before the request times out
-curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time for cURL to execute queries 
+	curl_setopt($curl, CURLOPT_TIMEOUT, 180);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
 	curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string); 
@@ -237,12 +199,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 			//var_dump($JObj);
 			
 			echo "<span class=\"resultado_test\">";
-			
-			if (isset($NamedQuerry)&&!(empty($NamedQuerry)))
-				echo $NamedQuerry;
-			else
-				echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabel."</span>";
-			
+			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabel."</span>";
 			echo "</span>";
 			echo "</br>";
 			echo "</br>";
@@ -389,8 +346,6 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 			
 			foreach ($arraYFiltro as $arrayEU)
 			{
-				
-				
 				$TypeA=0;
 				$valueAArr="";
 				foreach ($arrayEU as $Etiqueta=>$ValorE)
@@ -456,6 +411,7 @@ curl_setopt($curl, CURLOPT_TIMEOUT, 180); // Setting the maximum amount of time 
 						$valorIZ=$ValorE;
 							else if ($Etiqueta=='Atributos')
 								$valorElem=$ValorE;
+
 					
 				}
 				show_document($valorID,$valorDesc,$valorIZ,$counterdocT,$valorElem,$DescObject);

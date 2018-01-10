@@ -117,15 +117,15 @@ class CollectionArray
 		6,
 		"Diálogos literarios",
 		"Esta colección reúne los textos dialogados que se publicaron durante la Edad de Plata. Se fomenta así la colaboración con el Grupo de Investigación UCM Dyalogica y su Biblioteca Digital del Diálogo Hispánico. Coordinadora: Mª Jesús Fraga.",
-		"Id1=10&Desc1=Dialogos",
+		"Id1=0&Desc1=Dialogos",
 		"imagenes/COLECCION7.png"
 		),
 
 	new CollectionElem(
 		7,
-		"Felipe Trigo",
-		"Es una colección de los libros publicados por un autor individual. Coordinador: Pendiente de asignar.",
-		"Id1=1&Desc1=Felipe&Id2=1&Desc2=Trigo",
+		"Literatura de compromiso político-social",
+		"En esta colección se pueden catalogar textos y colecciones de quiosco pertenecientes a este subgénero. Por ahora solo se muestran completas las colecciones La Novela Roja (1922-23), La Novela Proletaria (1932-33), Tesoro de la Literatura Revolucionaria (1933) y parcialmente El Cuento Semanal (1907-8). Pendiente de asignar coordinador.",
+		"Id1=39258&Desc1=196207&Or1=true&Id2=39258&Desc2=196311&Or2=true&Id3=39258&Desc3=198876&Or3=true",
 		"imagenes/COLECCION8.png"
 		),
 		
