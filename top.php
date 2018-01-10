@@ -31,3 +31,7 @@
   
   <div class="wrapper">
 	<div class="zona_icono">
+	
+	<?php 
+	header('Content-type: text/html; charset=utf-8');
+	?>
