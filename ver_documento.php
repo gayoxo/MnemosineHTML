@@ -84,9 +84,6 @@ function ProcesaLista($ArrayE,$lis,$Ini)
 		
 		if (!empty($Value))
 		{
-			$Show="OV: ".$Value." (Sin descripción)" ;
-			if (!empty($DescRef))
-			$Show=$DescRef;
 			
 			if ($isMap==true)
 			{
@@ -94,12 +91,29 @@ function ProcesaLista($ArrayE,$lis,$Ini)
 				echo "<script>
     var map = new GMaps({
       el: '#map".$Ini."',
-      lat: -12.043333,
-      lng: -77.028333
-    });</script>";
+      lat: ".$Value[0].",
+      lng: ".$Value[1]."
+    });
+	
+	map.addMarker({
+  lat: ".$Value[0].",
+  lng: ".$Value[1].",
+  icon: \"geo/IconoRojo.png\",
+  infoWindow: {
+  content: '<p>HTML Content</p>'
+}
+	});
+	
+	</script>";
 	$Ini=$Ini+1;
 			}
 			else
+			{
+		
+			$Show="OV: ".$Value." (Sin descripción)" ;
+			if (!empty($DescRef))
+			$Show=$DescRef;
+		
 		if ($DocRef==true)
 				$Result= "<a class=\"avalueE\" href=\"ver_documento.php?documento=".$Value."\" target=\"_blank\" >".$Show."</a>";
 			else 
@@ -120,6 +134,8 @@ function ProcesaLista($ArrayE,$lis,$Ini)
 				$Value = eregi_replace('([_.0-9a-z-]+@([0-9a-z][0-9a-z-]+.)+[a-z]{2,3})','<a href="mailto:\1" target="_blank">\1</a>', $Value);
 				$Result= "<span class=\"svalueE\">".$Value."</span>";
 			}
+			
+		}
 		}
 		
 		echo $Type.": ".$Result;
