@@ -1,5 +1,9 @@
 <?php include 'top.php';
 include 'config.php'; 
+
+
+
+
 ?> 
 <br>
 <br>
@@ -9,7 +13,12 @@ include "form_buscador.php";
 
 
 <?php
-function ProcesaLista($ArrayE,$lis)
+
+
+
+
+
+function ProcesaLista($ArrayE,$lis,$Ini)
 {
 	foreach ($ArrayE as $arrayV)
 	{
@@ -20,6 +29,7 @@ function ProcesaLista($ArrayE,$lis)
 		$DescRef="";
 		$RecRef="";
 	$DescIcon="";
+	$isMap="";
 	
 	foreach ($arrayV as $EtiquetaV=>$Valor)
 	{
@@ -49,6 +59,9 @@ function ProcesaLista($ArrayE,$lis)
 		
 		if ($EtiquetaV=='DescIcon')
 			$DescIcon=$Valor;
+		
+		if ($EtiquetaV=='isMap')
+			$isMap=$Valor;
 	}
 
 	if (!empty($Type))
@@ -75,7 +88,18 @@ function ProcesaLista($ArrayE,$lis)
 			if (!empty($DescRef))
 			$Show=$DescRef;
 			
-			
+			if ($isMap==true)
+			{
+				echo "<div id=\"map".$Ini."\" class=\"map\"></div>";
+				echo "<script>
+    var map = new GMaps({
+      el: '#map".$Ini."',
+      lat: -12.043333,
+      lng: -77.028333
+    });</script>";
+	$Ini=$Ini+1;
+			}
+			else
 		if ($DocRef==true)
 				$Result= "<a class=\"avalueE\" href=\"ver_documento.php?documento=".$Value."\" target=\"_blank\" >".$Show."</a>";
 			else 
@@ -109,7 +133,7 @@ function ProcesaLista($ArrayE,$lis)
 		
 		
 		if (!empty($Info))
-			ProcesaLista($Info,true);
+			ProcesaLista($Info,true,$Ini);
 			
 			
 
@@ -230,7 +254,8 @@ $ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder
 				if (!empty($Info))
 				{
 				//var_dump($Info);
-				ProcesaLista($Info,false);
+				$Ini=0;
+				ProcesaLista($Info,false,$Ini);
 				}
 				?>
 			</div>
