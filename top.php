@@ -14,7 +14,7 @@
   <script src="gmaps.js"></script>
   <style type="text/css">
     .map {
-      width: 400px;
+      width: 100%;
       height: 400px;
     }
   </style>

@@ -30,6 +30,7 @@ function ProcesaLista($ArrayE,$lis,$Ini)
 		$RecRef="";
 	$DescIcon="";
 	$isMap="";
+	$isRoute="";
 	
 	foreach ($arrayV as $EtiquetaV=>$Valor)
 	{
@@ -62,6 +63,9 @@ function ProcesaLista($ArrayE,$lis,$Ini)
 		
 		if ($EtiquetaV=='isMap')
 			$isMap=$Valor;
+		
+		if ($EtiquetaV=='isRoute')
+			$isRoute=$Valor;
 	}
 
 	if (!empty($Type))
@@ -87,6 +91,59 @@ function ProcesaLista($ArrayE,$lis,$Ini)
 			
 			if ($isMap==true)
 			{
+				
+			if ($isRoute==true)
+			{
+				
+				$Posiciones=$Value[0];
+				$InicialPos=$Posiciones[0];
+				echo "<div id=\"map".$Ini."\" class=\"map\"></div>";
+				echo "<script>
+    var map = new GMaps({
+      el: '#map".$Ini."',
+      lat: ".$InicialPos[0].",
+      lng: ".$InicialPos[1].",
+	  zoom: 5
+    });";
+	
+	for($i = 0; $i < count($Posiciones); ++$i)
+	{
+
+	$icon="\"geo/IconoRojo.png\"";
+	if ($i>0)
+		$icon="\"geo/IconoAmarillo.png\"";
+	
+	if ($i==count($Posiciones)-1)
+		$icon="\"geo/IconoAzul.png\"";
+	
+	$valorMarca =$Posiciones[$i];
+	echo "
+	map.addMarker({
+  lat: ".$valorMarca[0].",
+  lng: ".$valorMarca[1].",
+  icon: ".$icon.",
+  infoWindow: {
+  content: '<p>HTML Content</p>'
+}
+	});";
+	}
+
+//
+//path = [[-12.044012922866312, -77.02470665341184], [-12.05449279282314, -77.03024273281858], [-12.055122327623378, -77.03039293652341], [-12.075917129727586, -77.02764635449216], [-12.07635776902266, -77.02792530422971], [-12.076819390363665, -77.02893381481931], [-12.088527520066453, -77.0241058385925], [-12.090814532191756, -77.02271108990476]];	
+//	echo "map.drawPolyline({
+//  path: ".$Posiciones.",
+//  strokeColor: '#131540',
+//  strokeOpacity: 0.6,
+//  strokeWeight: 6
+//});";
+	
+	echo "</script>";
+	$Ini=$Ini+1;
+				
+			}
+			else
+			{				
+				
 				echo "<div id=\"map".$Ini."\" class=\"map\"></div>";
 				echo "<script>
     var map = new GMaps({
@@ -106,6 +163,7 @@ function ProcesaLista($ArrayE,$lis,$Ini)
 	
 	</script>";
 	$Ini=$Ini+1;
+			}
 			}
 			else
 			{
