@@ -168,7 +168,12 @@ echo "pathe =".$psjason.";";
   lng: ".$Value[1].",
   icon: \"geo/IconoRojo.png\",
   infoWindow: {
-  content: '<p>HTML Content</p>'
+  content: '<p>";
+  
+  if (!empty($Info))
+			ProcesaLista($Info,true,$Ini);
+  
+  echo "</p>'
 }
 	});
 	
@@ -217,7 +222,7 @@ echo "pathe =".$psjason.";";
 		
 		
 		
-		if (!empty($Info))
+		if (!empty($Info)&&!($isMap==true))
 			ProcesaLista($Info,true,$Ini);
 			
 			
