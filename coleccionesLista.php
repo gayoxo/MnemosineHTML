@@ -159,13 +159,7 @@ class CollectionArray
 		"imagenes/COLECCION9.png"
 		)
 		
-			new CollectionElem(
-		12,
-		"Libros digitalizados Edad de Plata",
-		"Libros con referencia a edición digital del mismo. Coordinador: Pendiente de asignar.",
-		"name=Libros digitalizados&Id1=56560&Desc1=aa",
-		"imagenes/COLECCION5.png"
-		)
+
 		
 	);
 	
