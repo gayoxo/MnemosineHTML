@@ -19,7 +19,6 @@
 		
 	?>
 	
-	
 		<li>
 		<div>
 		<a class="coleccion_vinculo" href="buscadorColeccion.php?<?php echo $elembase->Datos; ?>" onmouseover="nhpup.popup('<?php echo $elembase->Descripcion; ?>');">
