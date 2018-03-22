@@ -158,9 +158,6 @@ class CollectionArray
 		"name=Carmen de Burgos&Id1=1&Desc1=Carmen&Id2=1&Desc2=Burgos",
 		"imagenes/COLECCION9.png"
 		)
-		
-
-		
 	);
 	
 	
