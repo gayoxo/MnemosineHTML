@@ -100,7 +100,7 @@ class CollectionArray
 		4,
 		"Edad de Plata Interactiva",
 		"Esta colección es resultado de la investigación del proyecto eLITE-CM: Edición Literaria Electrónica (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadora: Alicia Reina Navarro",
-		"name=Edad de Plata Interactiva&Id1=56521&Desc1=Edad de Plata Interactiva&Id2=56521&Desc2=Edad de Plata Interactiva&Id3=56523&Desc3=Col. sobre La Mujer Moderna&Id4=56523&Desc4=Edad de Plata Interactiva",
+		"name=Edad de Plata Interactiva&Id1=56521&Desc1=Edad de Plata Interactiva&Id2=56521&Desc2=Edad de Plata Interactiva&Id3=56523&Or2=true&Desc3=Col. sobre La Mujer Moderna&Or3=true&Id4=56523&Desc4=Edad de Plata Interactiva&Or4=true",
 		"imagenes/COLECCION6.png"
 		),
 		
