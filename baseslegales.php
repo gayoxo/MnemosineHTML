@@ -21,7 +21,7 @@ Condiciones generales de utilización
 <br>
 
 <p class="bases_legales_body">		
-Licencia <a class="bases_legales_body_link" href="http://es.creativecommons.org/blog/licencias/" target="_blank">Creative Commons</a>: Reconocimiento – NoComercial – CompartirIgual (by-nc-sa): No se permite un uso comercial de la obra original ni de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.in reservas por aquellos.
+Licencia <a class="bases_legales_body_link" href="https://creativecommons.org/share-your-work/licensing-types-examples/" target="_blank">Creative Commons</a>: Reconocimiento – NoComercial – CompartirIgual (by-nc-sa): No se permite un uso comercial de la obra original ni de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.in reservas por aquellos.
 </p>
  
 <br>
@@ -30,19 +30,19 @@ Licencia <a class="bases_legales_body_link" href="http://es.creativecommons.org/
 
 <tbody>
 <tr>
-<td valign="top"><img class="alignright size-full wp-image-970" alt="by.large_petit" src="http://es.creativecommons.org/blog/wp-content/uploads/2013/04/by.large_petit.png" width="43" height="43"></td>
+<td valign="top"><img class="alignright size-full wp-image-970" alt="by.large_petit" src="license/CC_by_large_petit.png" width="43" height="43"></td>
 <td valign="top">
 <p align="justify"><strong>Reconocimiento (Attribution)</strong>: En cualquier explotación de la obra autorizada por la licencia hará falta reconocer la autoría.</p>
 </td>
 </tr>
 <tr>
-<td valign="top"><img class="alignright size-full wp-image-977" alt="nc-eu.large_petit" src="http://es.creativecommons.org/blog/wp-content/uploads/2013/04/nc-eu.large_petit.png" width="43" height="43"></td>
+<td valign="top"><img class="alignright size-full wp-image-977" alt="nc-eu.large_petit" src="license/CC_nc-eu_large_petit.png" width="43" height="43"></td>
 <td valign="top">
 <p align="justify"><strong>No Comercial (Non commercial)</strong>: La explotación de la obra queda limitada a usos no comerciales.</p>
 </td>
 </tr>
 <tr>
-<td valign="top"><img class="alignright size-full wp-image-978" alt="nd.large_petit" src="http://es.creativecommons.org/blog/wp-content/uploads/2013/04/nd.large_petit.png" width="43" height="43"></td>
+<td valign="top"><img class="alignright size-full wp-image-978" alt="nd.large_petit" src="license/CC_nd_large_petit.png" width="43" height="43"></td>
 <td valign="top">
 <p align="justify"><strong>Sin obras derivadas (No Derivate Works): </strong>La autorización para explotar la obra no incluye la transformación para crear una obra derivada.</p>
 </td>

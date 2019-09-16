@@ -100,7 +100,7 @@ class CollectionArray
 		4,
 		"Edad de Plata Interactiva",
 		"Esta colección es resultado de la investigación del proyecto eLITE-CM: Edición Literaria Electrónica (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadora: Alicia Reina Navarro",
-		"name=Edad de Plata Interactiva&Id1=56521&Desc1=Edad de Plata Interactiva&Id2=56521&Desc2=Edad de Plata Interactiva&Id3=56523&Or2=true&Desc3=Col. sobre La Mujer Moderna&Or3=true&Id4=56523&Desc4=Edad de Plata Interactiva&Or4=true",
+		"name=Edad de Plata Interactiva&Id1=109159&Desc1=Edad de Plata Interactiva&Id2=109159&Desc2=Edad de Plata Interactiva&Id3=109161&Or2=true&Desc3=Col. sobre La Mujer Moderna&Or3=true&Id4=109161&Desc4=Edad de Plata Interactiva&Or4=true",
 		"imagenes/COLECCION6.png"
 		),
 		
@@ -148,7 +148,7 @@ class CollectionArray
 		10,
 		"Literatura de compromiso político-social",
 		"En esta colección se pueden catalogar textos y colecciones de quiosco pertenecientes a este subgénero. Por ahora solo se muestran completas las colecciones La Novela Roja (1922-23), La Novela Proletaria (1932-33), Tesoro de la Literatura Revolucionaria (1933) y parcialmente El Cuento Semanal (1907-8). Pendiente de asignar coordinador.",
-		"name=Literatura de compromiso político-social&Id1=56523&Desc1=209021&Or1=true&Id2=56523&Desc2=209006&Or2=true&Id3=56523&Desc3=209020&Or3=true&Id4=56523&Desc4=209009&Or4=true",
+		"name=Literatura de compromiso político-social&Id1=109161&Desc1=209021&Or1=true&Id2=109161&Desc2=209006&Or2=true&Id3=109161&Desc3=209020&Or3=true&Id4=109161&Desc4=209009&Or4=true",
 		"imagenes/COLECCION8.png"
 		),
 		
@@ -156,7 +156,7 @@ class CollectionArray
 		11,
 		"Literatura de Quiosco",
 		"La literatura vendida en los quioscos gozó de gran éxito de público. Esta colección irá recogiendo el legado de buena parte de estas colecciones. Encargado de la colección Jeffrey Zamostny",
-		"name=Literatura de Quiosco&Id1=56523&Desc1=209021&Or1=true&Id2=56523&Desc2=209006&Or2=true&Id3=56523&Desc3=209020&Or3=true&Id4=56523&Desc4=209009&Or4=true&Id5=56523&Desc5=209015&Or5=true&Id6=56523&Desc6=209016&Or6=true&Id7=56523&Desc7=209017&Or7=true&Id8=56523&Desc8=209019&Or8=true&Id9=56523&Desc9=209024&Or9=true&Id10=56523&Desc10=209025&Or10=true&Id11=56523&Desc11=209040&Or11=true",
+		"name=Literatura de Quiosco&Id1=109161&Desc1=209021&Or1=true&Id2=109161&Desc2=209006&Or2=true&Id3=109161&Desc3=209020&Or3=true&Id4=109161&Desc4=209009&Or4=true&Id5=109161&Desc5=209015&Or5=true&Id6=109161&Desc6=209016&Or6=true&Id7=109161&Desc7=209017&Or7=true&Id8=109161&Desc8=209019&Or8=true&Id9=109161&Desc9=209024&Or9=true&Id10=109161&Desc10=209025&Or10=true&Id11=109161&Desc11=209040&Or11=true",
 		"imagenes/COLECCION3.png"
 		),
 		
@@ -172,7 +172,7 @@ class CollectionArray
 		13,
 		"Libros digitalizados Edad de Plata",
 		"Libros con referencia a edición digital del mismo. Coordinador: Pendiente de asignar.",
-		"name=Libros digitalizados&Id1=56546&Desc1=*",
+		"name=Libros digitalizados&Id1=109176&Desc1=*",
 		"imagenes/COLECCION5.png"
 		)
 		

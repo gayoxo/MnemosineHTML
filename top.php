@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta name="keywords" content="Biblioteca,UCM,Mnemosine,ILSA,LOEP,Edad,Plata">
+	<meta name="keywords" content="Biblioteca,UCM,ILSA,LOEP,Edad,Plata">
 	<meta name="description" content="Biblioteca Mnemosine, Datos de autores y obras que pertenecen al repertorio de raros y olvidados (1868-1939)">
 	<meta name="author" content="Joaquin Gayoso-Cabada">
 	<meta name="author" content="Dolores Romero">
