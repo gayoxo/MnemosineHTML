@@ -30,19 +30,19 @@ Licencia <a class="bases_legales_body_link" href="https://creativecommons.org/sh
 
 <tbody>
 <tr>
-<td valign="top"><img class="alignright size-full wp-image-970" alt="by.large_petit" src="license/CC_by_large_petit.png" width="43" height="43"></td>
+<td valign="top"><img class="alignright size-full wp-image-970" alt="by.large_petit" src="license/Cc_by_large_petit.png" width="43" height="43"></td>
 <td valign="top">
 <p align="justify"><strong>Reconocimiento (Attribution)</strong>: En cualquier explotación de la obra autorizada por la licencia hará falta reconocer la autoría.</p>
 </td>
 </tr>
 <tr>
-<td valign="top"><img class="alignright size-full wp-image-977" alt="nc-eu.large_petit" src="license/CC_nc-eu_large_petit.png" width="43" height="43"></td>
+<td valign="top"><img class="alignright size-full wp-image-977" alt="nc-eu.large_petit" src="license/Cc_nc-eu_large_petit.png" width="43" height="43"></td>
 <td valign="top">
 <p align="justify"><strong>No Comercial (Non commercial)</strong>: La explotación de la obra queda limitada a usos no comerciales.</p>
 </td>
 </tr>
 <tr>
-<td valign="top"><img class="alignright size-full wp-image-978" alt="nd.large_petit" src="license/CC_nd_large_petit.png" width="43" height="43"></td>
+<td valign="top"><img class="alignright size-full wp-image-978" alt="nd.large_petit" src="license/Cc_nd_large_petit.png" width="43" height="43"></td>
 <td valign="top">
 <p align="justify"><strong>Sin obras derivadas (No Derivate Works): </strong>La autorización para explotar la obra no incluye la transformación para crear una obra derivada.</p>
 </td>
