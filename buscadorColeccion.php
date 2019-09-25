@@ -86,7 +86,9 @@
 	$Basica=json_encode($BusquedaArray);
 	
 	if (isset($_GET["name"])&&!(empty($_GET["name"])))
-		$NamedQuerry="Coleccion= ".$_GET["name"];
+		$NamedQuerry=$_GET["name"];
+	
+	//var_dump("Coleccion= ".$NamedQuerry);
 	
 	include 'buscar_codigo_general.php';
 	

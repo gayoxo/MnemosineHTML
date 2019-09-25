@@ -198,6 +198,10 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			curl_close($curl);
 			//var_dump($JObj);
 			
+			
+			if (isset($NamedQuerry)&&!empty($NamedQuerry))
+		$BusquedaStringLabel=$NamedQuerry;
+			
 			echo "<span class=\"resultado_test\">";
 			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabel."</span>";
 			echo "</span>";
