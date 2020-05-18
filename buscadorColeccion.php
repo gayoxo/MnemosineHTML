@@ -86,7 +86,7 @@
 	$Basica=json_encode($BusquedaArray);
 	
 	if (isset($_GET["name"])&&!(empty($_GET["name"])))
-		$NamedQuerry=$_GET["name"];
+		$NamedQuerry=strip_tags($_GET["name"]);
 	
 	//var_dump("Coleccion= ".$NamedQuerry);
 	
