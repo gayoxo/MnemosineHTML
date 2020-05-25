@@ -10,6 +10,11 @@
 	
 	$BusquedaStringLabel="";
 	
+	$BusquedaStringLabelQ="";
+	
+	if (isset($_GET["q"]))
+		$BusquedaStringLabelQ=$_GET["q"];
+	
 	
 	for ($x = 1; isset($_GET["Id".$x]); $x++)
 	{

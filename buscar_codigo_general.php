@@ -161,12 +161,17 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	echo "<br>";
 	
 	include 'description.php';
-
-	$BusquedaData=array("busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar,"resumen" => $Desc);
 	
-	//var_dump($BusquedaData);
+	if (!isset($BusquedaStringLabelQ))
+		$BusquedaStringLabelQ="obra";
+
+	$BusquedaData=array("q" =>$BusquedaStringLabelQ ,"busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar,"resumen" => $Desc);
+	
+//	var_dump($BusquedaData);
 		
 	$data_string = json_encode($BusquedaData);    
+	
+	var_dump($data_string);
 	
 	$BusquedaArray = json_encode($BusquedaArray);    
 	
