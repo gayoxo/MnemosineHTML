@@ -97,7 +97,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	if (empty($Limite))
 		$Limite=10;
 	
-	$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder/';
+	$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/'.ClavyService.'/';
 	$service_url = $ServerService.'active';
 	$curl = curl_init($service_url);
 
