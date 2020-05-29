@@ -9,7 +9,6 @@
 function ArrayFiltroN($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA)
 {
 	//Aqui meter mano;
-	
 	ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA);
 	
 }
@@ -19,7 +18,7 @@ function ArrayFiltroN($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$Filtro
 <?php
 function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA)
 {
-	//var_dump ($FiltroA);
+
 	if (!isset($arrayFiltro))
 		echo "<a>+ de 50 Valores</a>";
 	else if (empty($arrayFiltro))
@@ -27,6 +26,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	else
 	{
 	
+
 	$FiltroAplicarT= json_decode($FiltroA, true);
 	
 	if (isset($FiltroAplicarT[$TypeID])&&(!empty($FiltroAplicarT[$TypeID])))
@@ -353,8 +353,10 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<?php
 			
 			
+			
 			foreach ($arraYFiltro as $arrayEU)
 			{
+				
 				$TypeA=0;
 				$valueAArr="";
 				foreach ($arrayEU as $Etiqueta=>$ValorE)
@@ -364,14 +366,19 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 						
 					else
 						$valueAArr=$ValorE;
+					
+				
 						
 				}
 				
-				
+					
+					
 				echo "<details class=\"detailsfiltro\" ";
 				
 				if ((isset($FiltroAplicar[$TypeA])&&(!empty($FiltroAplicar[$TypeA])))||$TypeA==0)
 					echo "open"; 
+				
+				
 				echo ">";
 				echo "<summary>";
 				$ValueA=$FiltroObject->findElem($TypeA);

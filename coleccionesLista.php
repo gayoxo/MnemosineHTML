@@ -79,28 +79,28 @@ class CollectionArray
 		1,
 		"Mujeres intelectuales de la edad de plata",
 		"Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadora: Dolores Romero López con la colaboración de Ángela Ena y de Kirsty Hooper.",
-		"name=Mujeres intelectuales de la edad de plata&Id1=6&Desc1=Mujer",
+		"name=Mujeres intelectuales de la edad de plata&q=genero:mujer",
 		"imagenes/COLECCION1.png"
 		),
 	new CollectionElem(
 		2,
 		"Literatura infantil",
 		"Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadoras: Alicia Reina y Mª Jesús Fraga.",
-		"name=Literatura infantil&Id1=9&Desc1=literatura&Id2=9&Desc2=infantil",
+		"name=Literatura infantil&q=Materia:%22literatura infantil%22",
 		"imagenes/COLECCION9.png"
 		),
 	new CollectionElem(
 		3,
 		"Madrid en la Literatura de la Edad de Plata",
 		"Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinador: José Miguel González Soriano",
-		"name=Madrid en la Literatura de la Edad de Plata&Id1=12&Desc1=Madrid",
+		"name=Madrid en la Literatura de la Edad de Plata&q=lugardepublicacion:madrid AND nombre:madrid",
 		"imagenes/COLECCION8.png"
 		),
 	new CollectionElem(
 		4,
 		"Edad de Plata Interactiva",
 		"Esta colección es resultado de la investigación del proyecto eLITE-CM: Edición Literaria Electrónica (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadora: Alicia Reina Navarro",
-		"name=Edad de Plata Interactiva&Id1=109159&Desc1=Edad de Plata Interactiva&Id2=109159&Desc2=Edad de Plata Interactiva&Id3=109161&Or2=true&Desc3=Col. sobre La Mujer Moderna&Or3=true&Id4=109161&Desc4=Edad de Plata Interactiva&Or4=true",
+		"name=Edad de Plata Interactiva&Id1=109159&Desc1=Edad de Plata Interactiva&q=SerieoColeccion:%22Edad de Plata%22 OR SerieoColeccion:%22Col. sobre La Mujer Moderna%22",
 		"imagenes/COLECCION6.png"
 		),
 		
@@ -108,7 +108,7 @@ class CollectionArray
 		5,
 		"Traductoras de la Edad de Plata",
 		"Esta colección reúne a un grupo de mujeres que publicaron en español traducciones de autores extranjeros. Se utiliza la herramienta @Note para realizar anotaciones colaborativas de textos en línea. Coordinadora: Amelia Sanz Cabrerizo.",
-		"name=Traductoras de la Edad de Plata&Id1=6&Desc1=Mujer&Id2=2&Desc2=Traductor",
+		"name=Traductoras de la Edad de Plata&q=genero:mujer %26%26 tipoderelacion:traductor",
 		"imagenes/COLECCION3.png"
 		),
 		
