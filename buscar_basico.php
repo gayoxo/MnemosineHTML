@@ -14,17 +14,18 @@
 	
 	$TypeNumber=intval($Basica2);
 	
-	$Inside=$CamposArray->isinside($TypeNumber);
-	
 	$TypeNumber=$CamposArray->findElem($TypeNumber);
 	
-
-	$ArrayBasico=preg_split("/[\s,]+/",$Basica); 
+	$BusquedaStringLabelQ=trim($Basica);
 	
-	$BusquedaArray=array();
+	if (!empty($TypeNumber)) 
+		$BusquedaStringLabelQ=$TypeNumber.":".trim($Basica);
 	
 	$BusquedaStringLabel="";
 	
+	
+	
+	/*
 	
 	foreach ($ArrayBasico as $elem)
 	{
@@ -52,7 +53,7 @@
 			array_push($BusquedaArray,$Busqueda);
 			
 		}
-	}
+	}*/
 	
 	/*var_dump($BusquedaArray);*/
 	
