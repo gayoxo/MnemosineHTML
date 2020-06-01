@@ -86,7 +86,7 @@ class CollectionArray
 		2,
 		"Literatura infantil",
 		"Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadoras: Alicia Reina y Mª Jesús Fraga.",
-		"name=Literatura infantil&q=Materia:%22literatura infantil%22",
+		"name=Literatura infantil&q=materia:%22literatura?infantil%22",
 		"imagenes/COLECCION9.png"
 		),
 	new CollectionElem(
@@ -100,7 +100,7 @@ class CollectionArray
 		4,
 		"Edad de Plata Interactiva",
 		"Esta colección es resultado de la investigación del proyecto eLITE-CM: Edición Literaria Electrónica (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadora: Alicia Reina Navarro",
-		"name=Edad de Plata Interactiva&Id1=109159&Desc1=Edad de Plata Interactiva&q=SerieoColeccion:%22Edad de Plata%22 OR SerieoColeccion:%22Col. sobre La Mujer Moderna%22",
+		"name=Edad de Plata Interactiva&q=serieoColeccion:%22Edad de Plata%22 OR SerieoColeccion:%22Col. sobre La Mujer Moderna%22",
 		"imagenes/COLECCION6.png"
 		),
 		
@@ -116,7 +116,7 @@ class CollectionArray
 		6,
 		"Muertos en conflicto (1936-1939)",
 		"Esta colección reúne a aquellos autores raros y olvidados que fallecieron por distintas causas durante la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los lugares de fallecimiento. Coordinador: José Miguel González Soriano.",
-		"name=Muertos en conflicto (1936-1939)&Id1=5&Desc1=1936&Or1=true&Id2=5&Desc2=1938&Or2=true&Id3=5&Desc3=1939&Or3=true&Id4=5&Desc4=1937&Or4=true",
+		"name=Muertos en conflicto (1936-1939)&q=fechademuerte:/193[6789]/",
 		"imagenes/COLECCION4.png"
 		),
 		
@@ -124,7 +124,7 @@ class CollectionArray
 		7,
 		"Autores en exilio",
 		"Esta colección reúne escritores que sufrieron el exilio tras la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los espacios del exilio. Coordinadora: Lucía Cotarelo Esteban.",
-		"name=Autores en exilio&Id1=3&Desc1=Sí",
+		"name=Autores en exilio&q=exilio:S?",
 		"imagenes/COLECCION5.png"
 		),
 
@@ -132,7 +132,7 @@ class CollectionArray
 		8,
 		"Protociencia-ficción",
 		"Esta colección reúne los textos de la “Biblioteca de Protociencia-ficción Agustín Jaureguizar” que han sido digitalizados por la Biblioteca UCM. Se aportan datos y metadatos externos a Mnemosine. Coordinadora: Marta Correa Román.",
-		"name=Protociencia-ficción&Id1=9&Desc1=ficción&Id2=9&Desc2=Protociencia",
+		"name=Protociencia-ficción&q=materia:%22protociencia %26%26 materia:Ficci?n%22",
 		"imagenes/COLECCION6.png"
 		),
 
@@ -140,7 +140,7 @@ class CollectionArray
 		9,
 		"Diálogos literarios",
 		"Esta colección reúne los textos dialogados que se publicaron durante la Edad de Plata. Se fomenta así la colaboración con el Grupo de Investigación UCM Dyalogica y su Biblioteca Digital del Diálogo Hispánico. Coordinadora: Mª Jesús Fraga.",
-		"name=Diálogos literarios&Id1=0&Desc1=Dialogos",
+		"name=Diálogos literarios&q=dialogos",
 		"imagenes/COLECCION7.png"
 		),
 
@@ -164,7 +164,7 @@ class CollectionArray
 		12,
 		"Carmen de Burgos",
 		"Es una colección de los libros publicados por una autora individual. Coordinador: Pendiente de asignar.",
-		"name=Carmen de Burgos&Id1=1&Desc1=Carmen&Id2=1&Desc2=Burgos",
+		"name=Carmen de Burgos&q=Carmen AND Burgos",
 		"imagenes/COLECCION9.png"
 		),
 		
@@ -172,7 +172,7 @@ class CollectionArray
 		13,
 		"Libros digitalizados Edad de Plata",
 		"Libros con referencia a edición digital del mismo. Coordinador: Pendiente de asignar.",
-		"name=Libros digitalizados&Id1=109176&Desc1=*",
+		"name=Libros digitalizados&q=link:/.*/",
 		"imagenes/COLECCION5.png"
 		)
 		

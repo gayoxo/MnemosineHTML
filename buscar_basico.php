@@ -10,18 +10,18 @@
 <?php 
 	
 	$Basica=$_POST["BarraBasica"];
-	$Basica2=$_POST["Campo"];
+//	$Basica2=$_POST["Campo"];
 	
-	$TypeNumber=intval($Basica2);
+//	$TypeNumber=intval($Basica2);
 	
-	$TypeNumber=$CamposArray->findElem($TypeNumber);
+//	$TypeNumber=$CamposArray->findElem($TypeNumber);
 	
 	$BusquedaStringLabelQ=trim($Basica);
 	
-	if (!empty($TypeNumber)) 
-		$BusquedaStringLabelQ=$TypeNumber.":".trim($Basica);
+//	if (!empty($TypeNumber)) 
+//		$BusquedaStringLabelQ=$TypeNumber.":".trim($Basica);
 	
-	$BusquedaStringLabel="";
+//	$BusquedaStringLabel="";
 	
 	
 	
