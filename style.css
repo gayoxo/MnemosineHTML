@@ -689,6 +689,15 @@ text-decoration:none;
  color: black;
 }
 
+div.comando_ayuda {
+    overflow: auto;
+    max-height: 200px;
+    text-align: justify;
+    border-color: black;
+    border-style: dotted;
+    padding: 1em;
+}
+
 a.ayuda_link:hover {
 text-decoration:none;
  color:#31b49d;

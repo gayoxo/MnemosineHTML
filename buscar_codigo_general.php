@@ -171,7 +171,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		
 	$data_string = json_encode($BusquedaData);    
 	
-	var_dump($data_string);
+	//var_dump($data_string);
 	
 	$BusquedaArray = json_encode($BusquedaArray);    
 	
@@ -205,10 +205,10 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			
 			
 			if (isset($NamedQuerry)&&!empty($NamedQuerry))
-		$BusquedaStringLabel=$NamedQuerry;
+		$BusquedaStringLabelQ=$NamedQuerry;
 			
 			echo "<span class=\"resultado_test\">";
-			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabel."</span>";
+			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
 			echo "</span>";
 			echo "</br>";
 			echo "</br>";

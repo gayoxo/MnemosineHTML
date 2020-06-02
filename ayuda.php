@@ -1,11 +1,14 @@
 <?php include 'top.php'; ?>
 <?php $LinkAtras="index.php"; ?>
 <?php include 'cabecera.php'; ?>
+<?php
+	include 'config.php';
+?>
 	</br>
 
 </div>		
 <div class="ayuda">
-	<p class="ayuda_Cabecera">Ayuda</p>
+	<p class="ayuda_texto_Cabecera">Ayuda</p>
 	<hr class="linea_horizontal">
 	<div class="ayuda_body">
 		<div class="bloque">
@@ -63,13 +66,53 @@
 				
 				
 				La lista de concepto que estan definidos en la coleccion <a class="ayuda_link" href="index.php">Mnemosine</a> son: <br/>
+				
+				<div class="comando_ayuda">
+				
 				<code class="ayuda_code">
-				clavy_id:<br/>
-				titulo:<br/>
-				ipsum:<br/>
+				
+				<?php 
+				
+				$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/'.ClavyService.'/';
+	//$service_url = $ServerService.'getConcepts';
+	$service_url = $ServerService.'getConcepts?userclavy='.Clavyuser.'&passwordclavy='.Clavyuserkey.'&keyclavy='.Clavykey;
+	$curl = curl_init($service_url);
+
+	//echo ($service_url);
+	
+	curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 60); // Setting the amount of time (in seconds) before the request times out
+	curl_setopt($curl, CURLOPT_TIMEOUT, 180);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	$curl_response = curl_exec($curl);
+	if ($curl_response === false) {
+		$info = curl_getinfo($curl);
+		curl_close($curl);
+		echo 'El sistema Clavy en http://'.ClavyServer.':'.ClavyPort.' no esta activo, por favor pruebe de nuevo y contacte con el administrador si persiste';
+	}else
+	{
+		$status = curl_getinfo($curl);
+		
+		if ($status['http_code']=='200')
+		{
+			/*echo $curl_response;
+			echo "</br>";*/
+			
+			$JObj=json_decode($curl_response, true);
+			
+			curl_close($curl);
+			
+			foreach($JObj as $k => $elem){
+				echo $elem . ':<br/>';
+			}
+			
+		}
+	}
+				
+				
+				?>
 				
 				</code>
-				
+				</div>
 				</p>
 				
 				</div>
