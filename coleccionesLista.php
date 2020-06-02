@@ -148,7 +148,7 @@ class CollectionArray
 		10,
 		"Literatura de compromiso político-social",
 		"En esta colección se pueden catalogar textos y colecciones de quiosco pertenecientes a este subgénero. Por ahora solo se muestran completas las colecciones La Novela Roja (1922-23), La Novela Proletaria (1932-33), Tesoro de la Literatura Revolucionaria (1933) y parcialmente El Cuento Semanal (1907-8). Pendiente de asignar coordinador.",
-		"name=Literatura de compromiso político-social&Id1=109161&Desc1=59600&Or1=true&Id2=109161&Desc2=59614&Or2=true&Id3=109161&Desc3=59601&Or3=true&Id4=109161&Desc4=59596&Or4=true",
+		"name=Literatura de compromiso político-social&q=clavy_id:59600 OR clavy_id:59614 OR clavy_id:59601 OR clavy_id:59596",
 		"imagenes/COLECCION8.png"
 		),
 		
@@ -156,7 +156,7 @@ class CollectionArray
 		11,
 		"Literatura de Quiosco",
 		"La literatura vendida en los quioscos gozó de gran éxito de público. Esta colección irá recogiendo el legado de buena parte de estas colecciones. Encargado de la colección Jeffrey Zamostny",
-		"name=Literatura de Quiosco&Id1=109161&Desc1=59600&Or1=true&Id2=109161&Desc2=59614&Or2=true&Id3=109161&Desc3=59601&Or3=true&Id4=109161&Desc4=59596&Or4=true&Id5=109161&Desc5=59590&Or5=true&Id6=109161&Desc6=59605&Or6=true&Id7=109161&Desc7=59604&Or7=true&Id8=109161&Desc8=59602&Or8=true&Id9=109161&Desc9=59771&Or9=true&Id10=109161&Desc10=59770&Or10=true&Id11=109161&Desc11=59754&Or11=true",
+		"name=Literatura de Quiosco&q=clavy_id:59600 OR clavy_id:59614 OR clavy_id:59601 OR clavy_id:59596 OR clavy_id:59590 OR clavy_id:59605 OR clavy_id:59604 OR clavy_id:59602 OR clavy_id:59771 OR clavy_id:59770 OR clavy_id:59754",
 		"imagenes/COLECCION3.png"
 		),
 		

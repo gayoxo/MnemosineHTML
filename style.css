@@ -356,7 +356,7 @@ border: solid;
   width: 96.5%;
 }
 
- .Colecciones, .mysmartlibraryproyect, .quienes_somos, .zonIndex, .bases_legales{
+ .Colecciones, .mysmartlibraryproyect, .quienes_somos, .zonIndex, .bases_legales, .ayuda{
   width: 96.5%;
 }
 
@@ -485,7 +485,7 @@ font-family: mnemosine_minuscula;
 font-size: inherit;
 }
 
-p.Colecciones_texto_Cabecera, p.mysmartlibraryproyect_texto_Cabecera, p.quienes_somos_texto_Cabecera, p.zonaIndexCentro, p.buscador_avanzado_texto_Cabecera, p.bases_legales_texto_Cabecera{
+p.Colecciones_texto_Cabecera, p.mysmartlibraryproyect_texto_Cabecera,p.ayuda_texto_Cabecera ,p.quienes_somos_texto_Cabecera, p.zonaIndexCentro, p.buscador_avanzado_texto_Cabecera, p.bases_legales_texto_Cabecera{
 font-size: 2em;
 }
 
@@ -680,6 +680,16 @@ text-decoration:none;
 }
 
 a.quienes_somos_link:hover {
+text-decoration:none;
+ color:#31b49d;
+}
+
+a.ayuda_link {
+text-decoration:none;
+ color: black;
+}
+
+a.ayuda_link:hover {
 text-decoration:none;
  color:#31b49d;
 }

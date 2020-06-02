@@ -4,110 +4,140 @@
 	</br>
 
 </div>		
-<div class="quienes_somos">
-	<p class="quienes_somos_texto_Cabecera">Quiénes Somos</p>
+<div class="ayuda">
+	<p class="ayuda_Cabecera">Ayuda</p>
 	<hr class="linea_horizontal">
-	<div class="quienes_somos_body">
+	<div class="ayuda_body">
 		<div class="bloque">
-			<div class="imagen_bloque">
-				<a class="quienes_somos_link" href="index.php">
-					<img class="imagen_bloque_base" src="imagenes/logomenu.png" alt="">
-				</a>
-			</div>
-			<div class="texto_bloque">
 				<p class="texto_bloque_cabecera">
-					<a class="quienes_somos_link" href="index.php">
-					MNEMOSINE
-					</a>
+					Resumen
 				</p>
 				<p class="texto-bloque_cuerpo">
-				El principal objetivo de Mnemosine es seleccionar, catalogar y hacer visibles en formato digital textos que pertenecen a un repertorio olvidado que permitirá la revisión historiográfica de lo que ya se denomina ‘la otra Edad de Plata’ (Ángela Ena Bordonada: 2013). Esta biblioteca  digital pretende ser un campo de experimentación internacional para la creación de redes semánticas interoperables a través de las cuales se genere investigación e innovación de calidad y nuevos modelos teóricos de interpretación de textos literarios.
+				El sistema <a class="ayuda_link" href="index.php">Mnemosine</a> utiliza como fuente del conocimiento el sistema <a class="ayuda_link" target="_blank" href="http://clavy.fdi.ucm.es/">Clavy</a>, la coleccion <a class="ayuda_link" href="index.php">Mnemosine</a> esta almacenada en esta plataforma, que se caracteriza por ser una plataforma de almacenamiento de repositorios dinamicamente reconfigurable que puede exponer la informacion contenida mediante servicios, la web Mnemosine es una mecanismo de presentacion de esta informacion que permite un entorno agradable para su consulta y acceso.<br/>
+	
+	El sistema de busqueda esta almacenado en la plataforma <a class="ayuda_link" target="_blank" href="http://clavy.fdi.ucm.es/">Clavy</a> y se realiza mediante la creacion de un indice sobre la libreria <a class="ayuda_link" href="https://lucene.apache.org/">Lucene</a>, esta libreria permite el almacenamiento de la informacion de manera compacte e indexada, dando soporte a un potente servicio de busqueda. <br/>
+	
+	En esta seccion se presentara un breve resumen de el mecanismo de consultas que soporta <a class="ayuda_link" href="https://lucene.apache.org/">Lucene</a> y como crearlas para la inspeccion del repositorio. Este manual de ayuda esta basado en diferntes manuales de Lucene referenciados al final de esta pagina, donde puede encontrarse informacion adicional sobre el formato de las consultas.
 				</p>
-			</div>
 		</div>
 		<hr class="linea_horizontal">
+		
 		<div class="bloque">
-			<div class="imagen_bloque">
-				<a class="quienes_somos_link" href="quienessomos.php">
-					<img class="imagen_bloque_base" src="imagenes/red3.png" alt="">
-				</a>
-			</div>
-			<div class="texto_bloque">
+				<p class="texto_bloque_cabecera">
+					Consulta Basica
+				</p>
+				<p class="texto-bloque_cuerpo">
+				
+				Las consultas en <a class="ayuda_link" href="https://lucene.apache.org/">Lucene</a> se tratan como una expresion logica <i>booleana</i> por lo que lo primero que hay que explicar es que hay ciertas palabras/simbolos reservados para la consulta, estas palabras/simbolos son <code>AND OR && || + - ? *:</code>. <br/><br/>
+				
+				Una conslta basica constara de un conjunto de palabras a buscar y separadas por reservados, por ejemplo:<br/><br/>
+				
+				><code>Dialogos AND Teatro</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este la palabra Dialogo <strong>y</strong> Teatro simultaneamente.<br/><br/>
+				
+				><code>Dialogos OR Teatro</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este la palabra Dialogo <strong>ó</strong> Teatro simultaneamente.<br/><br/>
+				
+				><code>Dialogos AND -Teatro</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este la palabra Dialogo <strong>y no</strong> Teatro simultaneamente.<br/><br/>
+				
+				><code>Dialogos OR -Teatro</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este la palabra Dialogo <strong>ó no </strong> Teatro simultaneamente.<br/><br/>
+				
+				Los simbolos <code>&&</code> y <code> || </code> equivalen a <code>AND</code> y <code>OR</code> respectivamente.<br/><br/>
+				
+				</p>
+				
+				<p class="texto_bloque_cabecera">
+					Consulta por categoria
+				</p>
+				<p class="texto-bloque_cuerpo">
+				
+				Tal y como esta configurada <a class="ayuda_link" href="https://lucene.apache.org/">Lucene</a>, se permite tambien la busqueda mas especifica por categoria, para este objetivo, se debe incluir la categoria ( en minusculas y sin caracteres no alfanumericos) seguida del simbolo reservado <code>:</code><br/><br/>
+				
+				Unos ejemplos de consulta por categoria son:
+				
+				><code>titulo:Dialogos AND autor:Unamuno</code> - Esta consulta obtendra todas aquellos elementos en cuyas categoria Titulo/titulo este contenido el concepto Dialogo <strong>y</strong> las categorias Autor/autor este contenido el termino Unamumo simultaneamente.<br/><br/>
+				
+				><code>titulo:Dialogos OR autor:Unamuno</code> -  Esta consulta obtendra todas aquellos elementos en cuyas categoria Titulo/titulo este contenido el concepto Dialogo <strong>ó</strong> las categorias Autor/autor este contenido el termino Unamumo simultaneamente.<br/><br/>
+				
+				><code>titulo:Dialogos AND -autor:Unamuno</code> - Esta consulta obtendra todas aquellos elementos en cuyas categoria Titulo/titulo este contenido el concepto Dialogo <strong>y no</strong> las categorias Autor/autor este contenido el termino Unamumo simultaneamente.<br/><br/>
+				
+				><code>-titulo:Dialogos OR autor:Unamuno</code> -  Esta consulta obtendra todas aquellos elementos en cuyas categoria Titulo/titulo <strong>no </strong> este contenido el concepto Dialogo <strong>ó</strong> las categorias Autor/autor este contenido el termino Unamumo simultaneamente.<br/><br/>
+				
+				
+				La lista de concepto que estan definidos en la coleccion <a class="ayuda_link" href="index.php">Mnemosine</a> son: <br/>
+				<code class="ayuda_code">
+				clavy_id:<br/>
+				titulo:<br/>
+				ipsum:<br/>
+				
+				</code>
+				
+				</p>
+				
+				</div>
+				
+				
+		<hr class="linea_horizontal">
+		
+		
+		<div class="bloque">
+				
+				
+				<p class="texto_bloque_cabecera">
+					Elemento Comodin
+				</p>
+				<p class="texto-bloque_cuerpo">
+				La consultas pueden ser flexibles, permitiendo que la busqueda sea mas permeable a variaciones de una palabra, para este cometido es necesario usar los simbolos reservadas <code>? *</code>. Estos simbolos permitiran la sustitucion de este por una o varios caracteres respectivamente.
+				
+				Un ejemplo de su uso es el siguiente.<br/><br/>
+				
+				><code>Surc?</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este por ejemplo la palabra surc<strong>o</strong> o surc<strong>a</strong>.<br/><br/>
+				
+				><code>Trabaja*</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este por ejemplo la palabra Trabaja<strong>r</strong>,Trabaja<strong>dor</strong> o Trabaja<strong>dora</strong>.<br/><br/>
+
+				</p>
+				
+				
+		</div>		
+		<hr class="linea_horizontal">
+		
+		
+		<div class="bloque">
+				
+				
+				<p class="texto_bloque_cabecera">
+					Expresion Regular
+				</p>
+				<p class="texto-bloque_cuerpo">
+				
+				Las expresiones regulares estan permitidas para la realizacion de consultas complejas dentro de <a class="ayuda_link" href="https://lucene.apache.org/">Lucene</a>, una cpnsulta basada en expresion regular empezara con el caracter <code>/</code> y terminara con el caracter <code>/</code>.
+				
+				Un ejemplo de una expresion valida son los siguientes:
+				
+				><code>/Surc[oa]/</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este la palabra surc<strong>o</strong> o surc<strong>a</strong>.<br/><br/>
+				
+				><code>/Trabaja*/</code> - Esta consulta obtendra todas aquellos elementos en cuya descripcion este por ejemplo la palabra Trabaja<strong>r</strong>,Trabaja<strong>dor</strong> o Trabaja<strong>dora</strong>.<br/><br/>
+				
+				</p>
+				
+				
+		</div>
+		<hr class="linea_horizontal">
+		
+		
+		<div class="bloque">
 				<p class="texto_bloque_cabecera">
 					<a class="quienes_somos_link" href="quienessomos.php">
-					Quiénes Somos
+					Otros Links de Interes
 					</a>
 				</p>
 				<p class="texto-bloque_cuerpo">
-				Mnemosine es fruto de la colaboración entre especialistas de distintas disciplinas:<br>
-> Biblioteca: <a class="quienes_somos_link" href="#">José Luis Bueren Gómez-Acebo</a><br>
-> Informática: <a class="quienes_somos_link" href="http://ilsa.fdi.ucm.es/ilsa/ilsa.php?show=6">Joaquín Gayoso Cabada</a><br>
-> Contenidos: <a class="quienes_somos_link" href="http://media.wix.com/ugd/a91d96_d91bef286bb3451a9a1981c5767e6e85.pdf">José Miguel González Soriano</a> <br>
-> Literatura: <a class="quienes_somos_link" href="http://media.wix.com/ugd/a91d96_cc534f83709e496494ea8ec8ee662150.pdf">Dolores Romero López: Enlace</a> <br>
+				Esta manual ha sido diseñado a traves de diferentes tutoriales mas complejos, para conocer mas de las posiblidades de las consultas en <a class="ayuda_link" href="https://lucene.apache.org/">Lucene</a> se adjuntan como referencias las siguientes webs :<br>
+><a class="ayuda_link" target="_blank" href="http://www.lucenetutorial.com/lucene-query-syntax.html">Lucene Tutorial</a><br>
+><a class="ayuda_link" target="_blank" href="https://lucene.apache.org/core/2_9_4/queryparsersyntax.html">Apache Lucene Tutorial</a><br>
+><a class="ayuda_link" target="_blank" href="https://www.ionos.es/digitalguide/servidores/configuracion/apache-lucene/">Ionos.es</a><br>
+><a class="ayuda_link" target="_blank" href="https://es.wikipedia.org/wiki/Expresi%C3%B3n_regular">Expresion Regular</a><br>
 				</p>
-			</div>
 		</div>
-		<hr class="linea_horizontal">
-		<div class="bloque">
-			<div class="imagen_bloque">
-					<img class="imagen_bloque_base" src="imagenes/red.png" alt="">
-			</div>
-			<div class="texto_bloque">
-				<p class="texto_bloque_cabecera">
-					Grupos
-				</p>
-			</div>
-		</div>
-		<div class="bloque">
-			<div class="imagen_bloque">
-				<a class="quienes_somos_link" href="http://ilsa.fdi.ucm.es/">
-					<img class="imagen_bloque_base" src="imagenes/ILSA.jpg" alt="">
-				</a>
-			</div>
-			<div class="texto_bloque">
-				<p class="texto-bloque_cuerpo">
-				<a class="quienes_somos_link" href="http://ilsa.fdi.ucm.es/">ILSA</a> (Implementation of Language-Driven Software and Applications) es un Grupo de Investigación interdisciplinar UCM (Registro: 962022) que reúne a profesores e investigadores de varios centros y departamentos de Universidad Complutense de Madrid (UCM) vinculados a la Filología, Educación e Informática. Los intereses de investigación del grupo son: desarrollo de software utilizando técnicas de diseño e implementación de lenguajes de programación y desarrollo de aplicaciones en los campos de las Humanidades Digitales y e-learning
-				</p>
-			</div>
-		</div>
-		<div class="bloque">
-			<div class="imagen_bloque">
-				<a class="quienes_somos_link" href="https://www.ucm.es/leethi">
-					<img class="imagen_bloque_base" src="imagenes/leethi.jpg" alt="">
-				</a>
-			</div>
-			<div class="texto_bloque">
-				<p class="texto-bloque_cuerpo">
-				<a class="quienes_somos_link" href="https://www.ucm.es/leethi">LEETHI</a> (Literaturas Españolas y Europeas del Texto al Hipermedia) es un Grupo de Investigación nacido en 2000 y reconocido como consolidado por la UCM desde 2005 (Registro: 930262). De carácter interdisciplinar, reúne profesores de las Facultades de Filología y Educación de la UCM especializados en diferentes lenguas y sus literaturas (español, inglés, francés, alemán y neerlandés). Llevados todos por su formación en el ámbito nacional e internacional, la actividad de los miembros del grupo se ha centrado en los cambios de paradigma para el estudio del hecho literario que están produciendo en nuestros días la internacionalización y la globalización, las tecnologías digitales y la creación del EEES, de forma que su investigación ha integrado en todo momento y de forma indisoluble la reflexión literaria, tecnológica y didáctica en torno a dos conceptos: transliteratura e hipermedia.				
-				</p>
-			</div>
-		</div>
-		<div class="bloque">
-			<div class="imagen_bloque">
-				<a class="quienes_somos_link" href=" https://www.ucm.es/loep">
-					<img class="imagen_bloque_base" src="imagenes/loep.jpg" alt="">
-				</a>
-			</div>
-			<div class="texto_bloque">
-				<p class="texto-bloque_cuerpo">
-				<a class="quienes_somos_link" href=" https://www.ucm.es/loep">LOEP</a> (La otra Edad de Plata) se constituyó como Grupo de Investigación UCM en el año 2008 (Registro: 941375), con la necesidad de  atender a aquella literatura de las primeras décadas del siglo XX que había permanecido oscurecida por la brillantez de los grandes nombres y movimientos de la llamada Edad de Plata. Su objetivo es recuperar temas, géneros y autores que fueron cayendo en el olvido, —injusto en la mayoría de los casos—, al quedar excluidos del canon de la época.				
-				</p>
-			</div>
-		</div>
-		<hr class="linea_horizontal">
-		<div class="bloque">
-			<div class="imagen_bloque">
-					<img class="imagen_bloque_base" src="imagenes/logo-mineco.jpg" alt="">
-			</div>
-			<div class="texto_bloque">
-				<p class="texto_bloque_cabecera">
-					FINANCIACIÓN
-				</p>
-				<p class="texto-bloque_cuerpo">
-				Esta investigación está siendo financiada por el Ministerio de Economía y Competitividad. Proyecto de Investigación: “Escritorios Electrónicos para las Literaturas-2”. Referencia FFI2012-34666 (2012-2015)
-				</p>
-			</div>
-		</div>
+		
 	</div>
 </div>	
 	
