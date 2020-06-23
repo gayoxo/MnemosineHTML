@@ -18,7 +18,7 @@ function ArrayFiltroN($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$Filtro
 <?php
 function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA)
 {
-
+	//var_dump ($FiltroA);
 	if (!isset($arrayFiltro))
 		echo "<a>+ de 50 Valores</a>";
 	else if (empty($arrayFiltro))
@@ -76,6 +76,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	$FiltroNuevo=$_POST["FiltroNuevo"];
 	$BusquedaARRAY=$_POST["BusquedaARRAY"];
 	$BusquedaStringLabelIN=$_POST["BusquedaStringLabelIN"];
+	$BusquedaStringLabelQIN=$_POST["BusquedaStringLabelQIN"];
 
 	
 	
@@ -84,6 +85,9 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	
 	if (isset($BusquedaStringLabelIN)&&!empty($BusquedaStringLabelIN))
 		$BusquedaStringLabel=$BusquedaStringLabelIN;
+	
+	if (isset($BusquedaStringLabelQIN)&&!empty($BusquedaStringLabelQIN))
+		$$BusquedaStringLabelQ=$BusquedaStringLabelQIN;
 	
 	if (isset($BusquedaARRAY)&&!empty($BusquedaARRAY))
 	{
@@ -164,10 +168,10 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	
 	if (!isset($BusquedaStringLabelQ))
 		$BusquedaStringLabelQ="obra";
-
+	
 	$BusquedaData=array("q" =>$BusquedaStringLabelQ ,"busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar,"resumen" => $Desc);
 	
-//	var_dump($BusquedaData);
+	//var_dump($BusquedaData);
 		
 	$data_string = json_encode($BusquedaData);    
 	
@@ -205,7 +209,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			
 			
 			if (isset($NamedQuerry)&&!empty($NamedQuerry))
-		$BusquedaStringLabelQ=$NamedQuerry;
+				$BusquedaStringLabelQ=$NamedQuerry;
 			
 			echo "<span class=\"resultado_test\">";
 			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
@@ -248,7 +252,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="Filtro" value='<?php echo $FiltroA?>' />
 			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
 			<input type="hidden" name="BusquedaARRAY" value='<?php echo $BusquedaArray?>' />
-			<input type="hidden" name="BusquedaStringLabelQ" value='<?php echo $BusquedaStringLabelQ?>' />
+			<input type="hidden" name="BusquedaStringLabelQIN" value='<?php echo $BusquedaStringLabelQ?>' />
 			
 
 			<select name="Limite" onchange="javascript:document.forms['formlimite'].submit();">
@@ -299,7 +303,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
 					echo "<input type=\"hidden\" name=\"BusquedaARRAY\" value='".$BusquedaArray."' />";
-					echo "<input type=\"hidden\" name=\"BusquedaStringLabelQ\" value='".$BusquedaStringLabelQ."' />";
+					echo "<input type=\"hidden\" name=\"BusquedaStringLabelQIN\" value='".$BusquedaStringLabelQ."' />";
 					echo "<a class=\"paginadorNoActivo\" href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($staPlus+1)."'].submit();\" >Menos</a>  ";
 					echo "</form>";
 					}
@@ -315,7 +319,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
 					echo "<input type=\"hidden\" name=\"BusquedaARRAY\" value='".$BusquedaArray."' />";
-					echo "<input type=\"hidden\" name=\"BusquedaStringLabelQ\" value='".$BusquedaStringLabelQ."' />";
+					echo "<input type=\"hidden\" name=\"BusquedaStringLabelQIN\" value='".$BusquedaStringLabelQ."' />";
 				
 					if ($Visibles<5)
 					{
@@ -354,7 +358,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="FiltroNuevo" value=true />
 			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
 			<input type="hidden" name="BusquedaARRAY" value='<?php echo $BusquedaArray?>' />
-			<input type="hidden" name="BusquedaStringLabelQ" value='<?php echo $BusquedaStringLabelQ?>' />
+			<input type="hidden" name="BusquedaStringLabelQIN" value='<?php echo $BusquedaStringLabelQ?>' />
 			<?php
 			
 			
