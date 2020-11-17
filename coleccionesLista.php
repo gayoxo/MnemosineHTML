@@ -93,14 +93,14 @@ class CollectionArray
 		3,
 		"Madrid en la Literatura de la Edad de Plata",
 		"Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinador: José Miguel González Soriano",
-		"name=Madrid en la Literatura de la Edad de Plata&q=lugardepublicacion:madrid AND nombre:madrid",
+		"name=Madrid en la Literatura de la Edad de Plata&q=lugardepublicacion:madrid",
 		"imagenes/COLECCION8.png"
 		),
 	new CollectionElem(
 		4,
 		"Edad de Plata Interactiva",
 		"Esta colección es resultado de la investigación del proyecto eLITE-CM: Edición Literaria Electrónica (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadora: Alicia Reina Navarro",
-		"name=Edad de Plata Interactiva&q=serieoColeccion:%22Edad de Plata%22 OR SerieoColeccion:%22Col. sobre La Mujer Moderna%22",
+		"name=Edad de Plata Interactiva&q=serieocoleccion:%22Edad de Plata%22 OR serieocoleccion:%22Col. sobre La Mujer Moderna%22",
 		"imagenes/COLECCION6.png"
 		),
 		
@@ -132,7 +132,7 @@ class CollectionArray
 		8,
 		"Protociencia-ficción",
 		"Esta colección reúne los textos de la “Biblioteca de Protociencia-ficción Agustín Jaureguizar” que han sido digitalizados por la Biblioteca UCM. Se aportan datos y metadatos externos a Mnemosine. Coordinadora: Marta Correa Román.",
-		"name=Protociencia-ficción&q=materia:%22protociencia %26%26 materia:Ficci?n%22",
+		"name=Protociencia-ficción&q=materia:protociencia AND materia:Ficci?n",
 		"imagenes/COLECCION6.png"
 		),
 
