@@ -174,6 +174,14 @@ class CollectionArray
 		"Libros con referencia a edición digital del mismo. Coordinador: Pendiente de asignar.",
 		"name=Libros digitalizados&q=link:/.*/",
 		"imagenes/COLECCION5.png"
+		),
+		
+		new CollectionElem(
+		14,
+		"Poetas mujeres de la Edad de Plata",
+		"Poetas mujeres de la Edad de Plata. Coordinador: Dolores Romero López.",
+		"name=Poetas mujeres de la Edad de Plata&q=genero:mujer AND generosliterariosquecultiva:Poeta",
+		"imagenes/COLECCION1.png"
 		)
 		
 	);
