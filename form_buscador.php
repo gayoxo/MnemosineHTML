@@ -2,9 +2,13 @@
 	<div>
 	<form action='buscar_basico.php' method="post">
 	<input class="barra_buscador_simple buscador_simple" type="text" name="BarraBasica" maxlength="120" value="" placeholder="Buscar autor, obra, fecha...">
+	
+	<!--
+	
 	<select class="campo_valores_buscador_simple buscador_simple" name="Campo">
 	
 	<?php 
+	/*
 	include 'campos.php';
 	
 	
@@ -21,8 +25,15 @@
 		if ($Group1!="0")
 			 echo "</optgroup>";
 	}
+	
+	*/
 	?>
-	</select>
+	
+	
+	 
+	 
+	</select> -->
+	
 	<input class="buscar_buscador_simple buscador_simple" type="submit" value="Buscar">
 	</form>
 	</div>

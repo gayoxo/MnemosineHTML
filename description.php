@@ -38,10 +38,18 @@ class DescArray
 	
 	public function findElem($valueID)
 	{
+		
+		
 	foreach ($this->DescA as $elem)
-		if ($elem->Id==$valueID)
-			return $elem->Valor;
-			
+	
+		if (is_numeric($elem->Id)&& is_numeric($valueID))
+			if ($elem->Id==$valueID)
+				return $elem->Valor;
+			else;
+		else
+			if (!is_numeric($elem->Id)&& !is_numeric($valueID))
+				if ($elem->Id==$valueID)
+						return $elem->Valor;
 	return "Unvalued"; 
 	}
 	
@@ -50,23 +58,9 @@ class DescArray
 
 
 $DescP= array(
-new Desc(56332,"Fechas asociadas al nombre"),
-new Desc(62212,"Fechas asociadas al nombre"),
-new Desc(70620,"Fechas asociadas al nombre"),
-new Desc(73968,"Fechas asociadas al nombre"),
-new Desc(74259,"Fechas asociadas al nombre"),
-new Desc(56488,"Editorial"),
-new Desc(62942,"Editorial"),
-new Desc(74786,"Editorial"),
-new Desc(74804,"Editorial"),
-new Desc(74134,"Editorial"),
-new Desc(74347,"Editorial"),
-new Desc(56490,"Año de publicación"),
-new Desc(62943,"Año de publicación"),
-new Desc(74790,"Año de publicación"),
-new Desc(74806,"Año de publicación"),
-new Desc(74078,"Año de publicación"),
-new Desc(74342,"Año de publicación"));
+new Desc("fechasasociadasalnombre","Fechas asociadas al nombre"),
+new Desc("editorial","Editorial"),
+new Desc("fechadepublicacion","Año de publicación"));
 
 $DescObject=new DescArray($DescP);
 

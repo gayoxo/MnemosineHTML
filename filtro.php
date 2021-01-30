@@ -41,9 +41,21 @@ class FiltroArray
 	public function findElem($valueID)
 	{
 	foreach ($this->FiltroA as $elem)
-		if ($elem->Id==$valueID)
-			return $elem->Valor;
+		{
 			
+			if (is_numeric($elem->Id)&& is_numeric($valueID))
+				if ($elem->Id==$valueID)
+					return $elem->Valor;
+				else;
+			else
+				if (!is_numeric($elem->Id)&& !is_numeric($valueID))
+				{
+					
+					if ($elem->Id==$valueID)
+						return $elem->Valor;
+				}
+		}
+		
 	return "Unvalued"; 
 	}
 	
@@ -60,8 +72,8 @@ class FiltroArray
 
 
 
-$FiltroP= array(new FiltroElem(0,"Tipo",false),new FiltroElem(109302,"Género (Persona)",false),new FiltroElem(109333,"Exilio (Pais)",false),new FiltroElem(109335,"Exilio (Ciudad)",false),new FiltroElem(109062,"Impresor",false),new FiltroElem(110478,"Lugar de impresión",false),
-new FiltroElem(110493,"Materia",false),new FiltroElem(109168,"Tipo de documento",false),new FiltroElem(109061,"Fecha de publicación",false),new FiltroElem(109169,"Género (Obra)",false));
+$FiltroP= array(new FiltroElem(0,"Tipo",false),new FiltroElem("genero","Género",false),new FiltroElem(109333,"Exilio (Pais)",false),new FiltroElem(109335,"Exilio (Ciudad)",false),new FiltroElem("impresor","Impresor",false),new FiltroElem("lugardeimpresion","Lugar de impresión",false),
+new FiltroElem("materia","Materia",false),new FiltroElem("tipodedocumento","Tipo de documento",false),new FiltroElem("fechadepublicacion","Fecha de publicación",false));
 
 $FiltroObject=new FiltroArray($FiltroP);
 

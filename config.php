@@ -5,6 +5,7 @@ define('Clavykey','333');
 define('ClavyServer','CLAVY');
 define('ClavyPort','8080');
 define('ClavyDomine','Clavy');
+define('ClavyService','Finder');
 
 define('TZN_ODA_HOST','OO.fdi.ucm.es');
 

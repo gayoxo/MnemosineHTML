@@ -193,7 +193,7 @@ echo "pathe =".$psjason.";";
 			else 
 		if (($RecRef==true))
 		{
-			if (!empty($DescIcon))
+			if (!empty($DescIcon)&&(@get_headers($DescIcon)[0] != 'HTTP/1.1 404 Not Found'))
 				$Result= "<a class=\"avalueE\" href=\"".$Value."\" target=\"_blank\" ><img class=\"iconvalueE\" src=\"".$DescIcon."\" alt=\"".$DescIcon."\" >OPEN</a>";
 			else
 				$Result= "<a class=\"avalueE\" href=\"".$Value."\" target=\"_blank\" >".$Value."</a>";
@@ -201,12 +201,23 @@ echo "pathe =".$psjason.";";
 		}
 			else
 			{
+				//echo PHP_VERSION;
 				
+				if (strpos(PHP_VERSION, '5') === 0) {
 				$Value = eregi_replace('(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1 </a>', $Value);
 				$Value = eregi_replace('(((f|ht){1}tps://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1</a>', $Value);
 				$Value = eregi_replace('([[:space:]()[{}])(www.[-a-zA-Z0-9@:%_+.~#?&//=]+)','\1<a href="http://\2" target="_blank">\2</a>', $Value);
 				$Value = eregi_replace('([_.0-9a-z-]+@([0-9a-z][0-9a-z-]+.)+[a-z]{2,3})','<a href="mailto:\1" target="_blank">\1</a>', $Value);
 				$Result= "<span class=\"svalueE\">".$Value."</span>";
+				}
+				else{
+				$Value = preg_replace('(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1 </a>', $Value);
+				$Value = preg_replace('(((f|ht){1}tps://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1</a>', $Value);
+			//	$Value = preg_replace('([[:space:]()[{}])(www.[-a-zA-Z0-9@:%_+.~#?&//=]+)','\1<a href="http://\2" target="_blank">\2</a>', $Value);
+				$Value = preg_replace('([_.0-9a-z-]+@([0-9a-z][0-9a-z-]+.)+[a-z]{2,3})','<a href="mailto:\1" target="_blank">\1</a>', $Value);
+				$Result= "<span class=\"svalueE\">".$Value."</span>";
+				
+				}
 			}
 			
 		}

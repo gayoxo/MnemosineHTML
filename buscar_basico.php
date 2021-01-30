@@ -10,21 +10,22 @@
 <?php 
 	
 	$Basica=$_POST["BarraBasica"];
-	$Basica2=$_POST["Campo"];
+//	$Basica2=$_POST["Campo"];
 	
-	$TypeNumber=intval($Basica2);
+//	$TypeNumber=intval($Basica2);
 	
-	$Inside=$CamposArray->isinside($TypeNumber);
+//	$TypeNumber=$CamposArray->findElem($TypeNumber);
 	
-	$TypeNumber=$CamposArray->findElem($TypeNumber);
+	$BusquedaStringLabelQ=trim($Basica);
 	
-
-	$ArrayBasico=preg_split("/[\s,]+/",$Basica); 
+//	if (!empty($TypeNumber)) 
+//		$BusquedaStringLabelQ=$TypeNumber.":".trim($Basica);
 	
-	$BusquedaArray=array();
+//	$BusquedaStringLabel="";
 	
-	$BusquedaStringLabel="";
 	
+	
+	/*
 	
 	foreach ($ArrayBasico as $elem)
 	{
@@ -52,7 +53,7 @@
 			array_push($BusquedaArray,$Busqueda);
 			
 		}
-	}
+	}*/
 	
 	/*var_dump($BusquedaArray);*/
 	
