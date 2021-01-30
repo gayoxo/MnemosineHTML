@@ -156,7 +156,7 @@ class CollectionArray
 		11,
 		"Literatura de Quiosco",
 		"La literatura vendida en los quioscos gozó de gran éxito de público. Esta colección irá recogiendo el legado de buena parte de estas colecciones. Encargado de la colección Jeffrey Zamostny",
-		"name=Literatura de Quiosco&q=clavy_id:59600 OR clavy_id:59614 OR clavy_id:59601 OR clavy_id:59596 OR clavy_id:59590 OR clavy_id:59605 OR clavy_id:59604 OR clavy_id:59602 OR clavy_id:59771 OR clavy_id:59770 OR clavy_id:59754",
+		"name=Literatura de Quiosco&q=tipodecoleccion:quiosco",
 		"imagenes/COLECCION3.png"
 		),
 		
