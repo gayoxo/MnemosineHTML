@@ -1,14 +1,14 @@
 
  
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
+ 
+ <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-
         var data = google.visualization.arrayToDataTable([
-		['Task', 'Hours per Day'],
-		<?php    
+          ['Genero', 'Total', 'Exilio'],
+		  <?php    
 		
 		$ClavyService="mnemosineS";
 		$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/'.$ClavyService.'/';
@@ -26,7 +26,7 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'hombresmujeres';
+		$service_url = $ServerService.'hombresmujeresExilio';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
@@ -52,7 +52,9 @@
 			$JObj=json_decode($curl_response, true);
 				foreach ($JObj as $EtiquetaV=>$arrayE)
 				{
-					 echo "['$EtiquetaV',$arrayE],", PHP_EOL,"          ";
+					$Tottem=$arrayE['Total'];
+					$Exttem=$arrayE['Exilio'];
+					echo "['$EtiquetaV',$Tottem,$Exttem],", PHP_EOL,"          ";
 
 				}
 			curl_close($curl);
@@ -60,20 +62,27 @@
 	}
 	}
 		?>
+		  
         ]);
 
         var options = {
-          title: 'Autores por generos en Mnemosine',
+
+          title: 'Autores exiliados por genero en Mnemosine',
+		  legend: { position: 'none' },
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
-        chart.draw(data, options);
+        chart.draw(data, google.charts.Bar.convertOptions(options));
       }
- </script>
+    </script>
+	
+	
+	
+    
 
 
-<div class="zonIndex" id="piechart" style="height: 500px;">
+<div class="zonIndex" id="columnchart_material" style="height: 500px;"></div>
 
 </div>

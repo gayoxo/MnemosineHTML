@@ -1,14 +1,11 @@
-
- 
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
+<script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
-
       function drawChart() {
-
         var data = google.visualization.arrayToDataTable([
-		['Task', 'Hours per Day'],
-		<?php    
+          ['Nombre', 'Año de Fallecimiento'],
+		  
+		  <?php    
 		
 		$ClavyService="mnemosineS";
 		$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/'.$ClavyService.'/';
@@ -26,7 +23,7 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'hombresmujeres';
+		$service_url = $ServerService.'muertos3639';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
@@ -52,7 +49,7 @@
 			$JObj=json_decode($curl_response, true);
 				foreach ($JObj as $EtiquetaV=>$arrayE)
 				{
-					 echo "['$EtiquetaV',$arrayE],", PHP_EOL,"          ";
+					echo "['$EtiquetaV','$arrayE'],", PHP_EOL,"          ";
 
 				}
 			curl_close($curl);
@@ -60,20 +57,33 @@
 	}
 	}
 		?>
-        ]);
+
+		  ]);
 
         var options = {
-          title: 'Autores por generos en Mnemosine',
-		  colors: ['#1b9e77', '#d95f02', '#7570b3']
+          title: 'Muertos entre 1936 y 1937',
+          legend: { position: 'none' },
+		   colors: ['#1b9e77', '#d95f02', '#7570b3'],
+		   hAxis: {
+			   format: '',
+			   ticks: ['1936', '1937', '1938', '1939' ]
+			},
+
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
+        var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
- </script>
+    </script>
+ 
+ 
+ 
+	
+	
+	
+    
 
 
-<div class="zonIndex" id="piechart" style="height: 500px;">
+<div class="zonIndex" id="chart_div" style="height: 500px;"></div>
 
 </div>
