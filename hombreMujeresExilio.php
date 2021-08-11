@@ -84,5 +84,3 @@
 
 
 <div class="zonIndex" id="columnchart_material" style="height: 500px;"></div>
-
-</div>

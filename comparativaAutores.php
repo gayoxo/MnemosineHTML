@@ -1,13 +1,17 @@
+<script type="text/javascript">
+  google.charts.load("current", {packages:["timeline"]});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
 
- 
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-		['Task', 'Hours per Day'],
+    var container = document.getElementById('example3.1');
+    var chart = new google.visualization.Timeline(container);
+    var dataTable = new google.visualization.DataTable();
+    dataTable.addColumn({ type: 'string', id: 'President' });
+        dataTable.addColumn({ type: 'string', id: 'dummy bar label' });
+        dataTable.addColumn({ type: 'string', role: 'tooltip' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+    dataTable.addRows([
 		<?php    
 		
 		$ClavyService="mnemosineS";
@@ -26,7 +30,7 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'hombresmujeres';
+		$service_url = $ServerService.'obrasDe';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
@@ -52,7 +56,12 @@
 			$JObj=json_decode($curl_response, true);
 				foreach ($JObj as $EtiquetaV=>$arrayE)
 				{
-					 echo "['$EtiquetaV',$arrayE],", PHP_EOL,"          ";
+					foreach ($arrayE as $titulo=>$año)
+					{
+						$año2=$año+1;
+						echo "['$EtiquetaV',null,'$titulo',new Date($año, 0, -181),new Date($año, 0, 181)],", PHP_EOL,"          ";
+					}
+					
 
 				}
 			curl_close($curl);
@@ -60,18 +69,25 @@
 	}
 	}
 		?>
-        ]);
 
-        var options = {
-          title: 'Autores por generos en Mnemosine',
-		  colors: ['#1b9e77', '#d95f02', '#7570b3']
+      
+    ]);
+
+var options = {
+		   colors: ['#1b9e77', '#d95f02', '#7570b3'],
+		   timeline: {
+			   showBarLabels:false,
+			   showRowLabels:true,
+			   groupByRowLabel: true
+		   },
+		    avoidOverlappingGridLines: false
         };
+		
+    chart.draw(dataTable,options);
+  }
+</script>
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
- </script>
-
-
-<div class="zonIndex" id="piechart" style="height: 500px;"></div>
+<div class="zonIndex" id="chart_div" style="overflow-x: auto; height: 600px;">
+Obras de autores en el tiempo
+<div id="example3.1" style="width: 3000px; height: 600px;"></div>
+</div>

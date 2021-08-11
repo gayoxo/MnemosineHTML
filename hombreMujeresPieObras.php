@@ -26,7 +26,7 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'hombresmujeres';
+		$service_url = $ServerService.'hombresmujeresObras';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
@@ -63,15 +63,15 @@
         ]);
 
         var options = {
-          title: 'Autores por generos en Mnemosine',
+          title: 'Obras por generos del autor en Mnemosine',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
 
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
 
         chart.draw(data, options);
       }
  </script>
 
 
-<div class="zonIndex" id="piechart" style="height: 500px;"></div>
+<div class="zonIndex" id="piechart2" style="height: 500px;"></div>

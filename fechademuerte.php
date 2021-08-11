@@ -85,5 +85,3 @@
 
 
 <div class="zonIndex" id="chart_div" style="height: 500px;"></div>
-
-</div>
