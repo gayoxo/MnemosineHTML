@@ -1,17 +1,13 @@
-<script type="text/javascript">
-  google.charts.load("current", {packages:["timeline"]});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
 
-    var container = document.getElementById('example3.1');
-    var chart = new google.visualization.Timeline(container);
-    var dataTable = new google.visualization.DataTable();
-    dataTable.addColumn({ type: 'string', id: 'President' });
-        dataTable.addColumn({ type: 'string', id: 'dummy bar label' });
-        dataTable.addColumn({ type: 'string', role: 'tooltip' });
-        dataTable.addColumn({ type: 'date', id: 'Start' });
-        dataTable.addColumn({ type: 'date', id: 'End' });
-    dataTable.addRows([
+ 
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+		['Task', 'Hours per Day'],
 		<?php    
 		
 		$ClavyService="mnemosineS";
@@ -30,7 +26,7 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'obrasDe';
+		$service_url = $ServerService.'vocabulario?termino=generoliterario';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
@@ -56,12 +52,7 @@
 			$JObj=json_decode($curl_response, true);
 				foreach ($JObj as $EtiquetaV=>$arrayE)
 				{
-					foreach ($arrayE as $titulo=>$año)
-					{
-						$año2=$año+1;
-						echo "['$EtiquetaV',null,'$titulo',new Date($año, 0, -181),new Date($año, 0, 181)],", PHP_EOL,"          ";
-					}
-					
+					 echo "['$EtiquetaV',$arrayE],", PHP_EOL,"          ";
 
 				}
 			curl_close($curl);
@@ -69,25 +60,18 @@
 	}
 	}
 		?>
+        ]);
 
-      
-    ]);
-
-var options = {
-		   colors: ['#1b9e77', '#d95f02', '#7570b3', '#f4ff91'],
-		   timeline: {
-			   showBarLabels:false,
-			   showRowLabels:true,
-			   groupByRowLabel: true
-		   },
-		    avoidOverlappingGridLines: false
+        var options = {
+          title: 'Generos literarios de las obras en mnemosine',
+		  colors: ['#1b9e77', '#d95f02', '#7570b3', '#b370ac','#b2b370']
         };
-		
-    chart.draw(dataTable,options);
-  }
-</script>
 
-<div class="zonIndex" id="chart_div" style="overflow-x: auto; height: 600px;">
-Obras de autores en el tiempo
-<div id="example3.1" style="width: 3000px; height: 600px;"></div>
-</div>
+        var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
+
+        chart.draw(data, options);
+      }
+ </script>
+
+
+<div class="zonIndex" id="piechart3" style="height: 500px;"></div>

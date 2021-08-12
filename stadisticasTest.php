@@ -12,5 +12,7 @@
 <?php include 'fechademuerte.php'; ?>
 <?php include 'comparativaAutores.php'; ?>
 <?php include 'hombreMujeresPieObras.php'; ?>
+<?php include 'generosliterarios.php'; ?>
+<?php include 'ObrasGeneral.php'; ?>
 
 <?php include 'botton.php'; ?>
