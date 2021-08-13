@@ -164,7 +164,7 @@ class CollectionArray
 		12,
 		"Carmen de Burgos",
 		"Es una colección de los libros publicados por una autora individual. Coordinador: Pendiente de asignar.",
-		"name=Carmen de Burgos&q=Carmen AND Burgos",
+		"name=Carmen de Burgos&q=REL:62598",
 		"imagenes/COLECCION9.png"
 		),
 		
