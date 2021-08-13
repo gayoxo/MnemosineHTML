@@ -1,14 +1,10 @@
 
- 
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+Mapa de palabras en los elementos de Mnemosine.
+ <div class="zonIndex" id="wordcambas" style=" height: 500px;"></div>
+<script type="text/javascript">
 
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-		['Task', 'Hours per Day'],
-		<?php    
+var list = [
+<?php    
 		
 		$ClavyService="mnemosineS";
 		$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/'.$ClavyService.'/';
@@ -26,7 +22,7 @@
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'vocabulario?termino=generoliterario';
+		$service_url = $ServerService.'wordmapCountDes';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
@@ -50,10 +46,11 @@
 		{
 			
 			$JObj=json_decode($curl_response, true);
-				foreach ($JObj as $EtiquetaV=>$arrayE)
+				foreach ($JObj as $texto=>$numero)
 				{
-					$EtiquetaV=ucfirst($EtiquetaV);
-					 echo "['$EtiquetaV',$arrayE],", PHP_EOL,"          ";
+	
+					echo "['$texto',$numero],", PHP_EOL;
+								
 
 				}
 			curl_close($curl);
@@ -61,18 +58,7 @@
 	}
 	}
 		?>
-        ]);
+];
+WordCloud(document.getElementById('wordcambas'), { list: list } );
 
-        var options = {
-          title: 'Generos literarios de las obras en mnemosine',
-		  colors: ['#1b9e77', '#d95f02', '#7570b3', '#b370ac','#b2b370','#2471A3']
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
-
-        chart.draw(data, options);
-      }
  </script>
-
-
-<div class="zonIndex" id="piechart3" style="height: 500px;"></div>

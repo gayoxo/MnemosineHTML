@@ -14,5 +14,7 @@
 <?php include 'hombreMujeresPieObras.php'; ?>
 <?php include 'generosliterarios.php'; ?>
 <?php include 'ObrasGeneral.php'; ?>
+<?php include 'wordCloudDesc.php'; ?>
+<?php include 'TiposdeEntidad.php'; ?>
 
 <?php include 'botton.php'; ?>

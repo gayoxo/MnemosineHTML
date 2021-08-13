@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="nhpup_1.1.js"></script>
+	<script src="wordcloud2.js"></script>
 	  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPj8iz7libsW74GvKYCU7VdtggaOA8814&v=3&sensor=true&libraries=places"></script>  	
 
   <script src="gmaps.js"></script>
