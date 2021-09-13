@@ -188,7 +188,7 @@ class CollectionArray
 		15,
 		"Bohemia Literaria",
 		"Coleccion Bohemia Literaria. Coordinador: Sofia Nicolas Díez.",
-		"name=Bohemia Literaria&q=subcoleccionmateria:'Bohemia Literaria'",
+		"name=Bohemia Literaria&q=subcoleccion:'Bohemia Literaria'",
 		"imagenes/COLECCION3.png"
 		),
 		
@@ -196,7 +196,7 @@ class CollectionArray
 		15,
 		"Literaria Lesbica",
 		"Coleccion Literaria Lesbica. Coordinador: Ángela Ena y Patricia Barrera.",
-		"name=Literaria Lesbica&q=subcoleccionmateria:lesbica",
+		"name=Literaria Lesbica&q=subcoleccion:lesbica",
 		"imagenes/COLECCION5.png"
 		),
 		
