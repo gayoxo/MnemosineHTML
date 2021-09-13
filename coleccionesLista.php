@@ -241,11 +241,19 @@ class CollectionArray
 		),
 		
 		new CollectionElem(
-		20,
+		21,
 		"Publicaciones Periódicas",
 		"Publicaciones Periódicas.",
 		"name=Publicaciones Periódicas&q=coleccionenmnemosine:%22publicaciones periódicas%22",
 		"imagenes/COLECCION1.png"
+		),
+		
+		new CollectionElem(
+		22,
+		"Autores Extremeños",
+		"Autores Extremeños. Coordinador: Guadalupe Nieto Caballero.",
+		"name=Autores Extremeños&q=coleccionenmnemosine:%22Autores extremeños%22",
+		"imagenes/COLECCION3.png"
 		),
 
 		
