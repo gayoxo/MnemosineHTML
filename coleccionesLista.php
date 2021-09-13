@@ -182,7 +182,17 @@ class CollectionArray
 		"Poetas mujeres de la Edad de Plata. Coordinador: Dolores Romero López.",
 		"name=Poetas mujeres de la Edad de Plata&q=genero:mujer AND generosliterariosquecultiva:Poeta",
 		"imagenes/COLECCION1.png"
-		)
+		),
+		
+		new CollectionElem(
+		15,
+		"Bohemia Literaria",
+		"Coleccion Bohemia Literaria. Coordinador: Sofia Nicolas Díez.",
+		"name=Bohemia Literaria&q=subcoleccionmateria:'Bohemia Literaria'",
+		"imagenes/COLECCION3.png"
+		),
+		
+		
 		
 	);
 	
