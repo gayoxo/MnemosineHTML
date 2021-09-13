@@ -239,6 +239,14 @@ class CollectionArray
 		"name=Cuentos de Calleja&q=subcoleccion:calleja",
 		"imagenes/COLECCION5.png"
 		),
+		
+		new CollectionElem(
+		20,
+		"Publicaciones Periódicas",
+		"Publicaciones Periódicas.",
+		"name=Publicaciones Periódicas&q=coleccionenmnemosine:%22publicaciones periódicas%22",
+		"imagenes/COLECCION1.png"
+		),
 
 		
 	);
