@@ -208,6 +208,14 @@ class CollectionArray
 		"imagenes/COLECCION4.png"
 		),
 		
+		new CollectionElem(
+		17,
+		"Fondo Fernando Eguidazu ",
+		"Fondo Fernando Eguidazu de novela popular Española. Coordinador: Fondo Fernando Eguidazu.",
+		"name=Fondo Fernando Eguidazu&q=subcoleccion:CFENPE",
+		"imagenes/COLECCION4.png"
+		),
+		
 	);
 	
 	
