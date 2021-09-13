@@ -211,8 +211,24 @@ class CollectionArray
 		new CollectionElem(
 		17,
 		"Fondo Fernando Eguidazu ",
-		"Fondo Fernando Eguidazu de novela popular Española. Coordinador: Fondo Fernando Eguidazu.",
+		"Fondo Fernando Eguidazu de Novela Popular Española. Coordinador:  Dolores Romero López.",
 		"name=Fondo Fernando Eguidazu&q=subcoleccion:CFENPE",
+		"imagenes/COLECCION1.png"
+		),
+		
+		new CollectionElem(
+		18,
+		"Instituto Iberoamericano de Berlín",
+		"Instituto Iberoamericano de Berlín. Coordinador:  Dolores Romero López.",
+		"name=Instituto Iberoamericano de Berlín&q=localizaciondelfondo:Berlin",
+		"imagenes/COLECCION2.png"
+		),
+		
+		new CollectionElem(
+		18,
+		"Memorias de Exiliadas",
+		"Memorias de Exiliadas. Coordinador: Begona Camblor Pandiella.",
+		"name=Memorias de Exiliadas&q=subcoleccion:exiliada",
 		"imagenes/COLECCION4.png"
 		),
 		
