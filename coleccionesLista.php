@@ -204,7 +204,7 @@ class CollectionArray
 		16,
 		"Literatura Femenina en Índice Literario",
 		"Literatura Femenina en Índice Literario. Coordinador: Juana Maria González García.",
-		"name=Literaria Lesbica&q=reseadaen:'Índice Literario'",
+		"name=Índice Literario&q=reseadaen:indice AND reseadaen:literario",
 		"imagenes/COLECCION4.png"
 		),
 		
