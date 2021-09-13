@@ -232,6 +232,22 @@ class CollectionArray
 		"imagenes/COLECCION4.png"
 		),
 		
+		new CollectionElem(
+		20,
+		"Cuentos de Calleja",
+		"Cuentos de Calleja. Coordinador: Mª Jesús Fraga.",
+		"name=Cuentos de Calleja&q=subcoleccion:calleja",
+		"imagenes/COLECCION5.png"
+		),
+		
+		new CollectionElem(
+		21,
+		"Dialogos",
+		"Dialogos. Coordinador: Mª Jesús Fraga.",
+		"name=Dialogos&q=generoliterario:dialogo OR dialogos",
+		"imagenes/COLECCION4.png"
+		),
+		
 	);
 	
 	
