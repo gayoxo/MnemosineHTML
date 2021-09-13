@@ -86,7 +86,7 @@ class CollectionArray
 		2,
 		"Literatura infantil",
 		"Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinadoras: Alicia Reina y Mª Jesús Fraga.",
-		"name=Literatura infantil&q=materia:%22literatura?infantil%22",
+		"name=Literatura infantil&q=materia:%22literatura?infantil%22 OR coleccionenmnemosine:%22literatura?infantil%22",
 		"imagenes/COLECCION9.png"
 		),
 	new CollectionElem(
