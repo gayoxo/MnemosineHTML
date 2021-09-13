@@ -225,10 +225,10 @@ class CollectionArray
 		),
 		
 		new CollectionElem(
-		18,
+		19,
 		"Memorias de Exiliadas",
-		"Memorias de Exiliadas. Coordinador: Begona Camblor Pandiella.",
-		"name=Memorias de Exiliadas&q=subcoleccion:exiliada",
+		"Memorias de escritoras exiliadas tras la Guerra Civil. Coordinador: Begoña Camblor Pandiella.",
+		"name=Memorias de Exiliadas&q=subcoleccion:exiliadas",
 		"imagenes/COLECCION4.png"
 		),
 		
