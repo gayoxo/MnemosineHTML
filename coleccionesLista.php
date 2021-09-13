@@ -140,7 +140,7 @@ class CollectionArray
 		9,
 		"Diálogos literarios",
 		"Esta colección reúne los textos dialogados que se publicaron durante la Edad de Plata. Se fomenta así la colaboración con el Grupo de Investigación UCM Dyalogica y su Biblioteca Digital del Diálogo Hispánico. Coordinadora: Mª Jesús Fraga.",
-		"name=Diálogos literarios&q=dialogos",
+		"name=Diálogos literarios&q=dialogos OR q=generoliterario:dialogo",
 		"imagenes/COLECCION7.png"
 		),
 
@@ -239,14 +239,7 @@ class CollectionArray
 		"name=Cuentos de Calleja&q=subcoleccion:calleja",
 		"imagenes/COLECCION5.png"
 		),
-		
-		new CollectionElem(
-		21,
-		"Dialogos",
-		"Dialogos. Coordinador: Mª Jesús Fraga.",
-		"name=Dialogos&q=generoliterario:dialogo OR dialogos",
-		"imagenes/COLECCION4.png"
-		),
+
 		
 	);
 	
