@@ -221,7 +221,7 @@ class CollectionArray
 		"Instituto Iberoamericano de Berlín",
 		"Instituto Iberoamericano de Berlín. Coordinador:  Dolores Romero López.",
 		"name=Instituto Iberoamericano de Berlín&q=localizaciondelfondo:Berlin",
-		"imagenes/COLECCION2.png"
+		"imagenes/COLECCION3.png"
 		),
 		
 		new CollectionElem(
