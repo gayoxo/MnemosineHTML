@@ -194,9 +194,9 @@ class CollectionArray
 		
 		new CollectionElem(
 		15,
-		"Literaria Lesbica",
-		"Coleccion Literaria Lesbica. Coordinador: Ángela Ena y Patricia Barrera.",
-		"name=Literaria Lesbica&q=subcoleccion:lesbica",
+		"Literatura Lesbica",
+		"Coleccion Literatura Lesbica. Coordinador: Ángela Ena y Patricia Barrera.",
+		"name=Literatura Lesbica&q=subcoleccion:lesbica",
 		"imagenes/COLECCION5.png"
 		),
 		
