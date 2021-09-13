@@ -252,7 +252,7 @@ class CollectionArray
 		22,
 		"Autores Extremeños",
 		"Autores Extremeños. Coordinador: Guadalupe Nieto Caballero.",
-		"name=Autores Extremeños&q=coleccionenmnemosine:%22Autores extremeños%22",
+		"name=Autores Extremeños&q=coleccionenmnemosine:%22extremenos%22",
 		"imagenes/COLECCION3.png"
 		),
 
