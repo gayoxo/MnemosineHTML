@@ -10,6 +10,25 @@
  
 }
 
+
+p.completa {
+    height: auto !important;
+    text-align: justify;
+    margin: 1em 8em;
+}
+
+
+ul.centered {
+    width:100% !important;
+    text-align:center;
+}
+li.centered {
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+    float: none !important;
+}
+
 /*
 @font-face {
        font-family: "diddot";
