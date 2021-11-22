@@ -203,6 +203,7 @@ echo "pathe =".$psjason.";";
 			{
 				//echo PHP_VERSION;
 				
+				
 				if (strpos(PHP_VERSION, '5') === 0) {
 				$Value = eregi_replace('(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1 </a>', $Value);
 				$Value = eregi_replace('(((f|ht){1}tps://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1</a>', $Value);
@@ -211,10 +212,11 @@ echo "pathe =".$psjason.";";
 				$Result= "<span class=\"svalueE\">".$Value."</span>";
 				}
 				else{
-				$Value = preg_replace('(((f|ht){1}tp://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1 </a>', $Value);
-				$Value = preg_replace('(((f|ht){1}tps://)[-a-zA-Z0-9@:%_+.~#?&//=]+)','<a href="\1" target="_blank">\1</a>', $Value);
-			//	$Value = preg_replace('([[:space:]()[{}])(www.[-a-zA-Z0-9@:%_+.~#?&//=]+)','\1<a href="http://\2" target="_blank">\2</a>', $Value);
-				$Value = preg_replace('([_.0-9a-z-]+@([0-9a-z][0-9a-z-]+.)+[a-z]{2,3})','<a href="mailto:\1" target="_blank">\1</a>', $Value);
+
+				$Value = preg_replace('/(((f|ht){1}tp:\/\/)[-a-zA-Z0-9@:%_+.~#?&\/\/=]+)/','<a href="\1" target="_blank">\1 </a>', $Value);
+                $Value = preg_replace('/(((f|ht){1}tps:\/\/)[-a-zA-Z0-9@:%_+.~#?&\/\/=]+)/','<a href="\1" target="_blank">\1</a>', $Value);
+				$Value = preg_replace('/([[:space:]()[{}])(www.[-a-zA-Z0-9@:%_+.~#?&\/\/=]+)/','\1<a href="http://\2" target="_blank">\2</a>', $Value);
+				$Value = preg_replace('/([_.0-9a-z-]+@([0-9a-z][0-9a-z-]+.)+[a-z]{2,3})/','<a href="mailto:\1" target="_blank">\1</a>', $Value);
 				$Result= "<span class=\"svalueE\">".$Value."</span>";
 				
 				}
@@ -276,7 +278,7 @@ if (!isset($DocumentID)||($DocumentID==0))
 	exit();
 }
 	
-$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/Finder/';
+$ServerService='http://'.ClavyServer.':'.ClavyPort.'/'.ClavyDomine.'/rest/'.ClavyService.'/';
 	//$service_url = $ServerService.'getPlainDocument';
 	$service_url = $ServerService.'getPlainDocument?userclavy='.Clavyuser.'&passwordclavy='.Clavyuserkey.'&keyclavy='.Clavykey.'&iddocument='.$DocumentID;
 	$curl = curl_init($service_url);
