@@ -11,10 +11,11 @@
 }
 
 
-p.completa {
+p.colecciones_desc {
     height: auto !important;
     text-align: justify;
     margin: 1em 8em;
+    font-family: 'diddot';
 }
 
 
@@ -320,7 +321,7 @@ span.Descripcion_documento_buscador_valor {
 background-image: url("imagenes/redes2.png");
 background-size: 100% 100%;
     background-repeat: no-repeat;
- background-attachment: fixed;
+ background-attachment: inherit;
     background-position: center; 
 	  margin-top: 2em;
 }
