@@ -14,7 +14,7 @@
 p.colecciones_desc {
     height: auto !important;
     text-align: justify;
-    margin: 1em 8em;
+    margin: 1em 8em 3em 8em;
     font-family: 'diddot';
 }
 
@@ -22,6 +22,9 @@ p.colecciones_desc {
 ul.centered {
     width:100% !important;
     text-align:center;
+    margin-block-start: 0px;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
 }
 li.centered {
     display:inline-block;
@@ -774,3 +777,9 @@ ul .menustyle{
     list-style-image: url('sqpurple.gif');
 }
 */
+
+
+a.coleccion_directa {
+    text-decoration: none;
+    color: black;
+}

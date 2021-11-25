@@ -17,49 +17,21 @@
             <div class="collection_test"> <p>Cartografía Digital</p></div>
         </li>
         <li class="centered">
+            <a class="coleccion_directa" href="histoANDFilo.php">
             <img  src="imagenes/iconohistoriafilol.png" width="240" height="230" border="0" alt="1">
             <div class="collection_test"> <p>Historia y Filología</div>
+            </a>
         </li>
         <li class="centered">
-            <img  src="imagenes/iconoculturales.png" width="240" height="230" border="0" alt="1">
-            <div class="collection_test"> <p>Constelaciones Culturales</p></div>
+            <a class="coleccion_directa" href="constelacionesCulturales.php">
+                <img  src="imagenes/iconoculturales.png" width="240" height="230" border="0" alt="1">
+                <div class="collection_test"> <p>Constelaciones Culturales</p></div>
+            </a>
+
         </li>
 
     </ul>
 
-    <hr class="linea_horizontal">
-
-    <ul>
-
-
-	<?php
-	
-	include 'coleccionesLista.php';
-	
-	foreach($CollectionArrayAL as $elembase)
-	{
-		
-	?>
-	
-		<li>
-		<div>
-		<a class="coleccion_vinculo" href="buscadorColeccion.php?<?php echo $elembase->Datos; ?>" onmouseover="nhpup.popup('<?php echo $elembase->Descripcion; ?>');">
-		<img  src=<?php echo $elembase->Imagen; ?> width="150" height="150" border="0" alt="1"> 
-		<div class="collection_test"> <p><?php echo $elembase->Nombre; ?></p></div>
-        </a>
-        </div>
-		</li>
-	
-	
-	<?php
-	}
-	
-	?>
-	
-		
-		
-		
-	</ul>
 </div>	
 	
 <?php include 'botton.php'; ?>
