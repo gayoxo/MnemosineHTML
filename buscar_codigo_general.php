@@ -223,11 +223,14 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			echo "<span class=\"resultado_test\">";
 
 
-
+            if (isset($BusquedaId))
+                echo "Coleccion: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
+            else
+                echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
 if (isset($BusquedaId)&&file_exists("desc_".$BusquedaId.".php"))
 {
 
-    echo "Coleccion: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
+
 
     include "desc_".$BusquedaId.".php";
     ?>
@@ -252,8 +255,7 @@ if (isset($BusquedaId)&&file_exists("desc_".$BusquedaId.".php"))
     <?php
 
 }
-else
-    echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
+
 
 ?>
 
