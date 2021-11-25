@@ -127,8 +127,14 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 		
 	//var_dump($TypeNumber);
 	//var_dump($Campo);
-	
-	include 'filtro.php';
+
+    if (isset($BusquedaId)&&file_exists("f".$BusquedaId.".php"))
+        {
+            include "f".$BusquedaId.".php";
+        }
+    else
+        include 'filtro.php';
+
 	
 	$FiltroData = array("filtro" => $Filtro); 
 	
@@ -215,11 +221,47 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			$BusquedaStringLabelQ=strip_tags($BusquedaStringLabelQ);
 			
 			echo "<span class=\"resultado_test\">";
-			echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
-			echo "</span>";
-			echo "</br>";
-			echo "</br>";
-			
+
+
+
+if (isset($BusquedaId)&&file_exists("desc_".$BusquedaId.".php"))
+{
+
+    echo "Coleccion: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
+
+    include "desc_".$BusquedaId.".php";
+    ?>
+    <div class="Colecciones descript">
+        <div class="descript_text">
+            <p class="descript_text_text">
+                <?php echo $val_desc; ?>
+            </p>
+        </div>
+        <div class="descript_img">
+            <img class="descript_img_img" src="<?php echo $val_imagen; ?>">
+        </div>
+
+
+
+
+    </div>
+
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+
+    <?php
+
+}
+else
+    echo "Resultado para la busqueda: <span class=\"resultado_test_value\">".$BusquedaStringLabelQ."</span>";
+
+?>
+
+<hr class="linea_horizontal">
+</span>
+</br>
+</br>
+<?php
 			$arraYDocumentos=array();
 			$TotalValue=0;
 			$arraYFiltro=array();
@@ -256,6 +298,8 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
 			<input type="hidden" name="BusquedaARRAY" value='<?php echo $BusquedaArray?>' />
 			<input type="hidden" name="BusquedaStringLabelQIN" value='<?php echo $BusquedaStringLabelQ?>' />
+            <input type="hidden" name="$BusquedaId" value='<?php echo $BusquedaId?>' />
+
 			
 
 			<select name="Limite" onchange="javascript:document.forms['formlimite'].submit();">
@@ -307,6 +351,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
 					echo "<input type=\"hidden\" name=\"BusquedaARRAY\" value='".$BusquedaArray."' />";
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelQIN\" value='".$BusquedaStringLabelQ."' />";
+                        echo "<input type=\"hidden\" name=\"BusquedaId\" value='".$BusquedaId."' />";
 					echo "<a class=\"paginadorNoActivo\" href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($staPlus+1)."'].submit();\" >Menos</a>  ";
 					echo "</form>";
 					}
@@ -323,8 +368,9 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
 					echo "<input type=\"hidden\" name=\"BusquedaARRAY\" value='".$BusquedaArray."' />";
 					echo "<input type=\"hidden\" name=\"BusquedaStringLabelQIN\" value='".$BusquedaStringLabelQ."' />";
-				
-					if ($Visibles<5)
+                    echo "<input type=\"hidden\" name=\"BusquedaId\" value='".$BusquedaId."' />";
+
+                        if ($Visibles<5)
 					{
 						
 					$Visibles=$Visibles+1;
@@ -362,6 +408,7 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 			<input type="hidden" name="BusquedaStringLabelIN" value='<?php echo $BusquedaStringLabel?>' />
 			<input type="hidden" name="BusquedaARRAY" value='<?php echo $BusquedaArray?>' />
 			<input type="hidden" name="BusquedaStringLabelQIN" value='<?php echo $BusquedaStringLabelQ?>' />
+                <input type="hidden" name="$BusquedaId" value='<?php echo $BusquedaId?>' />
 			<?php
 			
 			

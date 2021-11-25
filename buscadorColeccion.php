@@ -14,6 +14,11 @@
 	
 	if (isset($_GET["q"]))
 		$BusquedaStringLabelQ=$_GET["q"];
+
+	$BusquedaId=0;
+
+if (isset($_GET["idc"]))
+	$BusquedaId=$_GET["idc"];
 	
 	
 	for ($x = 1; isset($_GET["Id".$x]); $x++)
@@ -94,7 +99,11 @@
 		$NamedQuerry=strip_tags($_GET["name"]);
 	
 	//var_dump("Coleccion= ".$NamedQuerry);
-	
+
+?>
+
+
+    <?php
 	include 'buscar_codigo_general.php';
 	
 		

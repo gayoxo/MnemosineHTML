@@ -783,3 +783,37 @@ a.coleccion_directa {
     text-decoration: none;
     color: black;
 }
+
+
+.descript_text {
+    float: left;
+    width: 68%;
+    height: 100%;
+    margin: 0em 1%;
+}
+
+.descript_img {
+    float: left;
+    width: 28%;
+    margin: 0em 1%;
+}
+
+img.descript_img_img {
+    width: 100%;
+}
+
+.Colecciones.descript {
+    margin: 1em 0em 3em 0em;
+    float: left;
+}
+
+p.descript_text_text {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    height: 100%;
+    font-family: 'diddot';
+    text-align: justify;
+    font-size: medium;
+}
