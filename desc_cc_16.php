@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/16.MemoriasExiliadas.png";
+$val_desc = "La recuperación de la historia del exilio republicano español ha pasado en los últimos años por una atención creciente hacia los llamados “géneros del yo”. Esta colección presenta un conjunto de datos y metadatos relacionados con textos memorialísticos escritos por mujeres en los que se recoge, en mayor o menor medida, un relato de las vivencias en el exilio. Se han seleccionado autoras nacidas entre 1898 y 1936, considerando tanto la Edad de Plata como su proyección posterior; abarca tres géneros principales (memorias, autobiografía y diarios), y consigna mujeres no pertenecientes en exclusiva al ámbito profesional de la literatura. A través de sus obras se puede reconstruir un relato fidedigno y en primera persona del exilio republicano español, además de observarse los diversos roles ejercidos por las mujeres de la época y su paulatina lucha por la emancipación y la participación en el espacio público.
+Coordinadora: Begoña Camblor Pandiella"
+?>

@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/18.EscriExtremeños.png";
+$val_desc = "Junto a los núcleos tradicionales y habitualmente reconocidos confluyen otros espacios periféricos que aportan pluralidad y dinamismo al contexto literario del siglo XX. En esta colección se incluyen nombres, datos, metadatos y enlaces a obras escritas por autores y autoras que nacen en Extremadura o se relacionan con la región. Se reúnen en ella figuras con un reconocimiento previo a nivel general y se añaden nombres menos habituales cuya trascendencia resulta fundamental para el devenir cultural de este espacio. Se trata de un conjunto diverso que aglutina obras de todos los géneros y que abarca a escritores y a escritoras que desarrollan su trayectoria tanto desde Extremadura como fuera de ella. En estos años se asientan tanto las bases de una literatura extremeña como la de una literatura en Extremadura, atenta a las novedades que se generan en otros espacios y en consonancia con el panorama nacional. 
+Coordinadora: Guadalupe Nieto Caballero"
+?>

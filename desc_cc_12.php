@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/12.Iberoamericano%20deBErlin.png";
+$val_desc = "Esta colección pretende ser un reconocimiento a las instituciones que albergan legados culturales españoles fuera de nuestras fronteras y que los documentan, catalogan y digitalizan con el fin de ponerlos a disposición pública. En este caso, el Instituto Iberoamericano de Berlín es la sede de la Colección Fernando Eguidazu de novela popular española, un legado indispensable para investigar las colecciones literarias que se publicaron en España desde la segunda mitad del siglo XIX hasta los años 2000. Según información oficial esta colección cuenta con unos 50.000 títulos, la mayor parte pertenecientes al género de novela popular editada en España, pero también hay títulos procedentes de Argentina, México, Estados Unidos y Francia. De momento, en Mnemosine solo damos acceso a los datos recabados en la sede de dicha institución y que forman un corpus de títulos de colecciones literarias publicadas en quioscos entre 1900 y 1939.
+Coordinadora: Dolores Romero López"
+?>

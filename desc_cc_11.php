@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/11.Fondo%20Eguidazu.png";
+$val_desc = "Este fondo de colecciones literarias publicadas entre 1900 y 1936 cuenta con 295 títulos diferentes. Considerada como literatura de quiosco, la colección Fernando Eguidazu de novela popular española está ubicada en el Instituto Iberoamericano de Berlín y lleva el nombre de quien durante muchos lustros coleccionó por afición ejemplares en su mayor parte publicados en Barcelona y en Madrid. Aquí solo se encuentran las referencias a los títulos de las colecciones, pero no a los ejemplares que integran cada una de ellas. Es un trabajo de catalogación y colaboración institucional en marcha con resultados prometedores. Entre los metadatos destacamos el lugar de publicación, el precio, los talleres y casas editoriales El género literario que predomina es el narrativo –cuentos, novelas cortas o novelas largas– y la temática está centrada en las aventuras, principalmente de detectives, espías, villanos, ladrones, del oeste…, pero también de viajes, ya sea reales, por mar o tierra, o fantásticos; no faltan novelas de aventuras sentimentales, amorosas, románticas o de intriga.
+Coordinadora: Dolores Romero López"
+?>

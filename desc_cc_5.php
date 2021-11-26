@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/5.%20Lit-Infantil%20y%20J.png";
+$val_desc = "La literatura infantil y juvenil va tomando cuerpo en el último cuarto del siglo XIX y conoce un amplio desarrollo en el XX. Ello es debido al progresivo asentamiento en la sociedad de la concepción de la infancia como una etapa específica del desarrollo humano que, como tal, requiere de una literatura propia, sin olvidar que algunas de las obras clásicas de este género fueron creadas por sus autores para un lector adulto y muchas otras, como los cuentos de hadas, fueron resultado del interés de ciertos estudiosos por registrar por escrito antiguos cuentos orales. Esta colección recoge una buena muestra de libros instructivos (Telémaco, los cuentos del canónigo Schmid, La buena Juanita), adaptaciones de cuentos de hadas (Andersen, Grimm), clásicos juveniles (Verne, Salgari) y una significativa muestra de las colecciones de cuentos de la editorial de Saturnino Calleja, su fundador, director y auténtico democratizador de la literatura infantil en España.  
+Coordinadora: Mª Jesús Fraga"
+?>

@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/8.%20Protocienciaficcion.png";
+$val_desc = "La colección de protociencia-ficción de la biblioteca digital Mnemosine contiene 185 obras catalogadas y digitalizadas gracias a la biblioteca privada de Agustín Jaureguizar, quien cedió temporalmente sus fondos a la UCM. La literatura española de ciencia-ficción surge en el siglo XIX, concretamente, con la aparición de zarzuelas ambientadas en el espacio exterior, como sucede en Viaje somniaéreo a la luna, o Zulema y Lambert (1832), fruto, quizás, del exotismo romántico. Progresivamente, los elementos propios de la ciencia-ficción evolucionan hasta dirigir el eje argumental de las novelas. Este es el caso del Anacronópete (1887), de Enrique Gaspar, primera novela en la que aparece la máquina del tiempo. Asimismo, podemos encontrar una rica variedad de temas, entre los que destacan la distopía (“Mecanópolis” de Unamuno); la novela científica (Un viaje a Cerebrópolis, de Giné y Partagás) o la novela de espías que incluye elementos de la ciencia-ficción (Después del gas, de David Arias). 
+Coordinadora: Marta Correa"
+?>

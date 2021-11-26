@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/7.Dialogos.png";
+$val_desc = "El diálogo literario, un género practicado desde los orígenes de la literatura, tuvo en España su época más prolífica y brillante durante el Renacimiento. Gracias al auge que la prensa literaria experimentó a finales del siglo XIX, el diálogo breve se vivificó compitiendo con otros géneros periodísticos gracias a su versatilidad y su capacidad didáctica desde la perspectiva de la risa y de la ironía. Una buena parte de estos diálogos fueron recopilados en libros, de los que esta colección contiene todavía un número limitado. Por el contrario, la parte más numerosa está constituida por un conjunto de textos dialogados en prosa publicados en la prensa española del fin de siglo (procedentes de veintiuna publicaciones, dieciséis de las cuales se analizan en la totalidad de sus números). Una gran parte de los textos tienen carácter satírico, lo que parcialmente se debe al importante auge de las revistas festivas. Otro importante grupo de diálogos se consideran de perfil costumbrista, y un tercero, filosófico. 
+Coordinadora: Mª Jesús Fraga"
+?>
