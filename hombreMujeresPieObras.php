@@ -63,7 +63,7 @@
         ]);
 
         var options = {
-          title: 'Obras por generos del autor en Mnemosine',
+          title: 'Obras por géneros del autor en Mnemosine',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
 

@@ -7,7 +7,7 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Genero', 'Total', 'Exilio'],
+          ['Género', 'Total', 'Exilio'],
 		  <?php    
 		
 		$ClavyService="mnemosineS";
@@ -67,7 +67,7 @@
 
         var options = {
 
-          title: 'Autores exiliados por genero en Mnemosine',
+          title: 'Autores exiliados por género en Mnemosine',
 		  legend: { position: 'none' },
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
