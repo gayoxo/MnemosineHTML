@@ -64,7 +64,7 @@
         ]);
 
         var options = {
-          title: 'Generos literarios de las obras en mnemosine',
+          title: 'Géneros literarios de las obras en mnemosine',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3', '#b370ac','#b2b370','#2471A3']
         };
 
