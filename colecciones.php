@@ -11,7 +11,7 @@
 
     <ul class="centered">
         <li class="centered">
-            <a class="coleccion_directa" href="" onmouseover="nhpup.popup('En diálogo con el cartel literario que Ernesto Giménez Caballero publicara la Gaceta Literaria (15/07/1927), esta cartografía es un mapa interactivo y didáctico, sintético y visual, en el que se representa la transición de las investigaciones filológicas e históricas hacia la apertura de los Estudios Culturales y las Humanidades Digitales.');">
+            <a class="coleccion_directa" href="CartografiaDigital.php" onmouseover="nhpup.popup('En diálogo con el cartel literario que Ernesto Giménez Caballero publicara la Gaceta Literaria (15/07/1927), esta cartografía es un mapa interactivo y didáctico, sintético y visual, en el que se representa la transición de las investigaciones filológicas e históricas hacia la apertura de los Estudios Culturales y las Humanidades Digitales.');">
                 <img  src="imagenes/iconomapa.png" width="240" height="230" border="0" alt="1">
                 <div class="collection_test"> <p>Cartografía Digital</p></div>
             </a>
