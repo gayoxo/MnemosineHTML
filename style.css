@@ -336,6 +336,7 @@ background-size: 100% 100%;
        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	   font-family: mnemosine;
 
+    text-align: center;
  }
  
 
@@ -355,6 +356,7 @@ font-family: mnemosine_minuscula;
   border: solid;
   height: 40px;
     font-size: 1.3em;
+    text-align: left;
 }
 
 select.campo_valores_buscador_simple{

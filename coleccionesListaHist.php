@@ -80,43 +80,52 @@ class CollectionArray
 		"Escritoras ",
 		"Escritoras",
 		"name=Escritoras&q=genero:mujer",
-		"imagenes/HyF1.jpg"
+		"imagenes/21.Escritoras.png"
 		),
 	new CollectionElem(
 		2,
 		"Escritores",
 		"Escritores",
 		"name=Escritores&q=genero:hombre",
-		"imagenes/HyF2.jpg"
+		"imagenes/22.Escritores.png"
 		),
         new CollectionElem(
             3,
+            "Mujeres Poetas",
+            "Mujeres Poetas",
+            "name=Mujeres Poetas&q=genero:mujer",
+            "imagenes/23.Mujeres%20Poetas.png"
+        ),
+        new CollectionElem(
+            4,
             "Géneros literarios",
             "Géneros literarios .",
             "name=Géneros literarios&q=generosliterario:/.*/",
-            "imagenes/HyF3.png"
+            "imagenes/24.Generos.png"
         ),
-		new CollectionElem(
-		4,
-		"Publicaciones Periódicas",
-		"Publicaciones Periódicas.",
-		"name=Publicaciones Periódicas&q=coleccionenmnemosine:%22publicaciones periódicas%22",
-		"imagenes/HyF4.png"
-		),
-		new CollectionElem(
-		5,
-		"Edad de Plata Interactiva ",
-		"Edad de Plata Interactiva ",
-		"name=Edad de Plata Interactiva &q=fuentedeenlace:Madgazine",
-		"imagenes/HyF5.png"
-		),
+        new CollectionElem(
+            5,
+            "Edad de Plata Interactiva ",
+            "Edad de Plata Interactiva ",
+            "name=Edad de Plata Interactiva &q=fuentedeenlace:Madgazine",
+            "imagenes/25.Libros%20Interactivos.png"
+        ),
         new CollectionElem(
             6,
             "Libros Digitalizados",
             "Libros Digitalizados",
             "name=Libros Digitalizados&q=link: /.*/",
-            "imagenes/HyF6.jpg"
+            "imagenes/26.Libros%20Enlazados.png"
         ),
+		new CollectionElem(
+		6,
+		"Publicaciones Periódicas",
+		"Publicaciones Periódicas.",
+		"name=Publicaciones Periódicas&q=coleccionenmnemosine:%22publicaciones periódicas%22",
+		"imagenes/27.PubliPeriodicas.png"
+		),
+
+
 
 		
 	);
