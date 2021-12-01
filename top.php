@@ -40,9 +40,11 @@
 				</li>
 				<li class="li_menunav"><a class="menu_elem" href="queesmnemosine.php">¿Qué es Mnemosine?&nbsp></a></li>
 				<li class="li_menunav"><a class="menu_elem" href="colecciones.php">Colecciones&nbsp></a></li>
-				<li class="li_menunav"><a class="menu_elem" href="equipodeinvestigacion.php">Grupos, equipo y contacto&nbsp></a></li>
+                <li class="li_menunav"><a class="menu_elem" href="stadisticasTest.php">Visualizaciones&nbsp></a></li>
+                <li class="li_menunav"><a class="menu_elem" href="equipodeinvestigacion.php">Grupos, equipo y contacto&nbsp></a></li>
 				<li class="li_menunav"><a class="menu_elem" href="ayuda.php">Ayuda&nbsp></a></li>
-		 	</ul>
+                <li class="li_menunav"><a class="menu_elem" href="">Cómo Citar&nbsp></a></li>
+            </ul>
 		</nav>
 	</div>
   
