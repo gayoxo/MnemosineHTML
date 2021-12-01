@@ -381,8 +381,13 @@ border: solid;
   width: 96.5%;
 }
 
- .Colecciones, .mysmartlibraryproyect, .quienes_somos, .zonIndex, .bases_legales, .ayuda{
+.Colecciones{
+    width: 96.5%;
+}
+
+ .mysmartlibraryproyect, .quienes_somos, .zonIndex, .bases_legales, .ayuda{
   width: 96.5%;
+     margin: 0em 12em 0em 5em;
 }
 
 p.bases_legales_body{
@@ -791,12 +796,12 @@ a.coleccion_directa {
     float: left;
     width: 68%;
     height: 100%;
-    margin: 0em 1%;
+    margin: 1em 5% 0em 5%;
 }
 
 .descript_img {
     float: left;
-    width: 28%;
+    width: 20%;
     margin: 0em 1%;
 }
 

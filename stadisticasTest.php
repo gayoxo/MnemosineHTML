@@ -2,6 +2,7 @@
 <?php $LinkAtras=""; ?>
 <?php include 'cabecera.php'; ?>
 <?php include 'config.php'; ?>
+<?php include 'form_buscador_Oculto.php'?>
 
 </div>
 

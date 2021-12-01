@@ -1,6 +1,9 @@
 <?php include 'top.php'; ?>
 <?php $LinkAtras="index.php"; ?>
 <?php include 'cabecera.php'; ?>
+
+<?php include 'form_buscador_Oculto.php'?>
+
 	</br>
 
 </div>		
