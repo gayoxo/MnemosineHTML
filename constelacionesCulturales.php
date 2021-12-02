@@ -24,7 +24,7 @@
 	
 		<li>
 		<div>
-		<a class="coleccion_vinculo" href="buscadorColeccion.php?<?php echo $elembase->Datos;echo "&idc=cc_";echo $elembase->Numer?>" onmouseover="nhpup.popup('<?php echo $elembase->Descripcion; ?>');">
+		<a class="coleccion_vinculo" href="buscadorColeccion.php?<?php echo $elembase->Datos;echo "&idc=cc_";echo $elembase->Numer;echo "&ord=";echo $elembase->Order?>" onmouseover="nhpup.popup('<?php echo $elembase->Descripcion; ?>');">
 		<img  src=<?php echo $elembase->Imagen; ?> width="150" height="150" border="0" alt="1"> 
 		<div class="collection_test"> <p><?php echo $elembase->Nombre; ?></p></div>
         </a>

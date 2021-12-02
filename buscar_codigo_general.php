@@ -174,8 +174,19 @@ function ArrayFiltro($TypeID,$arrayFiltro,$Basica,$Campo,$Start,$Limite,$FiltroA
 	
 	if (!isset($BusquedaStringLabelQ))
 		$BusquedaStringLabelQ="obra";
-	
-	$BusquedaData=array("q" =>$BusquedaStringLabelQ ,"busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar,"resumen" => $Desc);
+
+
+    if (isset($_GET["ord"]))
+        {
+
+            $BusquedaData=array("q" =>$BusquedaStringLabelQ ,"busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar,"resumen" => $Desc, "orden" => $_GET["ord"]);
+        }
+    else
+    {
+        $BusquedaData=array("q" =>$BusquedaStringLabelQ ,"busqueda" => $BusquedaArray, "filtro" => $FiltroData,"faplicado" => $FiltroAplicar,"resumen" => $Desc);
+    }
+
+
 	
 	//var_dump($BusquedaData);
 		
