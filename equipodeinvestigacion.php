@@ -81,21 +81,6 @@
 		<hr class="linea_horizontal">
 		<div class="bloque">
 			<div class="imagen_bloque">
-					<img class="imagen_bloque_base" src="imagenes/logo-mineco.jpg" alt="">
-					<img class="imagen_bloque_base" src="imagenes/BBVA.png" alt="">
-			</div>
-			<div class="texto_bloque">
-				<p class="texto_bloque_cabecera">
-					FINANCIACIÓN
-				</p>
-				<p class="texto-bloque_cuerpo">
-				Esta investigación está siendo financiada por el Ministerio de Economía y Competitividad. Proyecto de Investigación: “Escritorios Electrónicos para las Literaturas-2”. Referencia FFI2012-34666 (2012-2015), y por la Fundación BBVA, Convocatoria 2014 de Ayudas a Proyectos de Investigación (Proyecto HUM14_251).
-				</p>
-			</div>
-		</div>
-		<hr class="linea_horizontal">
-		<div class="bloque">
-			<div class="imagen_bloque">
 					<img class="imagen_bloque_base" src="imagenes/Blanco.png" alt="">
 			</div>
 			<div class="texto_bloque">

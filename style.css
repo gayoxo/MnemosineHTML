@@ -376,16 +376,13 @@ border: solid;
 	  font-family: mnemosine;
 
  }
- 
- .Colecciones {
-  width: 96.5%;
-}
 
-.Colecciones{
+
+.Colecciones , .zonIndex, .quienes_somos{
     width: 96.5%;
 }
 
- .mysmartlibraryproyect, .quienes_somos, .zonIndex, .bases_legales, .ayuda{
+ .mysmartlibraryproyect, , .bases_legales, .ayuda{
   width: 96.5%;
      margin: 0em 12em 0em 5em;
 }

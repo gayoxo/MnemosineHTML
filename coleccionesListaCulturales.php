@@ -147,9 +147,20 @@ Coordinador: Jeffrey Zamostny",
         ),
         new CollectionElem(
             10,
-            "Literatura de compromiso político-social",
-            "En esta colección se pueden catalogar textos y colecciones de quiosco pertenecientes a este subgénero. Por ahora solo se muestran completas las colecciones La Novela Roja (1922-23), La Novela Proletaria (1932-33), Tesoro de la Literatura Revolucionaria (1933) y parcialmente El Cuento Semanal (1907-8). Pendiente de asignar coordinador.",
-            "name=Literatura de compromiso político-social&q=clavy_id:59600 OR clavy_id:59614 OR clavy_id:59601 OR clavy_id:59596",
+            "Literatura de compromiso político",
+            "En una época de profundas transformaciones y de contrastes entre tradición y
+modernidad, de conciencia de crisis a nivel social e institucional, de agitaciones en la
+política, la economía y la cultura en España y en el resto de Europa, como lo fue el
+primer tercio del siglo XX, los escritores se ven impelidos a \“comprometerse\”, es decir,
+a tomar partido frente al nuevo orden sobre el cual se configura la sociedad. La
+literatura, hecho social por definición, se hará eco de tales circunstancias en una serie
+de obras con un mayor o menor grado de intencionalidad política, reflejo de la diversa
+personalidad e ideología de algunos de sus autores, y a través de colecciones literarias
+cuya inspiración política resulta uniforme y explícita. La presente colección muestra
+aquellos títulos recogidos en Mnemosine cuya temática o identidad ideológica queda
+catalogada bajo el término conceptual de \“político-social\”.
+COORDINADORES: Gonzalo Santonja y José Miguel González Soriano.",
+            "name=Literatura de compromiso político&q=clavy_id:59600 OR clavy_id:59614 OR clavy_id:59601 OR clavy_id:59596",
             "imagenes/10.%20compromisopolitico.png"
         ),
         new CollectionElem(
@@ -179,9 +190,20 @@ Coordinadora: Sofía Nicolás Díez",
         ),
         new CollectionElem(
             14,
-            "Muertos en conflicto (1936-1939)",
-            "Esta colección reúne a aquellos autores raros y olvidados que fallecieron por distintas causas durante la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los lugares de fallecimiento. Coordinador: José Miguel González Soriano.",
-            "name=Muertos en conflicto (1936-1939)&q=fechademuerte:/193[6789]/",
+            "Escritores muertos en tiempos de Guerra (1936-1939)",
+            "Colección donde se incluyen todos aquellos autores presentes
+en Mnemosine que murieron durante la Guerra Civil por diversas causas; un
+conjunto especialmente numeroso, que da cuenta de la dimensión de la
+tragedia, explicitado con nombres y cifras. Se utiliza en ella la
+herramienta Google Maps para localizar los respectivos lugares de
+defunción. Unos murieron directamente a causa de la contienda, en el frente de
+batalla o fusilados; otros no, pero como dijo José Ortega y Gasset, tras la
+muerte de Miguel de Unamuno, el 31 de diciembre de 1936: \“Ignoro todavía
+cuáles sean los datos médicos de su acabamiento; pero, sean los que fueren,
+estoy seguro de que ha muerto de ‘mal de España’. [...] Ha inscrito su muerte
+individual en la muerte innumerable que es hoy la vida española\”.
+COORDINADORA: Antonella Russo",
+            "name=Escritores muertos en tiempos de Guerra (1936-1939)&q=fechademuerte:/193[6789]/",
             "imagenes/14.muertos%20en%20conflicto.png"
         ),
         new CollectionElem(
@@ -202,7 +224,19 @@ Coordinadora: Begoña Camblor Pandiella",
         new CollectionElem(
             17,
             "Madrid en la Literatura de la Edad de Plata",
-            "Esta colección es resultado de la investigación del proyecto &quot;eLITE-CM: Edición Literaria Electrónica&quot; (Ref. H2015/HUM-3426), financiado por el Programa de Actividades de I+D entre grupos de investigación de la Comunidad de Madrid en Ciencias Sociales y Humanidades. Coordinador: José Miguel González Soriano",
+            "Madrid tuvo un lugar muy destacado en la producción literaria de la Edad
+de Plata, ya como escenario de múltiples narraciones novelescas y de tipo
+costumbrista, o de piezas dramáticas dentro del llamado género chico, ya como
+motivo de reflexión (de su ambiente, historia, tipos sociales...) en numerosos
+ensayos y crónicas de la época. La capital de España constituyó el principal
+lugar de encuentro para quienes perseguían una carrera literaria, la fama y el
+éxito en los últimos años del siglo XIX y comienzos del XX. La presente
+colección es resultado de discriminar una búsqueda general a partir del
+dato \“Madrid\” dentro del campo o metadato \“Materia: lugar geográfico\” en las
+fichas bibliográficas de obra, sin contar si aparece en otros campos de
+información de la misma ficha como (por ejemplo) lugar de edición o como
+lugar de nacimiento en el caso de los autores.
+COORDINADORA: Inmaculada Plaza",
             "name=Madrid en la Literatura de la Edad de Plata&q=lugardepublicacion:madrid",
             "imagenes/17.Madrid.png"
         ),
