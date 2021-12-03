@@ -7,15 +7,16 @@ class CollectionElem
 	public $Descripcion =""; 
 	public $Datos ="";
 	public $Imagen ="";
-	
+    public $Order ="";
 	
     
-	public function __construct($Numer, $Nombre, $Descripcion, $Datos, $Imagen){
+	public function __construct($Numer, $Nombre, $Descripcion, $Datos, $Imagen, $Order="DES"){
         $this->Numer = $Numer;
 		$this->Nombre = $Nombre;
 		$this->Descripcion=$Descripcion;
 		$this->Datos=$Datos;
 		$this->Imagen=$Imagen;
+        $this->Order=$Order;
     }
 
 }
@@ -93,36 +94,40 @@ class CollectionArray
             3,
             "Mujeres Poetas",
             "Mujeres Poetas",
-            "name=Mujeres Poetas&q=genero:mujer",
+            "name=Mujeres Poetas&q=genero:mujer AND ( generosliterariosquecultiva:poesia OR generosliterariosquecultiva:poeta)",
             "imagenes/23.Mujeres%20Poetas.png"
         ),
         new CollectionElem(
             4,
             "Géneros literarios",
             "Géneros literarios .",
-            "name=Géneros literarios&q=generosliterario:/.*/",
-            "imagenes/24.Generos.png"
+            "name=Géneros literarios&q=generoliterario:/.*/",
+            "imagenes/24.Generos.png",
+            "fechadepublicacion"
         ),
         new CollectionElem(
             5,
             "Edad de Plata Interactiva ",
             "Edad de Plata Interactiva ",
             "name=Edad de Plata Interactiva &q=fuentedeenlace:Madgazine",
-            "imagenes/25.Libros%20Interactivos.png"
+            "imagenes/25.Libros%20Interactivos.png",
+            "fechadepublicacion"
         ),
         new CollectionElem(
             6,
             "Libros Digitalizados",
             "Libros Digitalizados",
             "name=Libros Digitalizados&q=link: /.*/",
-            "imagenes/26.Libros%20Enlazados.png"
+            "imagenes/26.Libros%20Enlazados.png",
+            "fechadepublicacion"
         ),
 		new CollectionElem(
-		6,
+		7,
 		"Publicaciones Periódicas",
 		"Publicaciones Periódicas.",
 		"name=Publicaciones Periódicas&q=coleccionenmnemosine:%22publicaciones periódicas%22",
-		"imagenes/27.PubliPeriodicas.png"
+		"imagenes/27.PubliPeriodicas.png",
+            "fechadepublicacion"
 		),
 
 

@@ -190,7 +190,7 @@ class CollectionArray
         new CollectionElem(
             15,
             "Autores en exilio",
-            "Esta colección reúne escritores que sufrieron el exilio tras la Guerra Civil. Se utiliza la herramienta Google Maps para localizar los espacios del exilio. Coordinadora: Lucía Cotarelo Esteban.",
+            "Esta colección reúne escritores y obras del exilio republicano español de 1939. Para estructurarla, se han propuesto una serie de filtros y metadatos orientados a abordar efectivamente las especificidades -geográficas, políticas, asociativas, etc.- de este exilio. Se propone, como filtro específico, el de \"Lugar de exilio\", pudiéndose filtrar por país y ciudad, y siendo asimismo posible rastrear en los perfiles de los autores sus trayectorias migratorias a través de un sistema de mapping o cartografía digital de geolocalización. Entre los metadatos relativos a la entidad \"persona\", algunos como \"Nacionalidad(es)\", \"Militancia política\", \"Paso por campos de concentración\" o \"Muerte en exilio\" ofrecen una visión panorámica sobre la compleja multiplicidad de experiencias de estos escritores. Nuevos metadatos relativos a las entidades \"obra\" ayudarán, progresivamente, a estructurar una serie de temas y estéticas particulares de esta escritura exiliar. Coordinadora: Lucía Cotarelo Esteban",
             "name=Autores en exilio&q=exilio:S?",
             "imagenes/15.Exilio.png"
         ),
@@ -229,7 +229,7 @@ class CollectionArray
         new CollectionElem(
             20,
             "Luis Bello",
-            "Es una colección de los libros publicados por un autor individual. Coordinador: Pendiente de asignar.",
+            "Como mujer, fue pionera en la defensa pública de los derechos femeninos. Como escritora, supo llevar a sus novelas argumentos novedosos que retrataban la sociedad de su época. Esta colección de autora contiene una extensa red de datos biográficos que recogen tanto aquellos estandarizados (nombre, seudónimo y fechas de nacimiento y muerte) como los específicos que debe aportar una biblioteca especializada (lugares de residencia, estado civil, educación, actividades profesionales, géneros literarios que cultiva, aspectos financieros, asociaciones a las que pertenece, sus amistades, el movimiento artístico que le influye y ciertas curiosidades. Además, se pueden encontrar las referencias bibliográficas de más de treinta recursos con sus correspondientes metadatos y enlaces a los fondos digitalizados. Esta colección es el modelo sobre el que se han gestado otros datos de autores en Mnemosine. Coordinadores: Dolores Romero López y José Miguel González Soriano",
             "name=Luis Bello&q=REL:61030",
             "imagenes/20LuisBello.png",
             "fechadepublicacion"
