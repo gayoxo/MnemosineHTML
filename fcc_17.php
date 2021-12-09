@@ -7,12 +7,11 @@ use FiltroElem;
 
 $FiltroP= array(
     new FiltroElem("DES","Nombre",false),
-     new FiltroElem("lugardepublicacion","Lugar de publicación",false),
+    new FiltroElem("fechanacimiento","Fecha nacimiento",false),
+    new FiltroElem("fechadepublicacion","Fecha de publicación",false),
     new FiltroElem("editorial","Editorial",false),
-    new FiltroElem("ao","Fecha",false),
-    new FiltroElem("serieocoleccion","Serie o colección",false),
-    // new FiltroElem("digitalizacion","Digitalización",false), No esta definido
-
+    new FiltroElem("genero","Género literario",false),
+    // new FiltroElem("digitalizacion","Digitalización",false), NO APLICA
 );
 
 $FiltroObject=new FiltroArray($FiltroP);
