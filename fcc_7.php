@@ -74,9 +74,11 @@ class FiltroArray
 
 $FiltroP= array(
     new FiltroElem("DES","Nombre",false),
-    new FiltroElem("fechadeedicion","Fecha de edición",false),
-    new FiltroElem("titulolibroreseado","Obra",false),
-    new FiltroElem("link1","Enlace",false)
+     new FiltroElem("autorescritapor","Autor /Escrita por",false),
+    new FiltroElem("publicacionperiodica","Publicación periódica",false),
+    new FiltroElem("lugar","Lugar",false),
+    // new FiltroElem("digitalizacion","Digitalización",false), No esta definido
+
 );
 
 $FiltroObject=new FiltroArray($FiltroP);

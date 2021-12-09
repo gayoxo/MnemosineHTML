@@ -73,6 +73,7 @@ class FiltroArray
 
 
 $FiltroP= array(
+    //new FiltroElem("genero","Genero (sexo)",false), SIN SENTIDO
     new FiltroElem("nombre","Nombre",false),
     new FiltroElem("fechadenacimiento","Fecha nacimiento",false),
     new FiltroElem("lugardenacimiento","Lugar de nacimiento",false),
