@@ -788,6 +788,10 @@ a.coleccion_directa {
     color: black;
 }
 
+a.coleccion_directa_green {
+    text-decoration: none;
+    color: #31b49d;
+}
 
 .descript_text {
     float: left;
