@@ -12,7 +12,7 @@
 
     <ul>
 
-        <img src="imagenes/redes2_masMarco.png" alt="" width="1280" height="727" usemap="#Map"/>
+        <img src="imagenes/pruebamatrizFINALbaja.png" alt="" width="1280" height="727" usemap="#Map"/>
         <map name="Map">
             <area shape="poly" coords="347,135,237,130,218,148,240,172,341,172" href="http://repositorios.fdi.ucm.es/mnemosine_red/buscadorColeccion.php?name=Muertos en conflicto (1936-1939)&q=fechademuerte:/193[6789]/&idc=cc_14" target="_self">
             <area shape="poly" coords="795,391" href="#">
