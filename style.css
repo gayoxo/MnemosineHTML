@@ -690,6 +690,10 @@ p.justifiedtext {
 img.imagen_bloque_base {
   width: 100%;
 }
+imagen_bloque_base_up
+{
+    width: 65%;
+}
 
 .texto_bloque
 {

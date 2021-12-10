@@ -8,31 +8,31 @@
 
 	<div class="footer_elemnt">
 		<a class="quienes_somos_link" href="http://mysmartlibrary.es/" target="_blank">
-					<img class="imagen_bloque_base" src="imagenes/logoA.png" alt="">
+					<img class="imagen_bloque_base_up" src="imagenes/logoA.png" alt="">
 				</a>
 		</div>
 	
 	
 	<div class="footer_elemnt">
 		<a class="quienes_somos_link" href=" https://www.ucm.es/" target="_blank">
-					<img class="imagen_bloque_base" src="imagenes/logocomplutense.gif" alt="">
+					<img class="imagen_bloque_base_up" src="imagenes/logocomplutense.gif" alt="">
 				</a>
 		</div>
 	
 	<div class="footer_elemnt">
 		<a class="quienes_somos_link" href=" https://www.ucm.es/loep" target="_blank">
-					<img class="imagen_bloque_base" src="imagenes/loep.jpg" alt="">
+					<img class="imagen_bloque_base_up" src="imagenes/loep.jpg" alt="">
 				</a>
 		</div>
             <div class="footer_elemnt">
                 <a class="quienes_somos_link" href="https://www.ucm.es/leethi" target="_blank">
-                    <img class="imagen_bloque_base" src="imagenes/leethi.jpg" alt="">
+                    <img class="imagen_bloque_base_up" src="imagenes/leethi.jpg" alt="">
                 </a>
             </div>
 	
 	<div class="footer_elemnt">
 		<a class="quienes_somos_link" href="http://ilsa.fdi.ucm.es/" target="_blank">
-					<img class="imagen_bloque_base" src="imagenes/ILSA.jpg" alt="">
+					<img class="imagen_bloque_base_up" src="imagenes/ILSA.jpg" alt="">
 		</a>
 		</div>
         </div>
