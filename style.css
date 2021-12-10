@@ -788,8 +788,16 @@ a.coleccion_directa {
     color: black;
 }
 
-a.coleccion_directa_green {
+a.coleccion_directa:hover {
     text-decoration: none;
+    color: #31b49d;
+}
+
+a.coleccion_directa_green {
+    color: black;
+}
+
+a.coleccion_directa_green:hover {
     color: #31b49d;
 }
 
