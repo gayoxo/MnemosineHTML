@@ -16,7 +16,7 @@
 <i>Mnemosine</i>, Biblioteca Digital de La otra Edad de Plata,reúne un repertorio de textos y autores que han permanecido a la sombra de las grandes figuras literarias del primer tercio del siglo XX. La biblioteca pretende ser un <u>laboratorio</u> en el que se puedan importar, enriquecer, enlazar, visualizar datos y metadatos y ponerlos en abierto con el fin de responder a los retos de la historia cultural y digital de este periodo.
         </p>
 		<div class="imagen_centrada">
-			<img class="icono_entre_parrafos" src="imagenes/red290.png" width="170" height="170" alt="">
+			<img class="icono_entre_parrafos" src="imagenes/red2180.png" width="170" height="170" alt="">
 		</div>
 		<p class="justifiedtext">
 		Además, <i>Mnemosine</i>, como <a class="justifiedtext_link" href="http://mysmartlibrary.es">smartlibrary</a>, pretende ser un <u>campo de experimentación internacional</u> para la creación de herramientas y de redes semánticas interoperables a través de las cuales se genere investigación e innovación de calidad y nuevos modelos teóricos de interpretación de textos literarios.		</p>
