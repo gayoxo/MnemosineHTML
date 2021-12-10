@@ -63,7 +63,7 @@
         ]);
 
         var options = {
-          title: 'Autores por géneros en Mnemosine',
+          title: 'Autores por géneros en <i>Mnemosine</i>',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
 

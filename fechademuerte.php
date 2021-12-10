@@ -61,7 +61,7 @@
 		  ]);
 
         var options = {
-          title: 'Muertos entre 1936 y 1937',
+          title: 'Muertos entre 1936 y 1939',
           legend: { position: 'none' },
 		   colors: ['#1b9e77', '#d95f02', '#7570b3'],
 		   hAxis: {
