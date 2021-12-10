@@ -65,7 +65,8 @@
 
         var options = {
           title: 'Géneros literarios de las obras en mnemosine',
-		  colors: ['#1b9e77', '#d95f02', '#7570b3', '#b370ac','#b2b370','#2471A3']
+		  colors: ['#1b9e77', '#d95f02', '#7570b3', '#b370ac','#b2b370','#2471A3'],
+            pieResidueSliceLabel:"Otros"
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart3'));

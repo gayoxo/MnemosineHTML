@@ -10,6 +10,10 @@
 <?php 
 	
 	$Basica=$_POST["BarraBasica"];
+
+	if (isset($_GET["q"]))
+		$Basica=$_GET["q"];
+
 //	$Basica2=$_POST["Campo"];
 	
 //	$TypeNumber=intval($Basica2);
