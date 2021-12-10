@@ -1,0 +1,6 @@
+<?php 
+
+$val_imagen ="imagenes/6.%20Calleja.png";
+$val_desc = "La editorial creada en Madrid por Saturnino Calleja en 1876, en virtud de la preocupación de su fundador por el bajo nivel de instrucción en España, se orientó en gran medida hacia lo pedagógico. Sin abandonar esta línea editorial fundacional, pronto decide publicar grandes tiradas de cuentos individualizados «profusamente ilustrados» como rezaba su publicidad. La colección «Juguetes Instructivos» de la Biblioteca Mnemosine recoge los 300 libritos de menor tamaño (5 × 7 cm) y, sin duda, los más populares y reeditados. Este formato, aparte de contribuir a abaratar los costes de edición y por tanto su precio de venta, resultaba muy indicado para las pequeñas manos del niño, de fácil transporte en carteras escolares y bolsillos. Su tamaño también permitía coleccionar los cuentos como si fueran cromos y cambiarlos o adquirirlos en cualquier tienda. Las adaptaciones de cuentos maravillosos o populares, los cuentos de animales, los morales y los puramente humorísticos constituyen los principales temas de esta colección.
+Coordinadora: Mª Jesús Fraga"
+?>

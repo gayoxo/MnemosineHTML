@@ -80,16 +80,16 @@ class CollectionArray
 	$CollectionArrayAL=array(
 	new CollectionElem(
 		1,
-		"Mujeres intelectuales de la edad de plata",
+		"Mujeres intelectuales",
 		"Los estudios sobre memoria histórica han puesto en marcha dinámicas de género permitiendo rescatar la valiosa labor desarrollada por las escritoras modernas. En esta colección se encuentran nombres, datos, metadatos y enlaces a obras que fueron escritas por mujeres. En general son figuras nuevas junto a otras ya rescatadas y reconocidas. Todas ellas ponen voz al devenir cultural de este periodo y transmiten sus ideas para que otros las lean y valoren. Se trata de un conjunto heterogéneo de autoras y obras que abarca todos los géneros y en el que también aparecen algunas escritoras extranjeras, traducidas y leídas en la época. Aflora el discurso de unas mujeres –escritoras e intelectuales– que, en sus libros de ensayo y obras de ficción, van conformando los perfiles de la nueva mujer del siglo XX, desde su plano más íntimo al espacio público. Coordinadora: Dolores Romero López",
-		"name=Mujeres intelectuales de la edad de plata&q=genero:mujer",
+		"name=Mujeres intelectuales&q=genero:mujer",
 		"imagenes/1IntelectualesB.png",
 		),
         new CollectionElem(
             2,
-            "Traductoras de la Edad de Plata",
+            "Traductoras",
             "Mucho antes de la profesionalización de la traducción, algunas mujeres españolas vieron en la tarea de traducir una labor que les facilitaba su sustento y cierto reconocimiento público por su colaboración con la literatura. Aún tenemos escasos datos sobre sus vidas porque son casi anónimas; pero nos legaron magníficas traducciones de clásicos como a los modernos. Esta colección rescata sus nombres propios y en algunos casos sus datos vitales; también se da acceso a algunos de los recursos localizados. La digitalización de libros, publicaciones periódicas y archivos está permitiendo encontrar sus huellas, dibujar sus perfiles, recuperar sus contribuciones a aquella y a esta España. En esta colección se va dando cuenta de las obras producidas por traductoras de la Edad de Plata: de ellas y de los autores que les sirvieron de fuente, de los originales y de sus traducciones, de las conexiones de estas mujeres en el mundo de la cultura. Es un trabajo de colaboración entre profesores y estudiantes que realizan sus investigaciones sobre estas traductoras. Destacamos la labor de rescate de datos biográficos de alguna de ellas llevada a cabo por alumnos de la Universidad de Mayores de la Universidad Complutense de Madrid. Es la labor de aquellas mujeres ahora de todos y para todos. Coordinadora: Amelia Sanz Cabrerizo.",
-            "name=Traductoras de la Edad de Plata&q=genero:mujer %26%26 tipoderelacion:traductor",
+            "name=Traductoras&q=genero:mujer %26%26 tipoderelacion:traductor",
             "imagenes/2.%20M-Traductoras.png",
         ),
         new CollectionElem(
