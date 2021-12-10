@@ -329,6 +329,15 @@ background-size: 100% 100%;
 	  margin-top: 2em;
 }
 
+.zona_icono_cd{
+    background-image: url("imagenes/cabecerared8blur.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: center;
+    margin-top: 2em;
+}
+
 .buscador_simple
 {
  text-align: left;
