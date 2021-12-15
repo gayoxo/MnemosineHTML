@@ -27,7 +27,7 @@
             </div>
             <div class="texto_bloque">
                 <p class="texto-bloque_cuerpo">
-                    <a class="quienes_somos_link" href=" https://www.ucm.es/loep" target="_blank">LOEP</a> (La otra Edad de Plata) se constituyó como Grupo de Investigación UCM en el año 2008 (Registro: 941375), con la necesidad de  atender a aquella literatura de las primeras décadas del siglo XX que había permanecido oscurecida por la brillantez de los grandes nombres y movimientos de la llamada Edad de Plata. Su objetivo es recuperar temas, géneros y autores que fueron cayendo en el olvido, —injusto en la mayoría de los casos—, al quedar excluidos del canon de la época.
+                    <a class="quienes_somos_link" href=" https://www.ucm.es/loep" target="_blank">LOEP</a> (La otra Edad de Plata) se constituyó como Grupo de Investigación UCM en el año 2008 (Registro: 941375), con la necesidad de  atender a aquella literatura de las primeras décadas del siglo XX que había permanecido oscurecida por la brillantez de los grandes nombres y movimientos de la llamada Edad de Plata. Su objetivo es recuperar temas, géneros y autores que fueron cayendo en el olvido —injusto en la mayoría de los casos— al quedar excluidos del canon de la época.
                 </p>
             </div>
         </div>
@@ -39,7 +39,7 @@
 			</div>
 			<div class="texto_bloque">
 				<p class="texto-bloque_cuerpo">
-				<a class="quienes_somos_link" href="http://ilsa.fdi.ucm.es/" target="_blank">ILSA</a> (Implementation of Language-Driven Software and Applications) es un Grupo de Investigación interdisciplinar UCM (Registro: 962022) que reúne a profesores e investigadores de varios centros y departamentos de Universidad Complutense de Madrid (UCM) vinculados a la Filología, Educación e Informática. Los intereses de investigación del grupo son: desarrollo de software utilizando técnicas de diseño e implementación de lenguajes de programación y desarrollo de aplicaciones en los campos de las Humanidades Digitales y e-learning
+				<a class="quienes_somos_link" href="http://ilsa.fdi.ucm.es/" target="_blank">ILSA</a> (Implementation of Language-Driven Software and Applications) es un Grupo de Investigación interdisciplinar UCM (Registro: 962022) que reúne a profesores e investigadores de varios centros y departamentos de la Universidad Complutense de Madrid vinculados a la Filología, Educación e Informática. Los intereses de investigación del grupo son: desarrollo de software utilizando técnicas de diseño e implementación de lenguajes de programación y desarrollo de aplicaciones en los campos de las Humanidades Digitales y e-learning.
 				</p>
 			</div>
 		</div>
@@ -51,7 +51,7 @@
 			</div>
 			<div class="texto_bloque">
 				<p class="texto-bloque_cuerpo">
-				<a class="quienes_somos_link" href="https://www.ucm.es/leethi" target="_blank">LEETHI</a> (Literaturas Españolas y Europeas del Texto al Hipermedia) es un Grupo de Investigación nacido en 2000 y reconocido como consolidado por la UCM desde 2005 (Registro: 930262). De carácter interdisciplinar, reúne profesores de las Facultades de Filología y Educación de la UCM especializados en diferentes lenguas y sus literaturas (español, inglés, francés, alemán y neerlandés). S investigación ha integrado en todo momento y de forma indisoluble la reflexión literaria, tecnológica y didáctica en torno a dos conceptos: transliteratura e hipermedia.
+				<a class="quienes_somos_link" href="https://www.ucm.es/leethi" target="_blank">LEETHI</a> (Literaturas Españolas y Europeas del Texto al Hipermedia) es un Grupo de Investigación nacido en 2000 y reconocido como consolidado por la UCM desde 2005 (Registro: 930262). De carácter interdisciplinar, reúne profesores de las Facultades de Filología y Educación de la UCM especializados en diferentes lenguas y sus literaturas (español, inglés, francés, alemán y neerlandés). Su investigación ha integrado la reflexión literaria, tecnológica y didáctica en torno a dos conceptos: transliteratura e hipermedia.
 				</p>
 			</div>
 		</div>
