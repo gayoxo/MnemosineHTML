@@ -846,3 +846,25 @@ p.descript_text_text {
     text-align: justify;
     font-size: medium;
 }
+
+
+
+.imagen_centrada.flotante{
+    float: left;
+}
+
+p.colecciones_desc.menos {
+    margin: 1em 8em 3em 3em;
+}
+
+.imagen_centrada.flotante {
+    float: left;
+}
+
+.imagen_centrada-bloque {
+    margin: 1em 0em 3em 8em;
+}
+
+p.colecciones_desc.menos {
+    margin: 0em 8em 0em 3em;
+}
