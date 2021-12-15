@@ -10,6 +10,8 @@
 	<hr class="linea_horizontal">
     <p class="colecciones_desc">En diálogo con el cartel literario que Ernesto Giménez Caballero publicara la Gaceta Literaria (15/07/1927), esta cartografía es un mapa interactivo y didáctico, sintético y visual, en el que se representa la transición de las investigaciones filológicas e históricas hacia la apertura de los Estudios Culturales y las Humanidades Digitales.</p>
 
+    <p class="colecciones_desc_verde"><i>Este mapa es interactivo, pulsa sobre las etiquetas para acceder a las colecciones.</i></p>
+
     <ul>
 
         <img src="imagenes/pruebamatrizFINALbaja.png" alt="" width="1280" height="727" usemap="#Map"/>

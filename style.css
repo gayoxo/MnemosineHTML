@@ -868,3 +868,12 @@ p.colecciones_desc.menos {
 p.colecciones_desc.menos {
     margin: 0em 8em 0em 3em;
 }
+
+p.colecciones_desc_verde {
+    height: auto !important;
+    text-align: justify;
+    margin: 1em 8em 1em 8em;
+    font-family: 'diddot';
+    color: #31b49d;
+    font-weight: bold;
+}
