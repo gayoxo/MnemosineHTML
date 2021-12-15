@@ -55,7 +55,7 @@
         </div>
 
     <p class="colecciones_desc menos">
-        Bajo una mirada más <a class="coleccion_directa_green" href="histoANDFilo.php" onmouseover="nhpup.popup('Historia y Filología han organizado el conocimiento a través de aspectos biográficos, temáticos y formales que evolucionan en el tiempo. Escritores, escritoras, géneros literarios, publicaciones periódicas, coleccionistas, instituciones, etc. ofrecen una aproximación sistemática, ordenada y objetiva de los datos.');">histórica y filológica</a> que han organizado el conocimiento a través de aspectos biográficos, temáticos y formales que evolucionan en el tiempo. Escritores, escritoras, géneros literarios, publicaciones periódicas, coleccionistas, instituciones, etc. ofrecen una aproximación sistemática, ordenada y objetiva de los datos; y una vía de constelaciones culturales para desafiar la visión hegemónica del canon.
+        Bajo una mirada más <a class="coleccion_directa_green" href="histoANDFilo.php" onmouseover="nhpup.popup('Historia y Filología han organizado el conocimiento a través de aspectos biográficos, temáticos y formales que evolucionan en el tiempo. Escritores, escritoras, géneros literarios, publicaciones periódicas, coleccionistas, instituciones, etc. ofrecen una aproximación sistemática, ordenada y objetiva de los datos.');">histórica y filológica</a> que ha organizado el conocimiento a través de aspectos biográficos, temáticos y formales emergen escritores, escritoras, géneros literarios, publicaciones periódicas, coleccionistas, instituciones, etc. Esta óptica ofrece una aproximación sistemática, ordenada y objetiva de los datos.
     </p>
     </div>
 
