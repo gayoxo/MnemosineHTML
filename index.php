@@ -18,7 +18,7 @@
         Los registros de <i>Mnemosine</i> proceden de metadatos importados
         por <a class="zonaIndexCentro_text_link" href="http://clavy.fdi.ucm.es" target="_blank">Clavy</a> desde <a class="zonaIndexCentro_text_link" href="http://www.bne.es/es/Catalogos/BibliotecaDigitalHispanica/Inicio/index.html" target="_blank">Biblioteca Digital Hispánica</a> y desde <a class="zonaIndexCentro_text_link" href="http://babel.hathitrust.org/cgi/mb?a=listis;c=576801556" target="_blank">HathiTrust</a> con el
         apoyo de la <a class="zonaIndexCentro_text_link" href="http://biblioteca.ucm.es" target="_blank">Biblioteca UCM</a>. El último proyecto concedido ha permitido importar datos de la
-        Biblioteca de la <a class="zonaIndexCentro_text_link" href="https://oac.cdlib.org/findaid/ark:/13030/kt9t1nf91c/" target="_blank">Universidad de California</a> y del Archivo del <a class="zonaIndexCentro_text_link" href="https://www.iai.spk-berlin.de/es/biblioteca/catalogos-y-bancos-de-datos.html" target="_blank">Instituto Iberoamericano de Berlín</a>. La Biblioteca Digital
+        <a class="zonaIndexCentro_text_link" href="https://oac.cdlib.org/findaid/ark:/13030/kt9t1nf91c/" target="_blank">  Biblioteca de la Universidad de California</a> y del  <a class="zonaIndexCentro_text_link" href="https://www.iai.spk-berlin.de/es/biblioteca/catalogos-y-bancos-de-datos.html" target="_blank"> Archivo del Instituto Iberoamericano de Berlín</a>. La Biblioteca Digital
         <i>Mnemosine</i> contiene, además, colecciones de datos y metadatos aportados por
         investigadores que contribuyen a título individual con el fin de potenciar el
         conocimiento especializado en abierto.
