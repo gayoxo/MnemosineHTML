@@ -6,7 +6,7 @@ include "FiltroArray.php";
 
 $FiltroP= array(
 
-    new FiltroElem("generoliterario","Genero Literario",false),
+    new FiltroElem("generoliterario_T","Genero Literario",false),
     //new FiltroElem("fechasdepublicacion","Fechas de publicación",false) REQUIERE LINKING
 );
 

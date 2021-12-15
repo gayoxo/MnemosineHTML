@@ -7,13 +7,13 @@ use FiltroElem;
 
 $FiltroP= array(
     new FiltroElem("DES","Nombre",false),
-    new FiltroElem("lugardenacimiento","Lugar de nacimiento",false),
+    new FiltroElem("lugardenacimiento_T","Lugar de nacimiento",false),
     new FiltroElem("fechanacimiento","Fecha nacimiento",false),
     new FiltroElem("fechademuerte","Fecha de muerte",false),
-    new FiltroElem("lugarderesidencia","Lugar de residencia",false),
-    new FiltroElem("actividadprofesional","Actividad profesional",false),
-    new FiltroElem("generosliterariosquecultiva","Géneros que cultiva",false),
-    new FiltroElem("digitalizacion","Digitalizacion",false),
+    new FiltroElem("lugarderesidencia_T","Lugar de residencia",false),
+    new FiltroElem("actividadprofesional_T","Actividad profesional",false),
+    new FiltroElem("generosliterariosquecultiva_T","Géneros que cultiva",false),
+    new FiltroElem("digitalizacion_T","Digitalizacion",false),
     // new FiltroElem("digitalizacion","Digitalización",false), NO APLICA
 );
 

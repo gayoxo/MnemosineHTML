@@ -5,7 +5,7 @@ include "FiltroArray.php";
 
 $FiltroP= array(
 
-    new FiltroElem("fuentedelenlace","Fuente de la Obra",false),
+    new FiltroElem("fuentedelenlace_T","Fuente de la Obra",false),
     new FiltroElem("link","Enlace",false),
     //new FiltroElem("fechasdepublicacion","Fechas de publicación",false) REQUIERE LINKING
 );

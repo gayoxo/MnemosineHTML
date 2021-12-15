@@ -7,9 +7,9 @@ include "FiltroArray.php";
 
 $FiltroP= array(
 
-    new FiltroElem("generoforma","Genero / Forma",false),
+    new FiltroElem("generoforma_T","Genero / Forma",false),
     new FiltroElem("fechadepublicacion","Fecha de publicación",false),
-    new FiltroElem("editorial","Editorial",false),
+    new FiltroElem("editorial_T","Editorial",false),
     //new FiltroElem("fechasdepublicacion","Fechas de publicación",false) REQUIERE LINKING
 );
 
