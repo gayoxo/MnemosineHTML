@@ -74,6 +74,23 @@
         var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
 
         chart.draw(data, google.charts.Bar.convertOptions(options));
+
+          google.visualization.events.addListener(chart, 'select', function() {
+              var selection = chart.getSelection();
+
+              if (selection.length > 0) {
+                  var seleccionIndex = selection[0].row;
+
+
+                  if (selection[0].column==1)
+                      window.open("buscar_basico.php?q=genero:" + data.getValue(seleccionIndex, 0), "_blank");
+                  else
+                      window.open("buscar_basico.php?q=genero:" + data.getValue(seleccionIndex, 0)+" AND exilio:S?", "_blank");
+
+
+              }
+          });
+
       }
     </script>
 
