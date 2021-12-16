@@ -66,7 +66,6 @@
         ]);
 
         var options = {
-          title: 'Distribucion de las obras a lo largo de los años',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3'],
           hAxis: {
 			  title: 'Año', 
@@ -82,7 +81,10 @@
       }
     </script>
 
+<p class="estadisticasTitulo colecciones_desc">Distribución de las obras a lo largo de los años</p>
 <div class="zonIndex" id="obrastotalchart" style=" height: 500px;"></div>
+<hr class="linea_horizontal_footer">
+<br>
 
 
 

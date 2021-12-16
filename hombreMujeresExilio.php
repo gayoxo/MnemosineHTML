@@ -67,7 +67,6 @@
 
         var options = {
 
-          title: 'Autores exiliados por género en Mnemosine',
 		  legend: { position: 'none' },
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
@@ -77,10 +76,13 @@
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
     </script>
-	
-	
-	
-    
 
 
+
+
+
+ <p class="estadisticasTitulo colecciones_desc">Autores exiliados por género en <i>Mnemosine</i></p>
+ <br>
 <div class="zonIndex" id="columnchart_material" style="height: 500px;"></div>
+ <hr class="linea_horizontal_footer">
+ <br>

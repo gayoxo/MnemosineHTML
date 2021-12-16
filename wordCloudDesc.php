@@ -1,6 +1,11 @@
 
-Mapa de palabras en los elementos de Mnemosine.
+
+<p class="estadisticasTitulo colecciones_desc">Mapa de palabras en los elementos de <i>Mnemosine</i>.</p>
+<br>
  <div class="zonIndex" id="wordcambas" style=" height: 500px;"></div>
+
+<hr class="linea_horizontal_footer">
+<br>
 <script type="text/javascript">
 
 var list = [

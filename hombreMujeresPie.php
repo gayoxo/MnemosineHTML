@@ -63,7 +63,6 @@
         ]);
 
         var options = {
-          title: 'Autores por géneros en <i>Mnemosine</i>',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
 
@@ -86,5 +85,7 @@
       }
  </script>
 
-
+<p class="estadisticasTitulo colecciones_desc">Autores por géneros en <i>Mnemosine</i></p>
 <div class="zonIndex" id="piechart" style="height: 500px;"></div>
+    <hr class="linea_horizontal_footer">
+    <br>

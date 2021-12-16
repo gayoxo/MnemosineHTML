@@ -87,7 +87,10 @@ var options = {
   }
 </script>
 
+<p class="estadisticasTitulo colecciones_desc">Obras de autores en el tiempo </p>
+<br>
 <div class="zonIndex" id="chart_div" style="overflow-x: auto; height: 600px;">
-Obras de autores en el tiempo
 <div id="example3.1" style="width: 3000px; height: 600px;"></div>
 </div>
+<hr class="linea_horizontal_footer">
+<br>

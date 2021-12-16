@@ -63,7 +63,6 @@
         ]);
 
         var options = {
-          title: 'Obras por géneros del autor en Mnemosine',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3']
         };
 
@@ -73,5 +72,7 @@
       }
  </script>
 
-
+    <p class="estadisticasTitulo colecciones_desc">Obras por géneros del autor en <i>Mnemosine</i></p>
 <div class="zonIndex" id="piechart2" style="height: 500px;"></div>
+    <hr class="linea_horizontal_footer">
+    <br>

@@ -67,7 +67,6 @@
         ]);
 
         var options = {
-          title: 'Elementos por entidad en Mnemosine',
 		  colors: ['#1b9e77', '#d95f02', '#7570b3', '#b370ac','#b2b370','#2471A3']
         };
 
@@ -77,5 +76,5 @@
       }
  </script>
 
-
+    <p class="estadisticasTitulo colecciones_desc">Elementos por entidad en <i>Mnemosine</i>.</p>
 <div class="zonIndex" id="piechart3Enty" style="height: 500px;"></div>

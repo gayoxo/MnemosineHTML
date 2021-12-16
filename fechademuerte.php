@@ -61,7 +61,6 @@
 		  ]);
 
         var options = {
-          title: 'Muertos entre 1936 y 1939',
           legend: { position: 'none' },
 		   colors: ['#1b9e77', '#d95f02', '#7570b3'],
 		   hAxis: {
@@ -75,13 +74,15 @@
         chart.draw(data, options);
       }
     </script>
- 
- 
- 
-	
-	
-	
-    
 
 
+
+
+
+
+
+
+<p class="estadisticasTitulo colecciones_desc">Muertos entre 1936 y 1939 </p>
 <div class="zonIndex" id="chart_div" style="height: 500px;"></div>
+<hr class="linea_horizontal_footer">
+<br>

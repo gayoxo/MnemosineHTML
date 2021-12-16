@@ -391,7 +391,7 @@ border: solid;
     width: 96.5%;
 }
 
- .mysmartlibraryproyect, , .bases_legales, .ayuda{
+ .mysmartlibraryproyect , .bases_legales, .ayuda{
   width: 96.5%;
      margin: 0em 12em 0em 5em;
 }
@@ -876,4 +876,9 @@ p.colecciones_desc_verde {
     font-family: 'diddot';
     color: #31b49d;
     font-weight: bold;
+}
+
+p.estadisticasTitulo {
+    font-size: 1.5em;
+    margin: 1em 8em 0em 8em;
 }
