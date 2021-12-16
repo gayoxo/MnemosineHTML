@@ -43,7 +43,7 @@
                 <li class="li_menunav"><a class="menu_elem" href="stadisticasTest.php">Visualizaciones&nbsp></a></li>
                 <li class="li_menunav"><a class="menu_elem" href="equipodeinvestigacion.php">Grupos, equipo y contacto&nbsp></a></li>
 				<li class="li_menunav"><a class="menu_elem" href="ayuda.php">Ayuda&nbsp></a></li>
-                <li class="li_menunav"><a class="menu_elem" href="">Cómo Citar&nbsp></a></li>
+                <li class="li_menunav"><a class="menu_elem" href="comocitar.php">Cómo Citar&nbsp></a></li>
             </ul>
 		</nav>
 	</div>
