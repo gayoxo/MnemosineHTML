@@ -93,7 +93,7 @@ class CollectionArray
         new CollectionElem(
             3,
             "Mujeres Poetas",
-            "Mujeres Poetas",
+            "Esta colección reúne a poetas de la Edad de Plata y sus obras. Coord.: Helena Establier",
             "name=Mujeres Poetas&q=genero:mujer AND ( generosliterariosquecultiva:poesia OR generosliterariosquecultiva:poeta)",
             "imagenes/23.Mujeres%20Poetas.png"
         ),
@@ -108,7 +108,7 @@ class CollectionArray
         new CollectionElem(
             5,
             "Edad de Plata Interactiva ",
-            "Edad de Plata Interactiva ",
+            "Textos interactivos escritos por mujeres prosistas e intelectuales, cuentos infantiles de la editorial Calleja y relatos sobre Madrid. Coord.: Alicia Reina",
             "name=Edad de Plata Interactiva &q=fuentedeenlace:Madgazine",
             "imagenes/25.Libros%20Interactivos.png",
             "fechadepublicacion"

@@ -10,7 +10,7 @@
 
 <?php
 
-$URLBASEDALE="mnemosine_red";
+$URLBASEDALE="mnemosine";
 ?>
 
 
@@ -86,7 +86,7 @@ $URLBASEDALE="mnemosine_red";
                 _____, (2020). “La lectura <i>smart</i>. El acceso a la literatura a través de bibliotecas digitales -<i>Mnemosine y Ciberia</i>-”. En Ortuño, R. (ed.), “Humanidades digitales y estudios literarios: aproximaciones críticas”. 452F <i>Revista de Teoría de la Literatura y Literatura Comparada</i>, 23, 32-52. Enlace:  <a class="coleccion_directa_green" href="https://revistes.ub.edu/index.php/452f/article/view/30666/32235">https://revistes.ub.edu/index.php/452f/article/view/30666/32235</a>. [Fecha de consulta 01/01/2022].</br></br>
 
 
-                Romero-López, Dolores. Bueren-Gómez-Acebo, José Luis, Galloso-Cabada, Joaquín (2017). “Modelling Colecciones de Literatura de Quioscos for <i>Mnemosine</i> Digital Library”. En Zamostny, J. y Larson, S. (eds.), <i>Kiosk Literature in Silver Age Spain: Modernity and Mass Culture</i>, Intellect Books: Reino Unido, 397-418.</br></br>
+                Romero-López, Dolores. Bueren-Gómez-Acebo, José Luis, Gayoso-Cabada, Joaquín (2017). “Modelling Colecciones de Literatura de Quioscos for <i>Mnemosine</i> Digital Library”. En Zamostny, J. y Larson, S. (eds.), <i>Kiosk Literature in Silver Age Spain: Modernity and Mass Culture</i>, Intellect Books: Reino Unido, 397-418.</br></br>
 
                 Romero-López, Dolores, Bueren Gómez-Acebo, José Luis, (2019). “La colección literatura de quiosco en <i>Mnemosine, Biblioteca Digital de la Otra Edad de Plata (1868-1936)</i>. Hacia la redefinición del canon literario a través de metadatos”. <i>Literatura: Teoría, Historia, Crítica</i>, 21.1, 61-91. Enlace: <a class="coleccion_directa_green" href="http://dx.doi.org/10.15446/lthc.v21n1.74870">http://dx.doi.org/10.15446/lthc.v21n1.74870</a>. [Fecha de consulta 01/01/2022].</br></br>
 
@@ -109,6 +109,26 @@ $URLBASEDALE="mnemosine_red";
             Reina Navarro, Alicia: “Interactive Reading in Digital Collections”, DARIAH Annual Event 2019, Varsovia, Polonia, The Marketplace poster sesión. Fecha: 16/05/2019.</br></br>
 
             Romero López, Dolores y Cotarelo-Esteban, Lucía: “Mnemosyne, Digital Library for Rare and Forgotten Texts (1868-1936): Collections and digital editions”. Digital Humanities Congress, Montreal, Canadá. Fecha: 11/08/2017.</br></br>
+
+            </p>
+
+            <p class="texto_bloque_cabecera">
+                Presentación de pósteres
+            </p>
+            <p class="texto-bloque_cuerpo">
+
+                Cotarelo-Esteban, Lucía: “Mnemosine, Biblioteca Digital de La otra Edad de Plata (1868-1936)”. I Jornadas UCM “La investigación en ciencias sociales y humanidades: desafíos y perspectivas en entornos digitales”, Universidad Complutense de Madrid. Fecha: 12-13/01/2017.</br></br>
+
+                _____: “La otra Edad de Plata: proyección cultural y legado digital. Biblioteca Digital Mnemosine”. Workshop en línea Red INTELE. Fecha: 25/11/2020. Enlace: <a class="coleccion_directa_green" href="http://ixa2.si.ehu.eus/intele/?q=node/22">http://ixa2.si.ehu.eus/intele/?q=node/22</a></br></br>
+
+
+                Martínez Deyros, María, Reina Navarro, Alicia, Cotarelo Esteban, Lucía y González Soriano, José Miguel: “Networking Women Translators in Spain (1868-1936) and their presence in Mnemosyne Digital Library” DARIAH Annual Event 2019, Varsovia, Polonia, The Marketplace poster sesión. Fecha: 16/05/2019.</br></br>
+
+                _____: “Mnemosyne, Digital Library for Rare and Forgotten Texts (1868-1936): -Collections and digital editions-“ DARIAH Annual Event 2019, Varsovia, Polonia, The Marketplace poster sesión. Fecha: 16/05/2019.</br></br>
+
+                Reina Navarro, Alicia: “Interactive Reading in Digital Collections”, DARIAH Annual Event 2019, Varsovia, Polonia, The Marketplace poster sesión. Fecha: 16/05/2019.</br></br>
+
+                Romero López, Dolores y Cotarelo-Esteban, Lucía: “Mnemosyne, Digital Library for Rare and Forgotten Texts (1868-1936): Collections and digital editions”. Digital Humanities Congress, Montreal, Canadá. Fecha: 11/08/2017.</br></br>
 
             </p>
 
