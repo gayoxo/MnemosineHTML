@@ -104,6 +104,7 @@ class CollectionArray
             4,
             "Literatura Femenina en Índice Literario",
             "Reseñas de obras literarias escritas por mujeres entre 1932 -1936 y publicadas en la revista Índice Literario. Coord. Juana María González",
+            "name=Índice Literario&q=reseadaen:indice AND reseadaen:literario",
             "imagenes/4.%20Lit%20femen%20indice%20literario.png",
             "fechadepublicacion"
         ),
@@ -165,6 +166,7 @@ class CollectionArray
         ),
         new CollectionElem(
             12,
+            "Instituto Iberoamericano de Berlín",
             "Esta colección pretende ser un reconocimiento a las instituciones que albergan legados culturales españoles fuera de nuestras fronteras. Coord. Dolores Romero",
             "name=Instituto Iberoamericano de Berlín&q=localizaciondelfondo:Berlin",
             "imagenes/12.Iberoamericano%20deBErlin.png",
