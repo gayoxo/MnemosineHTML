@@ -53,7 +53,7 @@
 
 
 
-    var container = document.getElementById('example3.1');
+    var container = document.getElementById('example3.1.o');
     var chart = new google.visualization.Timeline(container);
 
     var dictNameID = {};
@@ -65,8 +65,9 @@
                   {
                       foreach ($arrayE as $titulo=>$año)
                       {
+                          $año2=$año+1;
                           ?>
-                         dictNameID['<?php echo $EtiquetaV; ?>$<?php echo $titulo;?>']=<?php echo$año[1]; ?>;
+                         dictNameID['<?php echo $EtiquetaV; ?>$<?php echo $titulo;?>']=12345;
                         <?php
 
                       }
@@ -85,12 +86,13 @@
         dataTable.addColumn({ type: 'date', id: 'End' });
     dataTable.addRows([
 		<?php    
-
+        
 				foreach ($JObj as $EtiquetaV=>$arrayE)
 				{
 					foreach ($arrayE as $titulo=>$año)
 					{
-						echo "['$EtiquetaV',null,'$titulo',new Date($año[0], 0, -181),new Date($año[0], 0, 181)],", PHP_EOL,"          ";
+						$año2=$año+1;
+						echo "['$EtiquetaV',null,'$titulo',new Date($año, 0, -181),new Date($año, 0, 181)],", PHP_EOL,"          ";
 					}
 					
 
@@ -119,7 +121,10 @@ var options = {
           if (selection.length > 0) {
               var seleccionIndex = selection[0].row;
 
-              window.open("http://repositorios.fdi.ucm.es/mnemosine/ver_documento.php?documento=" + dictNameID[dataTable.getValue(seleccionIndex, 0)+'$'+dataTable.getValue(seleccionIndex, 2)], "_blank");
+              alert(dataTable.getValue(seleccionIndex, 2));
+              alert(dataTable.getValue(seleccionIndex, 0)+'$'+dataTable.getValue(seleccionIndex, 2));
+              alert(dictNameID[dataTable.getValue(seleccionIndex, 0)+'$'+dataTable.getValue(seleccionIndex, 2)]);
+
 
           }
       });
@@ -129,7 +134,7 @@ var options = {
 <p class="estadisticasTitulo colecciones_desc">Obras de autores en el tiempo </p>
 <br>
 <div class="zonIndex" id="chart_div" style="overflow-x: auto; height: 600px;">
-<div id="example3.1" style="width: 3000px; height: 600px;"></div>
+<div id="example3.1.o" style="width: 3000px; height: 600px;"></div>
 </div>
 <hr class="linea_horizontal_footer">
 <br>
