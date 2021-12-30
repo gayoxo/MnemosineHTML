@@ -27,7 +27,7 @@ var list = [
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'wordmapCountDes';
+		$service_url = $ServerService.'wordmapCountDesObra?termino=Obra';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
