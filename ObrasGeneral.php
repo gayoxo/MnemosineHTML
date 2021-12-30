@@ -78,6 +78,20 @@
         var chart = new google.visualization.ScatterChart(document.getElementById('obrastotalchart'));
 
         chart.draw(data, options);
+
+          google.visualization.events.addListener(chart, 'select', function() {
+              var selection = chart.getSelection();
+
+              if (selection.length>0)
+              {
+                  var seleccionIndex = selection[0].row;
+                  window.open( "buscar_basico.php?q=fechadepublicacion:"+data.getValue(seleccionIndex,0), "_blank");
+              }
+
+
+
+          });
+
       }
     </script>
 

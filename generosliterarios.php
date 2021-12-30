@@ -71,6 +71,21 @@
         var chart = new google.visualization.PieChart(document.getElementById('piechart3'));
 
         chart.draw(data, options);
+
+
+          google.visualization.events.addListener(chart, 'select', function() {
+              var selection = chart.getSelection();
+
+              if (selection.length>0)
+              {
+                  var seleccionIndex = selection[0].row;
+                  window.open( "buscar_basico.php?q=generoliterario:"+data.getValue(seleccionIndex,0), "_blank");
+              }
+
+
+
+          });
+
       }
  </script>
 

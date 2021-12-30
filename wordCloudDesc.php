@@ -64,6 +64,12 @@ var list = [
 	}
 		?>
 ];
-WordCloud(document.getElementById('wordcambas'), { list: list } );
+WordCloud(document.getElementById('wordcambas'), {
+    list: list,
+    click: function(item) {
+        window.open( "buscar_basico.php?q="+item[0], "_blank");
+    }
+
+} );
 
  </script>
