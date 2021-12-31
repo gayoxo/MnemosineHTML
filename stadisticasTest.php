@@ -18,6 +18,8 @@
 <?php include 'generosliterarios.php'; ?>
 <?php include 'ObrasGeneral.php'; ?>
 <?php include 'wordCloudDesc.php'; ?>
+<?php include 'wordCloudlugPub.php'; ?>
+<?php include 'wordCloudlEdito.php'; ?>
 <?php include 'TiposdeEntidad.php'; ?>
 
 <?php include 'botton.php'; ?>

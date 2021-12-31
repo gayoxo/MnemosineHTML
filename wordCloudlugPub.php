@@ -1,8 +1,8 @@
 
 
-<p class="estadisticasTitulo colecciones_desc">Mapa de palabras en las Obras de <i>Mnemosine</i>.</p>
+<p class="estadisticasTitulo colecciones_desc">Mapa de palabras en los lugares de publicación de las obras de <i>Mnemosine</i>.</p>
 <br>
- <div class="zonIndex" id="wordcambas" style=" height: 500px;"></div>
+ <div class="zonIndex" id="wordcambasLP" style=" height: 500px;"></div>
 
 <hr class="linea_horizontal_footer">
 <br>
@@ -27,7 +27,7 @@ var list = [
 	}else
 	{
 		curl_close($curl);
-		$service_url = $ServerService.'wordmapCountDesObra?termino=Obra';
+		$service_url = $ServerService.'wordmapCountTerm?termino=lugardepublicacion';
 		//$service_url= $service_url.
 	
 	$curl = curl_init($service_url);
@@ -64,10 +64,10 @@ var list = [
 	}
 		?>
 ];
-WordCloud(document.getElementById('wordcambas'), {
+WordCloud(document.getElementById('wordcambasLP'), {
     list: list,
     click: function(item) {
-        window.open( "buscar_basico.php?q=gram:Obra%20AND%20"+item[0], "_blank");
+        window.open( "buscar_basico.php?q=gram:Obra%20AND%20lugardepublicacion:"+item[0], "_blank");
     }
 
 } );
