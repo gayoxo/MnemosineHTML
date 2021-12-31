@@ -13,6 +13,7 @@
 <?php include 'hombreMujeresExilio.php'; ?>
 <?php include 'fechademuerteHombre.php'; ?>
 <?php include 'fechademuerteMujer.php'; ?>
+<?php include 'fechademuerteGeneral.php'; ?>
 <?php include 'comparativaAutores.php'; ?>
 <?php include 'hombreMujeresPieObras.php'; ?>
 <?php include 'generosliterarios.php'; ?>
