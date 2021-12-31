@@ -46,7 +46,7 @@
                 {
 
                     $JObj=json_decode($curl_response, true);
-
+                    ksort($JObj);
                     curl_close($curl);
                 }
             }
@@ -96,6 +96,26 @@
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart_toto'));
 
         chart.draw(data, options);
+
+        google.visualization.events.addListener(chart, 'select', function() {
+            var selection = chart.getSelection();
+
+            if (selection.length>0)
+            {
+                var genero;
+                if ((selection[0].column==1) ||(selection[0].column==3))
+                    genero="hombre";
+                else
+                    genero="mujer";
+
+                console.log(selection[0]);
+                var seleccionIndex = selection[0].row;
+                window.open( "buscar_basico.php?q=fechademuerte:"+data.getValue(seleccionIndex,0)+" AND genero:"+genero, "_blank");
+            }
+
+
+
+        });
     }
 </script>
 
