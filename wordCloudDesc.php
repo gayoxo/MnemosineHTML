@@ -67,7 +67,7 @@ var list = [
 WordCloud(document.getElementById('wordcambas'), {
     list: list,
     click: function(item) {
-        window.open( "buscar_basico.php?q="+item[0], "_blank");
+        window.open( "buscar_basico.php?q=gram:Obra%20AND%20"+item[0], "_blank");
     }
 
 } );
