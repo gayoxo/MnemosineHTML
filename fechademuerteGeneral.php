@@ -56,24 +56,22 @@
 
 
         var data = google.visualization.arrayToDataTable([
-            ['Year', 'Hombres', 'Mujeres', 'Hombres', 'Mujeres' ],
+            ['Year', 'Hombres', 'Hombres (1936-1939)', 'Mujeres', 'Mujeres (1936-1939)' ],
 
             <?php
            // var_dump($JObj);
             foreach ($JObj as $EtiquetaV=>$arrayE)
             {
                 $H1=$arrayE[0];
-             /*   if (!is_numeric($H1) && is_null(is_numeric($H1)))
-                    $H1="null";
-*/
+
                 if (!is_numeric($H1) && is_null($H1))
                     $H1="null";
 
-                $M1=$arrayE[1];
+                $M1=$arrayE[2];
                 if (!is_numeric($M1) && is_null($M1))
                     $M1="null";
 
-                $H2=$arrayE[2];
+                $H2=$arrayE[1];
                 if (!is_numeric($H2) && is_null($H2))
                     $H2="null";
 
