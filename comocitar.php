@@ -92,26 +92,8 @@ $URLBASEDALE="mnemosine";
 
             </p>
 
-            <p class="texto_bloque_cabecera">
-                Bibliografía sobre Mnemosine
-            </p>
-
-            <p class="texto-bloque_cuerpo">
-
-            Cotarelo-Esteban, Lucía: “Mnemosine, Biblioteca Digital de La otra Edad de Plata (1868-1936)”. I Jornadas UCM “La investigación en ciencias sociales y humanidades: desafíos y perspectivas en entornos digitales”, Universidad Complutense de Madrid. Fecha: 12-13/01/2017.</br></br>
-
-            _____: “La otra Edad de Plata: proyección cultural y legado digital. Biblioteca Digital Mnemosine”. Workshop en línea Red INTELE. Fecha: 25/11/2020. Enlace: <a class="coleccion_directa_green" href="http://ixa2.si.ehu.eus/intele/?q=node/22">http://ixa2.si.ehu.eus/intele/?q=node/22</a>.</br></br>
-
-            Martínez Deyros, María, Reina Navarro, Alicia, Cotarelo Esteban, Lucía y González Soriano, José Miguel: “Networking Women Translators in Spain (1868-1936) and their presence in Mnemosyne Digital Library” DARIAH Annual Event 2019, Varsovia, Polonia, The Marketplace poster sesión. Fecha: 16/05/2019.</br></br>
-
-            _____: “Mnemosyne, Digital Library for Rare and Forgotten Texts (1868-1936): -Collections and digital editions-“ DARIAH Annual Event 2019, Varsovia, Polonia, The Marketplace poster sesión. Fecha: 16/05/2019.</br></br>
-
-            Reina Navarro, Alicia: “Interactive Reading in Digital Collections”, DARIAH Annual Event 2019, Varsovia, Polonia, The Marketplace poster sesión. Fecha: 16/05/2019.</br></br>
-
-            Romero López, Dolores y Cotarelo-Esteban, Lucía: “Mnemosyne, Digital Library for Rare and Forgotten Texts (1868-1936): Collections and digital editions”. Digital Humanities Congress, Montreal, Canadá. Fecha: 11/08/2017.</br></br>
-
-            </p>
-
+            </br>
+            
             <p class="texto_bloque_cabecera">
                 Presentación de pósteres
             </p>
