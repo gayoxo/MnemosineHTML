@@ -176,7 +176,7 @@ class CollectionArray
             13,
             "Bohemia Literaria",
             "Esta colección reúne obras de autores que pertenecieron o conocieron la bohemia. Coord. Sofía Nicolás Díez.",
-            "name=Bohemia Literaria&q=subcoleccion:'Bohemia Literaria'",
+            "name=Bohemia Literaria&q=subcoleccion:Bohemia AND subcoleccion:Literaria",
             "imagenes/13.Bohemia.png",
             "fechadepublicacion"
         ),

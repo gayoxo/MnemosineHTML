@@ -21,7 +21,7 @@
 	
 	<div class="footer_elemnt">
 		<a class="quienes_somos_link" href=" https://www.ucm.es/loep" target="_blank">
-					<img class="imagen_bloque_base_up" src="imagenes/loep.jpg" alt="">
+					<img class="imagen_bloque_base_up" src="imagenes/loep.png" alt="">
 				</a>
 		</div>
             <div class="footer_elemnt">
