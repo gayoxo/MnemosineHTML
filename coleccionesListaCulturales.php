@@ -136,7 +136,7 @@ class CollectionArray
             8,
             "Protociencia-ficción",
             "La colección contiene 185 obras catalogadas y digitalizadas gracias a la aportación del fondo de Agustín Jaureguizar. Coord. Marta Correa",
-            "name=Protociencia-ficción&q=materia:protociencia AND materia:Ficci?n",
+            "name=Protociencia-ficción&q=(materia:protociencia Ficci?n) OR (subgenero:protociencia Ficci?n) OR (genero:protociencia Ficci?n)",
             "imagenes/8.%20Protocienciaficcion.png",
             "fechadepublicacion"
         ),
