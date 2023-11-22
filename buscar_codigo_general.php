@@ -507,88 +507,7 @@ if (isset($BusquedaId)&&file_exists("desc_".$BusquedaId.".php"))
 			echo "</div>";	
 			
 			
-			//var_dump($JObj);
-			//echo $curl_response;
 			
-			
-		/*	
-		
-		 //Paginacion Abajo Problemas con el float
-		
-			if ($TotalValue>0){
-				$ParticionesC=$TotalValue/$Limite;
-			}
-			if ($TotalValue>$Limite)
-				{
-				
-				$Particiones=$TotalValue/$Limite;
-				echo "<div class='paginacion'>";
-				echo "</br>";
-				echo "</br>";
-				$Visibles=0;
-				$InicioMenos=false;
-				for ($i = 0; ($i <= $Particiones&&$Visibles<6); $i++) {
-					$sta=($Limite*$i);		
-					$sup=$Limite+($Limite*$i);
-					if ($sup>$TotalValue)
-						$sup=$TotalValue;
-					
-					
-					if ($Start<=$sta)
-					{
-						
-					if (!$InicioMenos&&$Start!=0)	
-					{
-					$InicioMenos=true;	
-					$staPlus=$sta-($Limite*5);
-					if ($staPlus<0)
-						$staPlus=0;
-					echo "<form class=\"paginacionF\" name=\"p".($staPlus+1)."\" action='' method=\"post\">";
-					echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
-					echo "<input type=\"hidden\" name=\"Campo\" value=".$Campo." />";
-					echo "<input type=\"hidden\" name=\"Start\" value=".$staPlus." />";
-					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
-					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
-					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
-					echo "<a class=\"paginadorNoActivo\" href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($staPlus+1)."'].submit();\" >Menos</a>  ";
-					echo "</form>";
-					}
-					else
-						$InicioMenos=true;	
-					
-	//				echo "[".$sta."-".$sup."]";
-					echo "<form class=\"paginacionF\" name=\"p".($sta+1)."\" action='' method=\"post\">";
-					echo "<input type=\"hidden\" name=\"BarraBasica\" value=".$Basica." />";
-					echo "<input type=\"hidden\" name=\"Campo\" value=".$Campo." />";
-					echo "<input type=\"hidden\" name=\"Start\" value=".$sta." />";
-					echo "<input type=\"hidden\" name=\"Limite\" value=".$Limite." />";
-					echo "<input type=\"hidden\" name=\"Filtro\" value='".$FiltroA."' />";	
-					echo "<input type=\"hidden\" name=\"BusquedaStringLabelIN\" value='".$BusquedaStringLabel."' />";
-				
-					if ($Visibles<5)
-					{
-						
-					$Visibles=$Visibles+1;
-					echo "<a ";
-					if ($Start==$sta)
-						echo "class=\"paginadorActivo\" ";
-					else
-						echo "class=\"paginadorNoActivo\" ";
-					echo " href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >".($i+1)."</a>  ";
-					
-					}else
-					{	
-					$Visibles=$Visibles+1;
-					echo "<a class=\"paginadorNoActivo\" href=\"javascript:void(0)\" onclick=\"javascript:document.forms['p".($sta+1)."'].submit();\" >Mas</a>  ";	
-					}
-					echo "</form>";
-					}
-					
-				}		
-				echo "</div>";	
-				
-				}
-			*/	
 				
 			
 		}
@@ -690,4 +609,4 @@ if ($TotalValue>0){
 
 ?>
 
-<?php include 'botton.php'; ?>
+<?php include 'botton_busquedaNAV.php'; ?>

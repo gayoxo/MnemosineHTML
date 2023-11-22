@@ -1,11 +1,11 @@
 <?php
-define('Clavyuser','AAA@gmail.com');
-define('Clavyuserkey','AAAA');
-define('Clavykey','333');
-define('ClavyServer','CLAVY');
+define('Clavyuser','admin@clavy.com');
+define('Clavyuserkey','contras3na');
+define('Clavykey','4657112059518280');
+define('ClavyServer','localhost');
 define('ClavyPort','8080');
 define('ClavyDomine','Clavy');
-define('ClavyService','Finder');
+define('ClavyService','FinderL');
 
 define('TZN_ODA_HOST','OO.fdi.ucm.es');
 
